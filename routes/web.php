@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
-
 Route::resource('phones', 'PhoneSystemController');
+
+Route::get('welcome', function() {
+	return view('welcome');
+});

@@ -4207,3236 +4207,3239 @@ w.find("input.account_id_unknown").click(function() {
                                 <div id="filters-body" class="tabs">
                                     <form action="{{ url('phones') }}" method="POST" name="filter_form" id="filter_form">
                                         @csrf
-                                            <div style="height: 50px; margin-bottom: 5px;">
-                                                <h4 style="float: left">Filter by:</h4>
-                                                <input style="float: right; margin: 15px 0;" type="submit" value="Update »" class="button" id="update">
-                                            </div>
-
-                                            <div style="clear: both"></div>
-
-                                            <div class="date-fields">
-                                                <div class="f-left">
-                                                    <label class="filter-label">Start date</label><br>
-                                                    <input class="datepicker filter-input short" style="font-family: inherit;font-weight: inherit;font-size: 14px;" type="text" name="filter_start_date" id="filter_start_date" value="07/23/2019">
-                                                </div>
-
-                                                <div class="f-right">
-                                                    <label class="filter-label">End date</label><br>
-                                                    <input class="datepicker filter-input short" type="text" name="filter_end_date" id="filter_end_date" value="07/23/2019">
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Phone</label><br>
-                                                <input class="filter-input filter_phone" id="phone_filter" type="text" name="filter_phone" value="">
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Account ID</label><br>
-                                                <input class="filter-input" id="account_id" type="text" name="filter_accountid" value="">
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Agent</label><br>
-
-                                                <select class="chosen chosen215" name="filter_agent[]" id="agent" data-placeholder="All agents" multiple>
-                                                    <option value="inactive"    onclick="alert('a')">Inactive users</option>
-                                                    <option value="active"        onclick="alert('b')">Active users</option>
-                                                    <option value="456"   > Sandra Rodriguez </option>
-                                                    <option value="712"   > Sebastian Cuadras </option>
-                                                    <option value="472"   > William Anderson </option>
-                                                    <option value="520"   > John Albarran </option>
-                                                    <option value="536"   > IC Test 1 (T) </option>
-                                                    <option value="312"   > Cesar Del Moral IRS (D) </option>
-                                                    <option value="328"   > Derek Knorr </option>
-                                                    <option value="344"   > Frances Labadie IRS (D) </option>
-                                                    <option value="360"   > James Feliksik IRS (D) </option>
-                                                    <option value="616"   > Karla Ortiz </option>
-                                                    <option value="376"   > Jose Alvarez IRS (D) </option>
-                                                    <option value="392"   > Kristan Venlos </option>
-                                                    <option value="648"   > Laura Wagner </option>
-                                                    <option value="664"   > Cristina Rosas </option>
-                                                    <option value="696"   > Deborah Parks Supervisor (D) </option>
-                                                    <option value="697"   > Patricia Vazquez </option>
-                                                    <option value="457"   > Sarah Nieschalk IRS (D) </option>
-                                                    <option value="713"   > Adan Olivera </option>
-                                                    <option value="473"   > William Dezoma </option>
-                                                    <option value="521"   > Theresa Daniel </option>
-                                                    <option value="537"   > IC Test 2 (T) </option>
-                                                    <option value="313"   > Charlie Hernandez </option>
-                                                    <option value="377"   > Josh Cuellar </option>
-                                                    <option value="409"   > Manuel Chavez </option>
-                                                    <option value="665"   > Jazmin Diaz_Supervisor (D) </option>
-                                                    <option value="425"   > Mike Hoefke </option>
-                                                    <option value="681"   > Norm Brumfield </option>
-                                                    <option value="458"   > Saul Herrera </option>
-                                                    <option value="714"   > Diana Moral </option>
-                                                    <option value="474"   > William Murphy </option>
-                                                    <option value="522"   > James Feliksik </option>
-                                                    <option value="570"   > Euridice Lopez </option>
-                                                    <option value="586"   > Usman Hussain (T) </option>
-                                                    <option value="362"   > Jared Rogers </option>
-                                                    <option value="618"   > Frank Reyes </option>
-                                                    <option value="394"   > Larry Corridon </option>
-                                                    <option value="650"   > Cecilia Rivera </option>
-                                                    <option value="410"   > Marco Jacome </option>
-                                                    <option value="682"   > Denyse Dominguez </option>
-                                                    <option value="442"   > Paul Gluck </option>
-                                                    <option value="699"   > Maria Salidas </option>
-                                                    <option value="715"   > Jamie Franklin </option>
-                                                    <option value="475"   > Yolanda Murphy </option>
-                                                    <option value="507"   > Daniel Franklin </option>
-                                                    <option value="523"   > Sarah Nieschalk </option>
-                                                    <option value="539"   > IC Test 3 </option>
-                                                    <option value="299"   > Angelica Berber </option>
-                                                    <option value="315"   > Christopher Leludis </option>
-                                                    <option value="571"   > Flavio Loria </option>
-                                                    <option value="587"   > David Gimpel </option>
-                                                    <option value="603"   > Nicholas Delaney IRS (D) </option>
-                                                    <option value="363"   > Jasmine Grant </option>
-                                                    <option value="619"   > Georgina Reyes </option>
-                                                    <option value="635"   > Esther Shenberg </option>
-                                                    <option value="395"   > Laura Fernandez </option>
-                                                    <option value="651"   > Vanessa Vincent </option>
-                                                    <option value="411"   > Maria Soto </option>
-                                                    <option value="667"   > Chris Doyle </option>
-                                                    <option value="716"   > Santiago Corvaia </option>
-                                                    <option value="476"   > Zyanya Alejandra </option>
-                                                    <option value="524"   > Tyler Butt </option>
-                                                    <option value="300"   > Anselmo Hernandez </option>
-                                                    <option value="556"   > Kiara Montgomery </option>
-                                                    <option value="572"   > Lizbeth Cruz </option>
-                                                    <option value="588"   > Terran Thomas </option>
-                                                    <option value="348"   > Gerardo Barron </option>
-                                                    <option value="604"   > Nicholas Delaney </option>
-                                                    <option value="364"   > Jason Nofzinger </option>
-                                                    <option value="620"   > Karen Vazquez </option>
-                                                    <option value="636"   > Alejandro Rangel_Supervisor (D) </option>
-                                                    <option value="396"   > Lauren Noel </option>
-                                                    <option value="412"   > Maria Ruiz </option>
-                                                    <option value="668"   > Wyatt Steed </option>
-                                                    <option value="428"   > Natalie Garcia </option>
-                                                    <option value="684"   > Noemi Carrero </option>
-                                                    <option value="444"   > Paul Rosario </option>
-                                                    <option value="461"   > Shelsee Hernandez </option>
-                                                    <option value="525"   > Peter Kang </option>
-                                                    <option value="2"   > Agent 1 </option>
-                                                    <option value="541"   > Luis Rivera IRS (D) </option>
-                                                    <option value="301"   > Arely Antunez </option>
-                                                    <option value="333"   > Edwin Carde IRS (D) </option>
-                                                    <option value="589"   > Katherine Austin </option>
-                                                    <option value="605"   > Tomas Sanchez IRS (D) </option>
-                                                    <option value="637"   > Jorge Caballero_Supervisor(D) </option>
-                                                    <option value="397"   > Lauriel Collins </option>
-                                                    <option value="653"   > Lourdes Miramontes </option>
-                                                    <option value="429"   > Nate McGoldrick </option>
-                                                    <option value="685"   > Maria Badillo </option>
-                                                    <option value="445"   > Paula Munoz </option>
-                                                    <option value="462"   > Sigrid Raudales </option>
-                                                    <option value="718"   > Annabelle Borota </option>
-                                                    <option value="526"   > Ryan Stegenga </option>
-                                                    <option value="286"   > Abraham Cab </option>
-                                                    <option value="542"   > Nancy Zambrana </option>
-                                                    <option value="558"   > Joshua Willemse </option>
-                                                    <option value="334"   > Elisabel Medina </option>
-                                                    <option value="350"   > Giselle Manzanero </option>
-                                                    <option value="606"   > Tomas Sanchez </option>
-                                                    <option value="622"   > Pedro Garcia </option>
-                                                    <option value="638"   > Alan Stafford_Super (D) </option>
-                                                    <option value="398"   > Lesley Sive </option>
-                                                    <option value="430"   > Neha Sharma </option>
-                                                    <option value="446"   > Peter Kang IRS (D) </option>
-                                                    <option value="703"   > Leon Johnson </option>
-                                                    <option value="719"   > Kelli Snyder </option>
-                                                    <option value="511"   > Brad Muller </option>
-                                                    <option value="527"   > Jennifer Brugh </option>
-                                                    <option value="303"   > Arturo del Castillo </option>
-                                                    <option value="319"   > Cynthia Patino </option>
-                                                    <option value="575"   > Oswaldo Escalante </option>
-                                                    <option value="335"   > Elizabeth Harmon </option>
-                                                    <option value="351"   > Han Tao </option>
-                                                    <option value="607"   > Seidy Pacheco </option>
-                                                    <option value="367"   > Jennifer Brugh IRS (D) </option>
-                                                    <option value="399"   > Lilly Kovacevic </option>
-                                                    <option value="655"   > Joshua Robison </option>
-                                                    <option value="415"   > Markos Banos IRS (D) </option>
-                                                    <option value="671"   > Lorenzo Stephens </option>
-                                                    <option value="687"   > Nallely Ochoa </option>
-                                                    <option value="447"   > Raul Cardiel </option>
-                                                    <option value="704"   > CTAX Test Agent </option>
-                                                    <option value="528"   > Jose Alvarez </option>
-                                                    <option value="544"   > Luis Rivera </option>
-                                                    <option value="304"   > Ashley Thomas </option>
-                                                    <option value="320"   > Daniel Urban </option>
-                                                    <option value="576"   > Christine Gandia </option>
-                                                    <option value="336"   > Elizabeth Hernandez </option>
-                                                    <option value="592"   > Tessa Garcia </option>
-                                                    <option value="368"   > Jessica Perez </option>
-                                                    <option value="384"   > Judith Redington </option>
-                                                    <option value="400"   > Lisette Guel </option>
-                                                    <option value="656"   > Yuritzi Vallejo </option>
-                                                    <option value="416"   > Matt DiRaimondo </option>
-                                                    <option value="672"   > Laura Sanchez </option>
-                                                    <option value="432"   > Nicholas Carrera </option>
-                                                    <option value="705"   > George Asimou </option>
-                                                    <option value="465"   > Stephanie Padilla IRS (D) </option>
-                                                    <option value="513"   > Gennifer White </option>
-                                                    <option value="529"   > Stephanie Padilla </option>
-                                                    <option value="289"   > Alan Eley </option>
-                                                    <option value="545"   > Jose Leon IRS (D) </option>
-                                                    <option value="305"   > Baletica Genous </option>
-                                                    <option value="561"   > Corey Hankerson IRS (D) </option>
-                                                    <option value="577"   > Ashley Thomas IRS (D) </option>
-                                                    <option value="337"   > Emmanuel Martinez </option>
-                                                    <option value="593"   > Robert Ventura </option>
-                                                    <option value="369"   > Jessie Seaman </option>
-                                                    <option value="385"   > Julieta Franco </option>
-                                                    <option value="401"   > Lissette Garciduenas </option>
-                                                    <option value="417"   > Matthew Chavez </option>
-                                                    <option value="673"   > Ashley Green </option>
-                                                    <option value="433"   > Nick Kind </option>
-                                                    <option value="689"   > Juan Texier </option>
-                                                    <option value="466"   > Stephany Cruz </option>
-                                                    <option value="722"   > Valerie Bolden </option>
-                                                    <option value="530"   > Frances Labadie </option>
-                                                    <option value="290"   > Alan Stafford_Agent </option>
-                                                    <option value="546"   > Jose Leon </option>
-                                                    <option value="306"   > Barry Rubin </option>
-                                                    <option value="562"   > Corey Hankerson </option>
-                                                    <option value="578"   > Christian Zuluaga </option>
-                                                    <option value="338"   > Erica Soto </option>
-                                                    <option value="594"   > Raul Hernandez </option>
-                                                    <option value="354"   > Hugo Gasca </option>
-                                                    <option value="370"   > John Albarran IRS (D) </option>
-                                                    <option value="626"   > Jon Brooke </option>
-                                                    <option value="418"   > Megan Parr </option>
-                                                    <option value="674"   > Alvaro Contreras </option>
-                                                    <option value="434"   > Nick Charveron </option>
-                                                    <option value="450"   > Robert Jakovich </option>
-                                                    <option value="707"   > Perla Ordonez </option>
-                                                    <option value="467"   > Stevie Bestecki </option>
-                                                    <option value="515"   > Roberto Spinelli </option>
-                                                    <option value="531"   > Edwin Carde </option>
-                                                    <option value="547"   > Samuel Montalvo IRS (D) </option>
-                                                    <option value="307"   > Benjamin Medina </option>
-                                                    <option value="563"   > Carmen Flores </option>
-                                                    <option value="323"   > Darla Harrison </option>
-                                                    <option value="579"   > Maureen Hawkins IRS (D) </option>
-                                                    <option value="339"   > Erick Santana </option>
-                                                    <option value="611"   > Jazmin Diaz </option>
-                                                    <option value="371"   > John Peloquin </option>
-                                                    <option value="387"   > July Valera </option>
-                                                    <option value="643"   > Abraham Montez </option>
-                                                    <option value="675"   > Luz Xalamigua </option>
-                                                    <option value="435"   > Nicolo Lentini </option>
-                                                    <option value="451"   > Robert Craig </option>
-                                                    <option value="708"   > Fabiola Patino </option>
-                                                    <option value="468"   > Theresa Daniel IRS (D) </option>
-                                                    <option value="292"   > Alejandro Rangel </option>
-                                                    <option value="548"   > Samuel Montalvo </option>
-                                                    <option value="580"   > Maureen Hawkins </option>
-                                                    <option value="596"   > David Ramirez </option>
-                                                    <option value="612"   > Andrew Strickler </option>
-                                                    <option value="372"   > John Keefe </option>
-                                                    <option value="644"   > Diego Franco </option>
-                                                    <option value="404"   > Luis Mendoza </option>
-                                                    <option value="420"   > Michael Hanses </option>
-                                                    <option value="436"   > Ninnette Morales </option>
-                                                    <option value="452"   > Ruben Leiva </option>
-                                                    <option value="709"   > Hanseen Pool </option>
-                                                    <option value="469"   > Tim Klepek </option>
-                                                    <option value="725"   > Kin Lopez </option>
-                                                    <option value="533"   > Cesar Del Moral </option>
-                                                    <option value="549"   > Karen Torton </option>
-                                                    <option value="565"   > Chris Hartford </option>
-                                                    <option value="325"   > Deborah Parks </option>
-                                                    <option value="581"   > Markos Banos </option>
-                                                    <option value="341"   > Ermir Ali </option>
-                                                    <option value="597"   > Robert Rodriguez </option>
-                                                    <option value="357"   > Jacob Dayan </option>
-                                                    <option value="613"   > 19999 (T) </option>
-                                                    <option value="629"   > Leticia Munoz </option>
-                                                    <option value="389"   > Karolina Gavilan </option>
-                                                    <option value="645"   > Azul Rodriguez </option>
-                                                    <option value="421"   > Michael Gaylord </option>
-                                                    <option value="693"   > Luis Jimenez </option>
-                                                    <option value="453"   > Ryan Zawadzki </option>
-                                                    <option value="710"   > Paul Castillo </option>
-                                                    <option value="470"   > Tyler Butt IRS (D) </option>
-                                                    <option value="294"   > Andrea Quintana </option>
-                                                    <option value="550"   > Joe Tester (T) </option>
-                                                    <option value="310"   > Brian McDonald </option>
-                                                    <option value="566"   > Ben Bauers IRS (D) </option>
-                                                    <option value="358"   > Jaime Viscarra </option>
-                                                    <option value="614"   > Mister Deeds (T) </option>
-                                                    <option value="374"   > Jordan Snow </option>
-                                                    <option value="630"   > Michelle Hurtado </option>
-                                                    <option value="422"   > Miguel Ramirez </option>
-                                                    <option value="678"   > Vanessa Rivera </option>
-                                                    <option value="694"   > Rosa Garcia </option>
-                                                    <option value="454"   > Ryan Stegenga IRS (D) </option>
-                                                    <option value="471"   > Victor Gomez </option>
-                                                    <option value="487"   > Daniela Garcia </option>
-                                                    <option value="519"   > Edrica Beneby </option>
-                                                    <option value="535"   > Keena Garner </option>
-                                                    <option value="295"   > Andres Garcia </option>
-                                                    <option value="311"   > Brynne Frauenhoffer </option>
-                                                    <option value="567"   > Ben Bauers </option>
-                                                    <option value="327"   > Dennis Mckinney </option>
-                                                    <option value="359"   > James Clair </option>
-                                                    <option value="615"   > Christopher Allen </option>
-                                                    <option value="375"   > Jorge Caballero </option>
-                                                    <option value="647"   > Rawley Davis </option>
-                                                    <option value="407"   > Maggie Fuentes </option>
-                                                    <option value="663"   > Jamie Franklin IRS (D) </option>
-                                                    <option value="679"   > Mounika Alluri </option>
-                                                    <option value="695"   > Francisco Ocanto </option>
-                                                    <option value="455"   > Sally Guzman </option>
-                                                    <option value="488"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="504"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="296"  style="color:#ccc; text-decoration: line-through" > Andrew Velazquez </option>
-                                                    <option value="552"  style="color:#ccc; text-decoration: line-through" > Laura Ferguson </option>
-                                                    <option value="568"  style="color:#ccc; text-decoration: line-through" > Yovanna Marin </option>
-                                                    <option value="584"  style="color:#ccc; text-decoration: line-through" > Goldie Greenstein IRS </option>
-                                                    <option value="600"  style="color:#ccc; text-decoration: line-through" > ALEXIS VELAZQUEZ </option>
-                                                    <option value="632"  style="color:#ccc; text-decoration: line-through" > Hector Gracia </option>
-                                                    <option value="408"  style="color:#ccc; text-decoration: line-through" > Manuel Espinosa </option>
-                                                    <option value="424"  style="color:#ccc; text-decoration: line-through" > Miguel Torres </option>
-                                                    <option value="680"  style="color:#ccc; text-decoration: line-through" > Geraldine Ceballos </option>
-                                                    <option value="440"  style="color:#ccc; text-decoration: line-through" > Pamela Anderson </option>
-                                                    <option value="489"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="505"  style="color:#ccc; text-decoration: line-through" > Leticia Hernandez </option>
-                                                    <option value="297"  style="color:#ccc; text-decoration: line-through" > Angel Sales </option>
-                                                    <option value="553"  style="color:#ccc; text-decoration: line-through" > Test Agent 2 </option>
-                                                    <option value="569"  style="color:#ccc; text-decoration: line-through" > Carlos Pozo </option>
-                                                    <option value="329"  style="color:#ccc; text-decoration: line-through" > Diana Aguilera </option>
-                                                    <option value="585"  style="color:#ccc; text-decoration: line-through" > Barry Footlick IRS (D) </option>
-                                                    <option value="345"  style="color:#ccc; text-decoration: line-through" > Gabriel Bustamante </option>
-                                                    <option value="601"  style="color:#ccc; text-decoration: line-through" > Sigrid Mcgregor </option>
-                                                    <option value="361"  style="color:#ccc; text-decoration: line-through" > James Thornton </option>
-                                                    <option value="617"  style="color:#ccc; text-decoration: line-through" > Emily Martinez </option>
-                                                    <option value="633"  style="color:#ccc; text-decoration: line-through" > Hector Garcia </option>
-                                                    <option value="393"  style="color:#ccc; text-decoration: line-through" > Kunal Mishra </option>
-                                                    <option value="649"  style="color:#ccc; text-decoration: line-through" > Rashawn Pope </option>
-                                                    <option value="441"  style="color:#ccc; text-decoration: line-through" > Patricia Vazquez </option>
-                                                    <option value="698"  style="color:#ccc; text-decoration: line-through" > Cortez Hodges </option>
-                                                    <option value="490"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="506"  style="color:#ccc; text-decoration: line-through" > Coco Kasperowicz </option>
-                                                    <option value="538"  style="color:#ccc; text-decoration: line-through" > test9899 </option>
-                                                    <option value="298"  style="color:#ccc; text-decoration: line-through" > Angelica Ocana </option>
-                                                    <option value="554"  style="color:#ccc; text-decoration: line-through" > Joe Tester </option>
-                                                    <option value="314"  style="color:#ccc; text-decoration: line-through" > Chris Hastings </option>
-                                                    <option value="330"  style="color:#ccc; text-decoration: line-through" > Diana Garcia </option>
-                                                    <option value="346"  style="color:#ccc; text-decoration: line-through" > Gabriela Melgoza </option>
-                                                    <option value="602"  style="color:#ccc; text-decoration: line-through" > Test for duplicate </option>
-                                                    <option value="378"  style="color:#ccc; text-decoration: line-through" > Joshua Kronick </option>
-                                                    <option value="634"  style="color:#ccc; text-decoration: line-through" > Jerrina Rodriguez </option>
-                                                    <option value="666"  style="color:#ccc; text-decoration: line-through" > Jamil Macias </option>
-                                                    <option value="426"  style="color:#ccc; text-decoration: line-through" > Monika Hudak </option>
-                                                    <option value="459"  style="color:#ccc; text-decoration: line-through" > Sean Zaragoza </option>
-                                                    <option value="491"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="555"  style="color:#ccc; text-decoration: line-through" > Grady Griffin </option>
-                                                    <option value="331"  style="color:#ccc; text-decoration: line-through" > Domingo Aguilera </option>
-                                                    <option value="347"  style="color:#ccc; text-decoration: line-through" > George Asimou </option>
-                                                    <option value="379"  style="color:#ccc; text-decoration: line-through" > Josue Lopez </option>
-                                                    <option value="427"  style="color:#ccc; text-decoration: line-through" > Natalie Camacho </option>
-                                                    <option value="683"  style="color:#ccc; text-decoration: line-through" > Taroniah Rice </option>
-                                                    <option value="443"  style="color:#ccc; text-decoration: line-through" > Paul Blahnik </option>
-                                                    <option value="700"  style="color:#ccc; text-decoration: line-through" > Lukasz Krolak </option>
-                                                    <option value="460"  style="color:#ccc; text-decoration: line-through" > Sharbel Meza </option>
-                                                    <option value="492"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="508"  style="color:#ccc; text-decoration: line-through" > Tony Espinoza </option>
-                                                    <option value="540"  style="color:#ccc; text-decoration: line-through" > IC Test 3 (T) </option>
-                                                    <option value="316"  style="color:#ccc; text-decoration: line-through" > Conner Rubio </option>
-                                                    <option value="332"  style="color:#ccc; text-decoration: line-through" > Edwin Montufar </option>
-                                                    <option value="380"  style="color:#ccc; text-decoration: line-through" > Juan Palma </option>
-                                                    <option value="652"  style="color:#ccc; text-decoration: line-through" > Marra Forman </option>
-                                                    <option value="701"  style="color:#ccc; text-decoration: line-through" > Valeria Martinez </option>
-                                                    <option value="717"  style="color:#ccc; text-decoration: line-through" > Mimi Lowery </option>
-                                                    <option value="477"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="493"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="509"  style="color:#ccc; text-decoration: line-through" > Andres Guijarro </option>
-                                                    <option value="557"  style="color:#ccc; text-decoration: line-through" > Angela Desmond </option>
-                                                    <option value="317"  style="color:#ccc; text-decoration: line-through" > Cristhian Ramos </option>
-                                                    <option value="573"  style="color:#ccc; text-decoration: line-through" > Cesar Criollo </option>
-                                                    <option value="349"  style="color:#ccc; text-decoration: line-through" > Gerardo Ramirez </option>
-                                                    <option value="365"  style="color:#ccc; text-decoration: line-through" > Javier Rivera </option>
-                                                    <option value="621"  style="color:#ccc; text-decoration: line-through" > Faud Escobar </option>
-                                                    <option value="381"  style="color:#ccc; text-decoration: line-through" > Juan Herrera </option>
-                                                    <option value="413"  style="color:#ccc; text-decoration: line-through" > Maria Sanchez </option>
-                                                    <option value="669"  style="color:#ccc; text-decoration: line-through" > Stephanie Edwards </option>
-                                                    <option value="702"  style="color:#ccc; text-decoration: line-through" > Nancy Hughes </option>
-                                                    <option value="478"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="494"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="510"  style="color:#ccc; text-decoration: line-through" > Patricia Valencia </option>
-                                                    <option value="302"  style="color:#ccc; text-decoration: line-through" > Armando Picon </option>
-                                                    <option value="318"  style="color:#ccc; text-decoration: line-through" > Cynthia Seaman </option>
-                                                    <option value="574"  style="color:#ccc; text-decoration: line-through" > Omar Morales </option>
-                                                    <option value="590"  style="color:#ccc; text-decoration: line-through" > Sharron Medley </option>
-                                                    <option value="366"  style="color:#ccc; text-decoration: line-through" > Jazmin Chable </option>
-                                                    <option value="382"  style="color:#ccc; text-decoration: line-through" > Juan Garcia </option>
-                                                    <option value="654"  style="color:#ccc; text-decoration: line-through" > Joseph Sbarra </option>
-                                                    <option value="414"  style="color:#ccc; text-decoration: line-through" > Mario Vazquez </option>
-                                                    <option value="670"  style="color:#ccc; text-decoration: line-through" > Nicole Sanchez </option>
-                                                    <option value="686"  style="color:#ccc; text-decoration: line-through" > Ruben Ramirez </option>
-                                                    <option value="463"  style="color:#ccc; text-decoration: line-through" > Silvia Alvarez </option>
-                                                    <option value="479"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="495"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="287"  style="color:#ccc; text-decoration: line-through" > Adam Dayan </option>
-                                                    <option value="543"  style="color:#ccc; text-decoration: line-through" > Victor Jimenez </option>
-                                                    <option value="559"  style="color:#ccc; text-decoration: line-through" > Greg Lomori IRS (D) </option>
-                                                    <option value="591"  style="color:#ccc; text-decoration: line-through" > Luis De La Fuente </option>
-                                                    <option value="623"  style="color:#ccc; text-decoration: line-through" > Cristopher Vera </option>
-                                                    <option value="383"  style="color:#ccc; text-decoration: line-through" > Juan Mendez IRS (D) </option>
-                                                    <option value="639"  style="color:#ccc; text-decoration: line-through" > Javier Chavarria </option>
-                                                    <option value="431"  style="color:#ccc; text-decoration: line-through" > Nelson Canul </option>
-                                                    <option value="464"  style="color:#ccc; text-decoration: line-through" > Silvia Nava </option>
-                                                    <option value="720"  style="color:#ccc; text-decoration: line-through" > Elissa Pulido </option>
-                                                    <option value="480"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="496"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="512"  style="color:#ccc; text-decoration: line-through" > Gordon Aguirre </option>
-                                                    <option value="288"  style="color:#ccc; text-decoration: line-through" > Aida Flores </option>
-                                                    <option value="560"  style="color:#ccc; text-decoration: line-through" > Greg Lomori </option>
-                                                    <option value="352"  style="color:#ccc; text-decoration: line-through" > Hannah Gabbard </option>
-                                                    <option value="608"  style="color:#ccc; text-decoration: line-through" > Test Agent3 </option>
-                                                    <option value="624"  style="color:#ccc; text-decoration: line-through" > Lourdes Perez </option>
-                                                    <option value="640"  style="color:#ccc; text-decoration: line-through" > Desiree Natividad </option>
-                                                    <option value="688"  style="color:#ccc; text-decoration: line-through" > Rosa Carles </option>
-                                                    <option value="448"  style="color:#ccc; text-decoration: line-through" > Rebeca Rivera IRS (D) </option>
-                                                    <option value="721"  style="color:#ccc; text-decoration: line-through" > Manuel Sanchez </option>
-                                                    <option value="481"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="497"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="321"  style="color:#ccc; text-decoration: line-through" > Daniela Lopez </option>
-                                                    <option value="353"  style="color:#ccc; text-decoration: line-through" > Holly Matous </option>
-                                                    <option value="609"  style="color:#ccc; text-decoration: line-through" > Francisco Camelo </option>
-                                                    <option value="625"  style="color:#ccc; text-decoration: line-through" > Tiffany Rodriguez </option>
-                                                    <option value="641"  style="color:#ccc; text-decoration: line-through" > Gloriana Suarez </option>
-                                                    <option value="657"  style="color:#ccc; text-decoration: line-through" > Alan Osorio </option>
-                                                    <option value="449"  style="color:#ccc; text-decoration: line-through" > Renee Curtis </option>
-                                                    <option value="706"  style="color:#ccc; text-decoration: line-through" > Mariana Rodriguez </option>
-                                                    <option value="482"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="498"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="514"  style="color:#ccc; text-decoration: line-through" > Christopher Bates </option>
-                                                    <option value="322"  style="color:#ccc; text-decoration: line-through" > Danielle Levy </option>
-                                                    <option value="610"  style="color:#ccc; text-decoration: line-through" > Rogelio Martinez </option>
-                                                    <option value="386"  style="color:#ccc; text-decoration: line-through" > Julius Mosansky </option>
-                                                    <option value="642"  style="color:#ccc; text-decoration: line-through" > Ana Avila </option>
-                                                    <option value="402"  style="color:#ccc; text-decoration: line-through" > Louis Clarke </option>
-                                                    <option value="658"  style="color:#ccc; text-decoration: line-through" > Valeria Borja </option>
-                                                    <option value="690"  style="color:#ccc; text-decoration: line-through" > Said Rosillo </option>
-                                                    <option value="723"  style="color:#ccc; text-decoration: line-through" > Cortez Hodges </option>
-                                                    <option value="483"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="499"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="291"  style="color:#ccc; text-decoration: line-through" > Aldo Martinez </option>
-                                                    <option value="595"  style="color:#ccc; text-decoration: line-through" > DANIEL KOH </option>
-                                                    <option value="355"  style="color:#ccc; text-decoration: line-through" > Isaac Alferez </option>
-                                                    <option value="627"  style="color:#ccc; text-decoration: line-through" > Joseph Blazen </option>
-                                                    <option value="403"  style="color:#ccc; text-decoration: line-through" > Lourdes Miramontes </option>
-                                                    <option value="659"  style="color:#ccc; text-decoration: line-through" > Dante Morales </option>
-                                                    <option value="419"  style="color:#ccc; text-decoration: line-through" > Meghan Whitlock </option>
-                                                    <option value="691"  style="color:#ccc; text-decoration: line-through" > Said Canche </option>
-                                                    <option value="724"  style="color:#ccc; text-decoration: line-through" > Kin Lopez </option>
-                                                    <option value="484"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="500"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="516"  style="color:#ccc; text-decoration: line-through" > Cathy Bryant </option>
-                                                    <option value="532"  style="color:#ccc; text-decoration: line-through" > Juan Mendez </option>
-                                                    <option value="308"  style="color:#ccc; text-decoration: line-through" > Berenice Ponce </option>
-                                                    <option value="564"  style="color:#ccc; text-decoration: line-through" > Eddy Lamar </option>
-                                                    <option value="324"  style="color:#ccc; text-decoration: line-through" > Darwin Lopez </option>
-                                                    <option value="340"  style="color:#ccc; text-decoration: line-through" > Erik Sirk </option>
-                                                    <option value="356"  style="color:#ccc; text-decoration: line-through" > Ivonne Kosberg </option>
-                                                    <option value="628"  style="color:#ccc; text-decoration: line-through" > Chris Lightner </option>
-                                                    <option value="388"  style="color:#ccc; text-decoration: line-through" > Karla Garcia </option>
-                                                    <option value="660"  style="color:#ccc; text-decoration: line-through" > Patricia Urbina </option>
-                                                    <option value="676"  style="color:#ccc; text-decoration: line-through" > Valeria Borja </option>
-                                                    <option value="692"  style="color:#ccc; text-decoration: line-through" > Ana Gomez </option>
-                                                    <option value="485"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="501"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="517"  style="color:#ccc; text-decoration: line-through" > Ron Stein </option>
-                                                    <option value="293"  style="color:#ccc; text-decoration: line-through" > Amna Abid </option>
-                                                    <option value="309"  style="color:#ccc; text-decoration: line-through" > Brad Blankley </option>
-                                                    <option value="373"  style="color:#ccc; text-decoration: line-through" > Jonathan Jimenez </option>
-                                                    <option value="405"  style="color:#ccc; text-decoration: line-through" > Luis Hernandez </option>
-                                                    <option value="661"  style="color:#ccc; text-decoration: line-through" > Francisco Sánchez </option>
-                                                    <option value="677"  style="color:#ccc; text-decoration: line-through" > Joselinne Jimenez </option>
-                                                    <option value="437"  style="color:#ccc; text-decoration: line-through" > Norm Brumfield </option>
-                                                    <option value="486"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="502"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="518"  style="color:#ccc; text-decoration: line-through" > Joseph Sbarra IRS (D) </option>
-                                                    <option value="534"  style="color:#ccc; text-decoration: line-through" > Rebeca Rivera </option>
-                                                    <option value="326"  style="color:#ccc; text-decoration: line-through" > Denise Young </option>
-                                                    <option value="582"  style="color:#ccc; text-decoration: line-through" > Barry Footlick </option>
-                                                    <option value="342"  style="color:#ccc; text-decoration: line-through" > Ernesto Mena </option>
-                                                    <option value="598"  style="color:#ccc; text-decoration: line-through" > KELLY CALLAHAN </option>
-                                                    <option value="390"  style="color:#ccc; text-decoration: line-through" > Kathleen O&#039;Connell </option>
-                                                    <option value="646"  style="color:#ccc; text-decoration: line-through" > Jason Warr </option>
-                                                    <option value="406"  style="color:#ccc; text-decoration: line-through" > Luz Picon </option>
-                                                    <option value="662"  style="color:#ccc; text-decoration: line-through" > Dori Sauceda </option>
-                                                    <option value="438"  style="color:#ccc; text-decoration: line-through" > Oscar Hernandez </option>
-                                                    <option value="711"  style="color:#ccc; text-decoration: line-through" > Ivan Morales </option>
-                                                    <option value="503"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
-                                                    <option value="551"  style="color:#ccc; text-decoration: line-through" > Test Agent (T) </option>
-                                                    <option value="583"  style="color:#ccc; text-decoration: line-through" > Goldie Greenstein </option>
-                                                    <option value="343"  style="color:#ccc; text-decoration: line-through" > Fernando Aviles </option>
-                                                    <option value="599"  style="color:#ccc; text-decoration: line-through" > MICHELLE MENDEZ </option>
-                                                    <option value="631"  style="color:#ccc; text-decoration: line-through" > Lindsey Marsland </option>
-                                                    <option value="391"  style="color:#ccc; text-decoration: line-through" > Kerim Tatlici </option>
-                                                    <option value="423"  style="color:#ccc; text-decoration: line-through" > Miguel Arredondo </option>
-                                                    <option value="439"  style="color:#ccc; text-decoration: line-through" > Oscar Sanchez </option>
-                                                </select>
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Contact list</label><br>
-
-                                                <select class="chosen chosen215" name="filter_pool[]" id="contact_list" data-placeholder="All contacts" multiple>
-                                                    <option value="1" >Joel test</option>
-                                                    <option value="3" >FreeReportDec27</option>
-                                                    <option value="5" >FreeReportJan9</option>
-                                                    <option value="9" >FreeReportJan28</option>
-                                                    <option value="13" >FreeReportFeb6</option>
-                                                    <option value="14" >FreeReportFeb7</option>
-                                                    <option value="16" >FreeReportSpanishApril10</option>
-                                                    <option value="17" >FreeReportMay25Eng</option>
-                                                    <option value="18" >FreeReportJune3Eng</option>
-                                                    <option value="19" >FreeReportJune13Eng</option>
-                                                    <option value="20" >FreeReportJuly9Eng</option>
-                                                    <option value="21" >FreeReportJuly9Eng2</option>
-                                                    <option value="22" >FreeReportJuly11Eng</option>
-                                                    <option value="23" >FreeReportJuly18Eng</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Call origin</label><br>
-
-                                                <select class="chosen chosen215" name="filter_call_origin" id="callorigin" data-placeholder="All calls">
-                                                    <option value="all" >All calls</option>
-                                                    <option value="internal" >Internal calls</option>
-                                                    <option value="external" >External calls</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Call type</label><br>
-
-                                                <select class="chosen chosen215" name="filter_call_type[]" id="calltype" data-placeholder="All calls" multiple>
-                                                    <option value="I" >Inbound</option>
-                                                    <option value="M" >Manual</option>
-                                                    <option value="O" >Outbound</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Termination event</label><br>
-
-                                                <select class="chosen chosen215" name="filter_termination_event[]" id="termination_event" data-placeholder="All termination events" multiple>
-                                                    <option value="ABANDON" >Abandon </option>
-                                                    <option value="COMPLETEAGENT" >Complete Agent </option>
-                                                    <option value="COMPLETECALLER" >Complete Caller </option>
-                                                    <option value="EXITWITHKEY" >Exit with Key </option>
-                                                    <option value="EXITWITHTIMEOUT" >Exit with Timeout </option>
-                                                    <option value="TRANSFER" >Transfer </option>
-                                                </select>
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Call result</label><br>
-
-                                                <select class="chosen chosen215" name="filter_crc[]" id="call_result" data-placeholder="All call results" multiple>
-                                                    <option value="22" >
-                                                        3QS - Three Question Screen Transfer
-                                                    </option>
-                                                    <option value="46" >
-                                                        4QS-1 - Four Question Screen-Tier 1
-                                                    </option>
-                                                    <option value="47" >
-                                                        4QS-2 - Four Question Screen-Tier 2
-                                                    </option>
-                                                    <option value="48" >
-                                                        5QS-1 - Five Question Screen-Tier 1
-                                                    </option>
-                                                    <option value="49" >
-                                                        5QS-2 - Five Question Screen-Tier 2
-                                                    </option>
-                                                    <option value="10" >
-                                                        AMD - Answer Machine - No Message Left
-                                                    </option>
-                                                    <option value="15" >
-                                                        AMM - Answer Machine - Message Left
-                                                    </option>
-                                                    <option value="43" >
-                                                        AR Call - Account Receivable Call
-                                                    </option>
-                                                    <option value="50" >
-                                                        BLG - Billing
-                                                    </option>
-                                                    <option value="9" >
-                                                        BSY - Busy Signal
-                                                    </option>
-                                                    <option value="40" >
-                                                        Call Completed - Call Handled Successfully
-                                                    </option>
-                                                    <option value="38" >
-                                                        CDIS - Call Discarded
-                                                    </option>
-                                                    <option value="42" >
-                                                        CR Call - Case Review Call
-                                                    </option>
-                                                    <option value="45" >
-                                                        CUR - Current Client
-                                                    </option>
-                                                    <option value="29" >
-                                                        DNC - Do Not Call
-                                                    </option>
-                                                    <option value="30" >
-                                                        DNQ - Non Qualified
-                                                    </option>
-                                                    <option value="35" >
-                                                        DRP - Dropped Call
-                                                    </option>
-                                                    <option value="8" >
-                                                        FAX - Fax machine
-                                                    </option>
-                                                    <option value="2" >
-                                                        HNG - Hangup or dead air
-                                                    </option>
-                                                    <option value="34" >
-                                                        IRS - IRS Call
-                                                    </option>
-                                                    <option value="26" >
-                                                        jctest - jctest
-                                                    </option>
-                                                    <option value="16" >
-                                                        NOA - No Answer
-                                                    </option>
-                                                    <option value="7" >
-                                                        OI - Invalid Phone Number
-                                                    </option>
-                                                    <option value="44" >
-                                                        P1 Call - New Client Call
-                                                    </option>
-                                                    <option value="31" >
-                                                        QLD - Qualified Prospect
-                                                    </option>
-                                                    <option value="32" >
-                                                        QND - Qualified No Deal
-                                                    </option>
-                                                    <option value="36" >
-                                                        RBD - Robodial
-                                                    </option>
-                                                    <option value="13" >
-                                                        UNK - Contact CU to resolve this result code
-                                                    </option>
-                                                    <option value="37" >
-                                                        VMAfter - Voice Mail After Hours
-                                                    </option>
-                                                    <option value="39" >
-                                                        Wrong Number - Not Looking for CTAX
-                                                    </option>
-                                                    <option value="28" >
-                                                        XAC - Transfer Accounting Sales
-                                                    </option>
-                                                    <option value="24" >
-                                                        XAR - Transfer to AR
-                                                    </option>
-                                                    <option value="33" >
-                                                        XCA - Transfer to Case Advocate
-                                                    </option>
-                                                    <option value="23" >
-                                                        XCM - Transfer to CM
-                                                    </option>
-                                                    <option value="17" >
-                                                        XFC - Transferred Call
-                                                    </option>
-                                                    <option value="27" >
-                                                        XSE - Transfer to English Sales
-                                                    </option>
-                                                    <option value="25" >
-                                                        XSS - Transfer Spanish Sales
-                                                    </option>
-                                                </select>
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Campaign</label><br>
-
-                                                <select class="chosen chosen215 " name="campaign[]" id="filter_campaign" data-placeholder="All campaigns" multiple>
-                                                    <option value="546" > AR English</option>
-                                                    <option value="545" > Case Management</option>
-                                                    <option value="555" > CM English</option>
-                                                    <option value="556" > CM Spanish</option>
-                                                    <option value="672" > Current Year Tax Prep Eng</option>
-                                                    <option value="704" > Current Year Tax Prep Span</option>
-                                                    <option value="678" > Direct Dialed</option>
-                                                    <option value="557" > Enrollment English</option>
-                                                    <option value="727" > Enrollment English W/O Screeners</option>
-                                                    <option value="558" > Enrollment Spanish</option>
-                                                    <option value="655" > Free Report</option>
-                                                    <option value="741" > Free Report Spanish</option>
-                                                    <option value="725" > Hoefke Test</option>
-                                                    <option value="584" > Inbound</option>
-                                                    <option value="5" > Inbound</option>
-                                                    <option value="728" > Internal Transfer</option>
-                                                    <option value="735" > Internal Transfer.</option>
-                                                    <option value="554" > IRS Line</option>
-                                                    <option value="689" > Joel&#039;s test dialer</option>
-                                                    <option value="585" > Manual</option>
-                                                    <option value="568" > Outbound AR/Finance</option>
-                                                    <option value="563" > Outbound CM</option>
-                                                    <option value="561" > Outbound Enrollment</option>
-                                                    <option value="637" > Outbound Enrollment (Sp)</option>
-                                                    <option value="564" > Outbound Enterprise</option>
-                                                    <option value="569" > Outbound Investigation</option>
-                                                    <option value="570" > Outbound P3</option>
-                                                    <option value="567" > Outbound Practitioner</option>
-                                                    <option value="562" > Outbound Spanish Sales</option>
-                                                    <option value="566" > Outbound Tax Advocate</option>
-                                                    <option value="565" > Outbound Tax Prep</option>
-                                                    <option value="698" > P3</option>
-                                                    <option value="702" > P3 Spanish</option>
-                                                    <option value="674" > Practitioner IRS</option>
-                                                    <option value="652" > Preview Campaign</option>
-                                                    <option value="782" > Sugar - Enrollment English</option>
-                                                    <option value="783" > Sugar - Enrollment English W/O Screeners</option>
-                                                    <option value="784" > Sugar - Enrollment Spanish</option>
-                                                    <option value="746" > Sugar Enrollment Eng Testing</option>
-                                                    <option value="654" > Test Team</option>
-                                                </select>
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">DNIS</label><br>
-
-                                                <select class="chosen chosen215" name="filter_dnis[]" id="dnis" data-placeholder="All DNIS" multiple>
-                                                    <option value="1005" >
-                                                        1005
-
-                                                        - 1005 Test Number
-                                                    </option>
-                                                    <option value="13123867741" >
-                                                        312-386-7741
-
-                                                        - ES: Drips
-                                                    </option>
-                                                    <option value="13124360570" >
-                                                        312-436-0570
-
-                                                        - E: Partner Lead
-                                                    </option>
-                                                    <option value="13124459634" >
-                                                        312-445-9634
-
-                                                        - E: Converse Media
-                                                    </option>
-                                                    <option value="13124459635" >
-                                                        312-445-9635
-
-                                                        - ES: Partner Lead
-                                                    </option>
-                                                    <option value="13124459643" >
-                                                        312-445-9643
-
-                                                        - ES: Converse Spanish
-                                                    </option>
-                                                    <option value="13124459655" >
-                                                        312-445-9655
-
-                                                        - E: Pro Media (Cash)
-                                                    </option>
-                                                    <option value="13124459720" >
-                                                        312-445-9720
-
-                                                        - E: Hybrid Radio
-                                                    </option>
-                                                    <option value="13124942620" >
-                                                        312-494-2620
-
-                                                        - Inbound Extension 440
-                                                    </option>
-                                                    <option value="13125094940" >
-                                                        312-509-4940
-
-                                                        - Inbound Extension 144
-                                                    </option>
-                                                    <option value="13125464338" >
-                                                        312-546-4338
-
-                                                        - ES: CTax Media
-                                                    </option>
-                                                    <option value="13125466225" >
-                                                        312-546-6225
-
-                                                        - E: Broadcast (Marchex)
-                                                    </option>
-                                                    <option value="13125466599" >
-                                                        312-546-6599
-
-                                                        - EA: Finance Pal
-                                                    </option>
-                                                    <option value="13125613020" >
-                                                        312-561-3020
-
-                                                        - E: Consumer Affairs
-                                                    </option>
-                                                    <option value="13125645272" >
-                                                        312-564-5272
-
-                                                        - E: DCOM Lead (Live Transfers)
-                                                    </option>
-                                                    <option value="13126263023" >
-                                                        312-626-3023
-
-                                                        - Inbound Extension 248
-                                                    </option>
-                                                    <option value="13126619161" >
-                                                        312-661-9161
-
-                                                        - E: Pro Media (Radio)
-                                                    </option>
-                                                    <option value="13126708924" >
-                                                        312-670-8924
-
-                                                        - ES: Porsche Radio SP
-                                                    </option>
-                                                    <option value="13126839070" >
-                                                        312-683-9070
-
-                                                        - Inbound Extension 957
-                                                    </option>
-                                                    <option value="13126839389" >
-                                                        312-683-9389
-
-                                                        - Inbound Extension 959
-                                                    </option>
-                                                    <option value="13126977175" >
-                                                        312-697-7175
-
-                                                        - E: Pro Media (Cash)
-                                                    </option>
-                                                    <option value="13127537817" >
-                                                        312-753-7817
-
-                                                        - ES: Pro Media (Cash)
-                                                    </option>
-                                                    <option value="13127660942" >
-                                                        312-766-0942
-
-                                                        - Inbound Extension 486
-                                                    </option>
-                                                    <option value="13127660943" >
-                                                        312-766-0943
-
-                                                        - Inbound Extension 487
-                                                    </option>
-                                                    <option value="13127660946" >
-                                                        312-766-0946
-
-                                                        - Inbound Extension 483
-                                                    </option>
-                                                    <option value="13127660947" >
-                                                        312-766-0947
-
-                                                        - Inbound Extension 120
-                                                    </option>
-                                                    <option value="13127660948" >
-                                                        312-766-0948
-
-                                                        - Client Retention Eng
-                                                    </option>
-                                                    <option value="13127660949" >
-                                                        312-766-0949
-
-                                                        - Client Retention Spa
-                                                    </option>
-                                                    <option value="13127660950" >
-                                                        312-766-0950
-
-                                                        - Inbound Extension 482
-                                                    </option>
-                                                    <option value="13127660951" >
-                                                        312-766-0951
-
-                                                        - Inbound Extension 484
-                                                    </option>
-                                                    <option value="13128000610" >
-                                                        312-800-0610
-
-                                                        - Inbound Extension 136
-                                                    </option>
-                                                    <option value="13128000621" >
-                                                        312-800-0621
-
-                                                        - Tier 2 Internal Transfers
-                                                    </option>
-                                                    <option value="13128002935" >
-                                                        312-800-2935
-
-                                                        - E: Best Debt
-                                                    </option>
-                                                    <option value="13128781188" >
-                                                        312-878-1188
-
-                                                        - ES: INTM Web
-                                                    </option>
-                                                    <option value="13128781234" >
-                                                        312-878-1234
-
-                                                        - ES: Pro Media (PI)
-                                                    </option>
-                                                    <option value="13128781755" >
-                                                        312-878-1755
-
-                                                        - Inbound Extension 226
-                                                    </option>
-                                                    <option value="13128784212" >
-                                                        312-878-4212
-
-                                                        - EA: Hybrid
-                                                    </option>
-                                                    <option value="13128785454" >
-                                                        312-878-5454
-
-                                                        - Inbound Extension 506
-                                                    </option>
-                                                    <option value="13128789170" >
-                                                        312-878-9170
-
-                                                        - Tier 1 Internal Transfers
-                                                    </option>
-                                                    <option value="13129850405" >
-                                                        312-985-0405
-
-                                                        - Inbound Extension 997
-                                                    </option>
-                                                    <option value="14806761604" >
-                                                        480-676-1604
-
-                                                        - IC Test Number - Temp
-                                                    </option>
-                                                    <option value="150" >
-                                                        150
-
-                                                        - Client Office
-                                                    </option>
-                                                    <option value="17732432300" >
-                                                        773-243-2300
-
-                                                        - Test Team Campaign
-                                                    </option>
-                                                    <option value="17732432593" >
-                                                        773-243-2593
-
-                                                        - Inbound Extension 188
-                                                    </option>
-                                                    <option value="17732506558" >
-                                                        773-250-6558
-
-                                                        - Inbound Extension 505
-                                                    </option>
-                                                    <option value="17732506560" >
-                                                        773-250-6560
-
-                                                        - Inbound Extension 504
-                                                    </option>
-                                                    <option value="17732738171" >
-                                                        773-273-8171
-
-                                                        - ES: Website Lead
-                                                    </option>
-                                                    <option value="17732956552" >
-                                                        773-295-6552
-
-                                                        - Inbound Extension 182
-                                                    </option>
-                                                    <option value="17732957043" >
-                                                        773-295-7043
-
-                                                        - Inbound Extension 180
-                                                    </option>
-                                                    <option value="17732957893" >
-                                                        773-295-7893
-
-                                                        - Inbound Extension 466
-                                                    </option>
-                                                    <option value="17733036345" >
-                                                        773-303-6345
-
-                                                        - Inbound Extension 906
-                                                    </option>
-                                                    <option value="17733090180" >
-                                                        773-309-0180
-
-                                                        - Inbound Extension 938
-                                                    </option>
-                                                    <option value="17733090235" >
-                                                        773-309-0235
-
-                                                        - Inbound Extension 944
-                                                    </option>
-                                                    <option value="17733090238" >
-                                                        773-309-0238
-
-                                                        - CM Spanish
-                                                    </option>
-                                                    <option value="17733456056" >
-                                                        773-345-6056
-
-                                                        - Cancun Conference Room
-                                                    </option>
-                                                    <option value="17733456057" >
-                                                        773-345-6057
-
-                                                        - Inbound Extension 421
-                                                    </option>
-                                                    <option value="17733456058" >
-                                                        773-345-6058
-
-                                                        - Inbound Extension 422
-                                                    </option>
-                                                    <option value="17733456059" >
-                                                        773-345-6059
-
-                                                        - Inbound Extension 270
-                                                    </option>
-                                                    <option value="17733456060" >
-                                                        773-345-6060
-
-                                                        - Inbound Extension 424
-                                                    </option>
-                                                    <option value="17733456061" >
-                                                        773-345-6061
-
-                                                        - Inbound Extension 425
-                                                    </option>
-                                                    <option value="17733456062" >
-                                                        773-345-6062
-
-                                                        - Inbound Extension 411
-                                                    </option>
-                                                    <option value="17733582994" >
-                                                        773-358-2994
-
-                                                        - Inbound Extension 908
-                                                    </option>
-                                                    <option value="17733625043" >
-                                                        773-362-5043
-
-                                                        - Inbound Extension 507
-                                                    </option>
-                                                    <option value="17733644136" >
-                                                        773-364-4136
-
-                                                        - E: Partner Lead (Transfer)
-                                                    </option>
-                                                    <option value="17733644185" >
-                                                        773-364-4185
-
-                                                        - EA: Finance Pal
-                                                    </option>
-                                                    <option value="17733668263" >
-                                                        773-366-8263
-
-                                                        - Test DID 18090
-                                                    </option>
-                                                    <option value="17734094473" >
-                                                        773-409-4473
-
-                                                        - Inbound Extension 437
-                                                    </option>
-                                                    <option value="17734232098" >
-                                                        773-423-2098
-
-                                                        - Inbound Extension 434
-                                                    </option>
-                                                    <option value="17734359093" >
-                                                        773-435-9093
-
-                                                        - Inbound Extension 296
-                                                    </option>
-                                                    <option value="17734359910" >
-                                                        773-435-9910
-
-                                                        - Inbound Extension 295
-                                                    </option>
-                                                    <option value="17734964743" >
-                                                        773-496-4743
-
-                                                        - E: Partner Lead (Palo)
-                                                    </option>
-                                                    <option value="17734964761" >
-                                                        773-496-4761
-
-                                                        - ES: Spanish Website Lead
-                                                    </option>
-                                                    <option value="17734964766" >
-                                                        773-496-4766
-
-                                                        - E: C3 Web
-                                                    </option>
-                                                    <option value="17734964787" >
-                                                        773-496-4787
-
-                                                        - Inbound Extension 801
-                                                    </option>
-                                                    <option value="17735165706" >
-                                                        773-516-5706
-
-                                                        - Inbound Extension 286
-                                                    </option>
-                                                    <option value="17735412093" >
-                                                        773-541-2093
-
-                                                        - Inbound Extension 490
-                                                    </option>
-                                                    <option value="17735412094" >
-                                                        773-541-2094
-
-                                                        - Inbound Extension 454
-                                                    </option>
-                                                    <option value="17735705036" >
-                                                        773-570-5036
-
-                                                        - Inbound Extension 435
-                                                    </option>
-                                                    <option value="17735706049" >
-                                                        773-570-6049
-
-                                                        - Inbound Extension 263
-                                                    </option>
-                                                    <option value="17735772020" >
-                                                        773-577-2020
-
-                                                        - Community Tax
-                                                    </option>
-                                                    <option value="17735772641" >
-                                                        773-577-2641
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772642" >
-                                                        773-577-2642
-
-                                                        - Inbound Extension 115
-                                                    </option>
-                                                    <option value="17735772643" >
-                                                        773-577-2643
-
-                                                        - Inbound Extension 116
-                                                    </option>
-                                                    <option value="17735772644" >
-                                                        773-577-2644
-
-                                                        - Inbound Extension 953
-                                                    </option>
-                                                    <option value="17735772645" >
-                                                        773-577-2645
-
-                                                        - Inbound Extension 247
-                                                    </option>
-                                                    <option value="17735772646" >
-                                                        773-577-2646
-
-                                                        - Inbound Extension 183
-                                                    </option>
-                                                    <option value="17735772647" >
-                                                        773-577-2647
-
-                                                        - Inbound Extension 121
-                                                    </option>
-                                                    <option value="17735772648" >
-                                                        773-577-2648
-
-                                                        - Inbound Extension 291
-                                                    </option>
-                                                    <option value="17735772649" >
-                                                        773-577-2649
-
-                                                        - Inbound Extension 230
-                                                    </option>
-                                                    <option value="17735772650" >
-                                                        773-577-2650
-
-                                                        - Conference Room
-                                                    </option>
-                                                    <option value="17735772651" >
-                                                        773-577-2651
-
-                                                        - Inbound Extension 426
-                                                    </option>
-                                                    <option value="17735772652" >
-                                                        773-577-2652
-
-                                                        - E: DCOM Lead
-                                                    </option>
-                                                    <option value="17735772653" >
-                                                        773-577-2653
-
-                                                        - Inbound Extension 445
-                                                    </option>
-                                                    <option value="17735772654" >
-                                                        773-577-2654
-
-                                                        - Inbound Extension 129
-                                                    </option>
-                                                    <option value="17735772655" >
-                                                        773-577-2655
-
-                                                        - Inbound Extension 130
-                                                    </option>
-                                                    <option value="17735772656" >
-                                                        773-577-2656
-
-                                                        - Inbound Extension 131
-                                                    </option>
-                                                    <option value="17735772657" >
-                                                        773-577-2657
-
-                                                        - Inbound Extension 127
-                                                    </option>
-                                                    <option value="17735772658" >
-                                                        773-577-2658
-
-                                                        - Inbound Extension 126
-                                                    </option>
-                                                    <option value="17735772659" >
-                                                        773-577-2659
-
-                                                        - Inbound Extension 155
-                                                    </option>
-                                                    <option value="17735772660" >
-                                                        773-577-2660
-
-                                                        - Inbound Extension 132
-                                                    </option>
-                                                    <option value="17735772661" >
-                                                        773-577-2661
-
-                                                        - Inbound Extension 133
-                                                    </option>
-                                                    <option value="17735772662" >
-                                                        773-577-2662
-
-                                                        - Inbound Extension 134
-                                                    </option>
-                                                    <option value="17735772663" >
-                                                        773-577-2663
-
-                                                        - Inbound Extension 135
-                                                    </option>
-                                                    <option value="17735772664" >
-                                                        773-577-2664
-
-                                                        - Inbound Extension 902
-                                                    </option>
-                                                    <option value="17735772665" >
-                                                        773-577-2665
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772666" >
-                                                        773-577-2666
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772667" >
-                                                        773-577-2667
-
-                                                        - Inbound Extension 185
-                                                    </option>
-                                                    <option value="17735772668" >
-                                                        773-577-2668
-
-                                                        - Inbound Extension 145
-                                                    </option>
-                                                    <option value="17735772669" >
-                                                        773-577-2669
-
-                                                        - Inbound Extension 146
-                                                    </option>
-                                                    <option value="17735772670" >
-                                                        773-577-2670
-
-                                                        - Inbound Extension 217
-                                                    </option>
-                                                    <option value="17735772671" >
-                                                        773-577-2671
-
-                                                        - Inbound Extension 148
-                                                    </option>
-                                                    <option value="17735772672" >
-                                                        773-577-2672
-
-                                                        - Inbound Extension 149
-                                                    </option>
-                                                    <option value="17735772673" >
-                                                        773-577-2673
-
-                                                        - Inbound Extension 151
-                                                    </option>
-                                                    <option value="17735772674" >
-                                                        773-577-2674
-
-                                                        - Inbound Extension 419
-                                                    </option>
-                                                    <option value="17735772675" >
-                                                        773-577-2675
-
-                                                        - Inbound Extension 284
-                                                    </option>
-                                                    <option value="17735772676" >
-                                                        773-577-2676
-
-                                                        - Inbound Extension 101
-                                                    </option>
-                                                    <option value="17735772677" >
-                                                        773-577-2677
-
-                                                        - Inbound Extension 224
-                                                    </option>
-                                                    <option value="17735772678" >
-                                                        773-577-2678
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772679" >
-                                                        773-577-2679
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772680" >
-                                                        773-577-2680
-
-                                                        - Inbound Extension 186
-                                                    </option>
-                                                    <option value="17735772681" >
-                                                        773-577-2681
-
-                                                        - Inbound Extension 184
-                                                    </option>
-                                                    <option value="17735772682" >
-                                                        773-577-2682
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772683" >
-                                                        773-577-2683
-
-                                                        - Inbound Extension 138
-                                                    </option>
-                                                    <option value="17735772684" >
-                                                        773-577-2684
-
-                                                        - Inbound Extension 281
-                                                    </option>
-                                                    <option value="17735772685" >
-                                                        773-577-2685
-
-                                                        - Inbound Extension 475
-                                                    </option>
-                                                    <option value="17735772686" >
-                                                        773-577-2686
-
-                                                        - Inbound Extension 264
-                                                    </option>
-                                                    <option value="17735772687" >
-                                                        773-577-2687
-
-                                                        - Inbound Extension 274
-                                                    </option>
-                                                    <option value="17735772688" >
-                                                        773-577-2688
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772689" >
-                                                        773-577-2689
-
-                                                        - Inbound Extension 910
-                                                    </option>
-                                                    <option value="17735772690" >
-                                                        773-577-2690
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772691" >
-                                                        773-577-2691
-
-                                                        - Inbound Extension 187
-                                                    </option>
-                                                    <option value="17735772692" >
-                                                        773-577-2692
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772693" >
-                                                        773-577-2693
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772694" >
-                                                        773-577-2694
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772695" >
-                                                        773-577-2695
-
-                                                        - Inbound Extension 139
-                                                    </option>
-                                                    <option value="17735772696" >
-                                                        773-577-2696
-
-                                                        - Inbound Extension 142
-                                                    </option>
-                                                    <option value="17735772697" >
-                                                        773-577-2697
-
-                                                        - Inbound Extension 118
-                                                    </option>
-                                                    <option value="17735772698" >
-                                                        773-577-2698
-
-                                                        - Inbound Extension 119
-                                                    </option>
-                                                    <option value="17735772699" >
-                                                        773-577-2699
-
-                                                        - ES: DCOM Lead
-                                                    </option>
-                                                    <option value="17735772700" >
-                                                        773-577-2700
-
-                                                        - Inbound Extension 427
-                                                    </option>
-                                                    <option value="17735772900" >
-                                                        773-577-2900
-
-                                                        - EA: Finance Pal
-                                                    </option>
-                                                    <option value="17735772901" >
-                                                        773-577-2901
-
-                                                        - Inbound Extension 251
-                                                    </option>
-                                                    <option value="17735772902" >
-                                                        773-577-2902
-
-                                                        - Inbound Extension 252
-                                                    </option>
-                                                    <option value="17735772903" >
-                                                        773-577-2903
-
-                                                        - Inbound Extension 253
-                                                    </option>
-                                                    <option value="17735772904" >
-                                                        773-577-2904
-
-                                                        - Inbound Extension 254
-                                                    </option>
-                                                    <option value="17735772905" >
-                                                        773-577-2905
-
-                                                        - Inbound Extension 471
-                                                    </option>
-                                                    <option value="17735772906" >
-                                                        773-577-2906
-
-                                                        - Inbound Extension 256
-                                                    </option>
-                                                    <option value="17735772907" >
-                                                        773-577-2907
-
-                                                        - Inbound Extension 257
-                                                    </option>
-                                                    <option value="17735772908" >
-                                                        773-577-2908
-
-                                                        - Inbound Extension 459
-                                                    </option>
-                                                    <option value="17735772909" >
-                                                        773-577-2909
-
-                                                        - Inbound Extension 231
-                                                    </option>
-                                                    <option value="17735772910" >
-                                                        773-577-2910
-
-                                                        - Inbound Extension 122
-                                                    </option>
-                                                    <option value="17735772911" >
-                                                        773-577-2911
-
-                                                        - Inbound Extension 222
-                                                    </option>
-                                                    <option value="17735772912" >
-                                                        773-577-2912
-
-                                                        - Inbound Extension 262
-                                                    </option>
-                                                    <option value="17735772913" >
-                                                        773-577-2913
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772914" >
-                                                        773-577-2914
-
-                                                        - Inbound Extension 962
-                                                    </option>
-                                                    <option value="17735772915" >
-                                                        773-577-2915
-
-                                                        - Inbound Extension 125
-                                                    </option>
-                                                    <option value="17735772916" >
-                                                        773-577-2916
-
-                                                        - Inbound Extension 266
-                                                    </option>
-                                                    <option value="17735772917" >
-                                                        773-577-2917
-
-                                                        - Inbound Extension 932
-                                                    </option>
-                                                    <option value="17735772918" >
-                                                        773-577-2918
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772919" >
-                                                        773-577-2919
-
-                                                        - Inbound Extension 288
-                                                    </option>
-                                                    <option value="17735772920" >
-                                                        773-577-2920
-
-                                                        - Inbound Extension 460
-                                                    </option>
-                                                    <option value="17735772921" >
-                                                        773-577-2921
-
-                                                        - Inbound Extension 238
-                                                    </option>
-                                                    <option value="17735772922" >
-                                                        773-577-2922
-
-                                                        - Inbound Extension 272
-                                                    </option>
-                                                    <option value="17735772923" >
-                                                        773-577-2923
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772924" >
-                                                        773-577-2924
-
-                                                        - Inbound Extension 165
-                                                    </option>
-                                                    <option value="17735772925" >
-                                                        773-577-2925
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772926" >
-                                                        773-577-2926
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17735772927" >
-                                                        773-577-2927
-
-                                                        - Inbound Extension 277
-                                                    </option>
-                                                    <option value="17735772928" >
-                                                        773-577-2928
-
-                                                        - Inbound Extension 278
-                                                    </option>
-                                                    <option value="17735772929" >
-                                                        773-577-2929
-
-                                                        - ES: Partner Lead (compra)
-                                                    </option>
-                                                    <option value="17735772930" >
-                                                        773-577-2930
-
-                                                        - Inbound Extension 283
-                                                    </option>
-                                                    <option value="17735772931" >
-                                                        773-577-2931
-
-                                                        - Inbound Extension 109
-                                                    </option>
-                                                    <option value="17735772932" >
-                                                        773-577-2932
-
-                                                        - Inbound Extension 508
-                                                    </option>
-                                                    <option value="17735772933" >
-                                                        773-577-2933
-
-                                                        - Inbound Extension 123
-                                                    </option>
-                                                    <option value="17735772934" >
-                                                        773-577-2934
-
-                                                        - Inbound Extension 280
-                                                    </option>
-                                                    <option value="17735772935" >
-                                                        773-577-2935
-
-                                                        - Inbound Extension 942
-                                                    </option>
-                                                    <option value="17735772936" >
-                                                        773-577-2936
-
-                                                        - Inbound Extension 268
-                                                    </option>
-                                                    <option value="17735772938" >
-                                                        773-577-2938
-
-                                                        - Inbound Extension 287
-                                                    </option>
-                                                    <option value="17735772939" >
-                                                        773-577-2939
-
-                                                        - Inbound Extension 428
-                                                    </option>
-                                                    <option value="17735772940" >
-                                                        773-577-2940
-
-                                                        - Inbound Extension 289
-                                                    </option>
-                                                    <option value="17735772941" >
-                                                        773-577-2941
-
-                                                        - Inbound Extension 267
-                                                    </option>
-                                                    <option value="17735772942" >
-                                                        773-577-2942
-
-                                                        - Inbound Extension 956
-                                                    </option>
-                                                    <option value="17735772943" >
-                                                        773-577-2943
-
-                                                        - Inbound Extension 921
-                                                    </option>
-                                                    <option value="17735772944" >
-                                                        773-577-2944
-
-                                                        - Inbound Extension 124
-                                                    </option>
-                                                    <option value="17735772945" >
-                                                        773-577-2945
-
-                                                        - Inbound Extension 414
-                                                    </option>
-                                                    <option value="17735772946" >
-                                                        773-577-2946
-
-                                                        - Inbound Extension 467
-                                                    </option>
-                                                    <option value="17735772947" >
-                                                        773-577-2947
-
-                                                        - Inbound Extension 432
-                                                    </option>
-                                                    <option value="17735772948" >
-                                                        773-577-2948
-
-                                                        - Inbound Extension 167
-                                                    </option>
-                                                    <option value="17735772949" >
-                                                        773-577-2949
-
-                                                        - Inbound Extension 102
-                                                    </option>
-                                                    <option value="17735772950" >
-                                                        773-577-2950
-
-                                                        - Inbound Extension 108
-                                                    </option>
-                                                    <option value="17735772951" >
-                                                        773-577-2951
-
-                                                        - Inbound Extension 103
-                                                    </option>
-                                                    <option value="17735772952" >
-                                                        773-577-2952
-
-                                                        - Inbound Extension 104
-                                                    </option>
-                                                    <option value="17735772953" >
-                                                        773-577-2953
-
-                                                        - Inbound Extension 105
-                                                    </option>
-                                                    <option value="17735772954" >
-                                                        773-577-2954
-
-                                                        - Inbound Extension 106
-                                                    </option>
-                                                    <option value="17735772955" >
-                                                        773-577-2955
-
-                                                        - Inbound Extension 107
-                                                    </option>
-                                                    <option value="17735772956" >
-                                                        773-577-2956
-
-                                                        - PBX - Ring Group: TP Admin-local
-                                                    </option>
-                                                    <option value="17735772957" >
-                                                        773-577-2957
-
-                                                        - Inbound Extension 110
-                                                    </option>
-                                                    <option value="17735772958" >
-                                                        773-577-2958
-
-                                                        - Inbound Extension 111
-                                                    </option>
-                                                    <option value="17735772959" >
-                                                        773-577-2959
-
-                                                        - Inbound Extension 919
-                                                    </option>
-                                                    <option value="17735961488" >
-                                                        773-596-1488
-
-                                                        - Inbound Extension 913
-                                                    </option>
-                                                    <option value="17736349093" >
-                                                        773-634-9093
-
-                                                        - Inbound Extension 260
-                                                    </option>
-                                                    <option value="17736445327" >
-                                                        773-644-5327
-
-                                                        - Inbound Extension 276
-                                                    </option>
-                                                    <option value="17736496424" >
-                                                        773-649-6424
-
-                                                        - Inbound Extension 503
-                                                    </option>
-                                                    <option value="17736634074" >
-                                                        773-663-4074
-
-                                                        - Inbound Extension 510
-                                                    </option>
-                                                    <option value="17737242742" >
-                                                        773-724-2742
-
-                                                        - Inbound Extension 228
-                                                    </option>
-                                                    <option value="17737242743" >
-                                                        773-724-2743
-
-                                                        - Inbound Extension 143
-                                                    </option>
-                                                    <option value="17737242744" >
-                                                        773-724-2744
-
-                                                        - E: Yelp
-                                                    </option>
-                                                    <option value="17737242745" >
-                                                        773-724-2745
-
-                                                        - Main Spanish IVR
-                                                    </option>
-                                                    <option value="17737242746" >
-                                                        773-724-2746
-
-                                                        - Inbound Extension 297
-                                                    </option>
-                                                    <option value="17737242747" >
-                                                        773-724-2747
-
-                                                        - Inbound Extension 912
-                                                    </option>
-                                                    <option value="17737242748" >
-                                                        773-724-2748
-
-                                                        - Inbound Extension 430
-                                                    </option>
-                                                    <option value="17737242749" >
-                                                        773-724-2749
-
-                                                        - Inbound Extension 229
-                                                    </option>
-                                                    <option value="17737242750" >
-                                                        773-724-2750
-
-                                                        - Inbound Extension 282
-                                                    </option>
-                                                    <option value="17737242751" >
-                                                        773-724-2751
-
-                                                        - Inbound Extension 221
-                                                    </option>
-                                                    <option value="17737242752" >
-                                                        773-724-2752
-
-                                                        - Inbound Extension 161
-                                                    </option>
-                                                    <option value="17737242753" >
-                                                        773-724-2753
-
-                                                        - Inbound Extension 223
-                                                    </option>
-                                                    <option value="17737242754" >
-                                                        773-724-2754
-
-                                                        - E: Website Lead
-                                                    </option>
-                                                    <option value="17737242755" >
-                                                        773-724-2755
-
-                                                        - Inbound Extension 225
-                                                    </option>
-                                                    <option value="17737242756" >
-                                                        773-724-2756
-
-                                                        - Inbound Extension 451
-                                                    </option>
-                                                    <option value="17737242757" >
-                                                        773-724-2757
-
-                                                        - Inbound Extension 227
-                                                    </option>
-                                                    <option value="17737242758" >
-                                                        773-724-2758
-
-                                                        - Inbound Extension 216
-                                                    </option>
-                                                    <option value="17737242759" >
-                                                        773-724-2759
-
-                                                        - Inbound Extension 219
-                                                    </option>
-                                                    <option value="17737242760" >
-                                                        773-724-2760
-
-                                                        - Inbound Extension 140
-                                                    </option>
-                                                    <option value="17737242761" >
-                                                        773-724-2761
-
-                                                        - Inbound Extension 201
-                                                    </option>
-                                                    <option value="17737242762" >
-                                                        773-724-2762
-
-                                                        - Inbound Extension 202
-                                                    </option>
-                                                    <option value="17737242763" >
-                                                        773-724-2763
-
-                                                        - Inbound Extension 215
-                                                    </option>
-                                                    <option value="17737242764" >
-                                                        773-724-2764
-
-                                                        - Inbound Extension 204
-                                                    </option>
-                                                    <option value="17737242765" >
-                                                        773-724-2765
-
-                                                        - Inbound Extension 205
-                                                    </option>
-                                                    <option value="17737242766" >
-                                                        773-724-2766
-
-                                                        - Inbound Extension 206
-                                                    </option>
-                                                    <option value="17737242767" >
-                                                        773-724-2767
-
-                                                        - Inbound Extension 141
-                                                    </option>
-                                                    <option value="17737242768" >
-                                                        773-724-2768
-
-                                                        - Inbound Extension 208
-                                                    </option>
-                                                    <option value="17737242769" >
-                                                        773-724-2769
-
-                                                        - Inbound Extension 209
-                                                    </option>
-                                                    <option value="17737242771" >
-                                                        773-724-2771
-
-                                                        - Inbound Extension 211
-                                                    </option>
-                                                    <option value="17737242772" >
-                                                        773-724-2772
-
-                                                        - Inbound Extension 930
-                                                    </option>
-                                                    <option value="17737242773" >
-                                                        773-724-2773
-
-                                                        - Inbound Extension 213
-                                                    </option>
-                                                    <option value="17737242774" >
-                                                        773-724-2774
-
-                                                        - Inbound Extension 214
-                                                    </option>
-                                                    <option value="17737242775" >
-                                                        773-724-2775
-
-                                                        - Inbound Extension 235
-                                                    </option>
-                                                    <option value="17737242776" >
-                                                        773-724-2776
-
-                                                        - Inbound Extension 292
-                                                    </option>
-                                                    <option value="17737242777" >
-                                                        773-724-2777
-
-                                                        - Inbound Extension 207
-                                                    </option>
-                                                    <option value="17737242779" >
-                                                        773-724-2779
-
-                                                        - R - IRS Line
-                                                    </option>
-                                                    <option value="17737242780" >
-                                                        773-724-2780
-
-                                                        - Inbound Extension 210
-                                                    </option>
-                                                    <option value="17737242781" >
-                                                        773-724-2781
-
-                                                        - Inbound Extension 918
-                                                    </option>
-                                                    <option value="17737242782" >
-                                                        773-724-2782
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="17737242783" >
-                                                        773-724-2783
-
-                                                        - Inbound Extension 511
-                                                    </option>
-                                                    <option value="17737242784" >
-                                                        773-724-2784
-
-                                                        - Inbound Extension 234
-                                                    </option>
-                                                    <option value="17737242785" >
-                                                        773-724-2785
-
-                                                        - Inbound Extension 290
-                                                    </option>
-                                                    <option value="17737242786" >
-                                                        773-724-2786
-
-                                                        - Available
-                                                    </option>
-                                                    <option value="17737242787" >
-                                                        773-724-2787
-
-                                                        - Inbound Extension 237
-                                                    </option>
-                                                    <option value="17737242788" >
-                                                        773-724-2788
-
-                                                        - Inbound Extension 241
-                                                    </option>
-                                                    <option value="17737242789" >
-                                                        773-724-2789
-
-                                                        - Inbound Extension 461
-                                                    </option>
-                                                    <option value="17737242790" >
-                                                        773-724-2790
-
-                                                        - Inbound Extension 509
-                                                    </option>
-                                                    <option value="17737242791" >
-                                                        773-724-2791
-
-                                                        - Inbound Extension 479
-                                                    </option>
-                                                    <option value="17737242792" >
-                                                        773-724-2792
-
-                                                        - Inbound Extension 242
-                                                    </option>
-                                                    <option value="17737242793" >
-                                                        773-724-2793
-
-                                                        - Inbound Extension 243
-                                                    </option>
-                                                    <option value="17737242794" >
-                                                        773-724-2794
-
-                                                        - Inbound Extension 900
-                                                    </option>
-                                                    <option value="17737242795" >
-                                                        773-724-2795
-
-                                                        - Inbound Extension 907
-                                                    </option>
-                                                    <option value="17737242796" >
-                                                        773-724-2796
-
-                                                        - Inbound Extension 246
-                                                    </option>
-                                                    <option value="17737242797" >
-                                                        773-724-2797
-
-                                                        - Inbound Extension 476
-                                                    </option>
-                                                    <option value="17737242798" >
-                                                        773-724-2798
-
-                                                        - Inbound Extension 294
-                                                    </option>
-                                                    <option value="17737242799" >
-                                                        773-724-2799
-
-                                                        - Available
-                                                    </option>
-                                                    <option value="17737242800" >
-                                                        773-724-2800
-
-                                                        - Available
-                                                    </option>
-                                                    <option value="17737242801" >
-                                                        773-724-2801
-
-                                                        - E: Website Lead (Main WC Routing)
-                                                    </option>
-                                                    <option value="17737242802" >
-                                                        773-724-2802
-
-                                                        - Available
-                                                    </option>
-                                                    <option value="17737360100" >
-                                                        773-736-0100
-
-                                                        - Main IVR
-                                                    </option>
-                                                    <option value="17737565608" >
-                                                        773-756-5608
-
-                                                        - Inbound Extension 265
-                                                    </option>
-                                                    <option value="17737704174" >
-                                                        773-770-4174
-
-                                                        - Inbound Extension 904
-                                                    </option>
-                                                    <option value="17737704344" >
-                                                        773-770-4344
-
-                                                        - Inbound Extension 909
-                                                    </option>
-                                                    <option value="17737962289" >
-                                                        773-796-2289
-
-                                                        - Inbound Extension 200
-                                                    </option>
-                                                    <option value="17737992786" >
-                                                        773-799-2786
-
-                                                        - Inbound Extension 169
-                                                    </option>
-                                                    <option value="17737992788" >
-                                                        773-799-2788
-
-                                                        - Inbound Extension 293
-                                                    </option>
-                                                    <option value="17737992789" >
-                                                        773-799-2789
-
-                                                        - Inbound Extension 114
-                                                    </option>
-                                                    <option value="17738284785" >
-                                                        773-828-4785
-
-                                                        - Inbound Extension 438
-                                                    </option>
-                                                    <option value="17738284862" >
-                                                        773-828-4862
-
-                                                        - Inbound Extension 259
-                                                    </option>
-                                                    <option value="17738284886" >
-                                                        773-828-4886
-
-                                                        - Inbound Extension 935
-                                                    </option>
-                                                    <option value="17738407819" >
-                                                        773-840-7819
-
-                                                        - Inbound Extension 920
-                                                    </option>
-                                                    <option value="17738407821" >
-                                                        773-840-7821
-
-                                                        - Inbound Extension 285
-                                                    </option>
-                                                    <option value="17738773275" >
-                                                        773-877-3275
-
-                                                        - Inbound Extension 458
-                                                    </option>
-                                                    <option value="17738970860" >
-                                                        773-897-0860
-
-                                                        - Inbound Extension 163
-                                                    </option>
-                                                    <option value="17738970876" >
-                                                        773-897-0876
-
-                                                        - Inbound Extension 916
-                                                    </option>
-                                                    <option value="17738970878" >
-                                                        773-897-0878
-
-                                                        - Inbound Extension 917
-                                                    </option>
-                                                    <option value="17738970882" >
-                                                        773-897-0882
-
-                                                        - Inbound Extension 212
-                                                    </option>
-                                                    <option value="17738973313" >
-                                                        773-897-3313
-
-                                                        - Inbound Extension 462
-                                                    </option>
-                                                    <option value="17738973326" >
-                                                        773-897-3326
-
-                                                        - Inbound Extension 416
-                                                    </option>
-                                                    <option value="17738973792" >
-                                                        773-897-3792
-
-                                                        - Inbound Extension 406
-                                                    </option>
-                                                    <option value="17738973793" >
-                                                        773-897-3793
-
-                                                        - Inbound Extension 415
-                                                    </option>
-                                                    <option value="17738973798" >
-                                                        773-897-3798
-
-                                                        - Inbound Extension 469
-                                                    </option>
-                                                    <option value="17738973917" >
-                                                        773-897-3917
-
-                                                        - Inbound Extension 452
-                                                    </option>
-                                                    <option value="17738973935" >
-                                                        773-897-3935
-
-                                                        - Inbound Extension 442
-                                                    </option>
-                                                    <option value="17738975216" >
-                                                        773-897-5216
-
-                                                        - Inbound Extension 512
-                                                    </option>
-                                                    <option value="17738975404" >
-                                                        773-897-5404
-
-                                                        - Inbound Extension 417
-                                                    </option>
-                                                    <option value="17738975409" >
-                                                        773-897-5409
-
-                                                        - Inbound Extension 502
-                                                    </option>
-                                                    <option value="17738975413" >
-                                                        773-897-5413
-
-                                                        - Inbound Extension 500
-                                                    </option>
-                                                    <option value="17738975414" >
-                                                        773-897-5414
-
-                                                        - Inbound Extension 501
-                                                    </option>
-                                                    <option value="17738975926" >
-                                                        773-897-5926
-
-                                                        - ES: A Prospects
-                                                    </option>
-                                                    <option value="17738975936" >
-                                                        773-897-5936
-
-                                                        - Inbound Extension 401
-                                                    </option>
-                                                    <option value="17738975950" >
-                                                        773-897-5950
-
-                                                        - Inbound Extension 418
-                                                    </option>
-                                                    <option value="17738976083" >
-                                                        773-897-6083
-
-                                                        - Inbound Extension 412
-                                                    </option>
-                                                    <option value="17738976090" >
-                                                        773-897-6090
-
-                                                        - Inbound Extension 410
-                                                    </option>
-                                                    <option value="17738976092" >
-                                                        773-897-6092
-
-                                                        - Inbound Extension 166
-                                                    </option>
-                                                    <option value="17738976701" >
-                                                        773-897-6701
-
-                                                        - Inbound Extension 514
-                                                    </option>
-                                                    <option value="17738976703" >
-                                                        773-897-6703
-
-                                                        - Inbound Extension 408
-                                                    </option>
-                                                    <option value="17738976704" >
-                                                        773-897-6704
-
-                                                        - Inbound Extension 489
-                                                    </option>
-                                                    <option value="17738976713" >
-                                                        773-897-6713
-
-                                                        - Inbound Extension 409
-                                                    </option>
-                                                    <option value="17738979371" >
-                                                        773-897-9371
-
-                                                        - Inbound Extension 403
-                                                    </option>
-                                                    <option value="17738979373" >
-                                                        773-897-9373
-
-                                                        - Inbound Extension 405
-                                                    </option>
-                                                    <option value="17738979375" >
-                                                        773-897-9375
-
-                                                        - Inbound Extension 402
-                                                    </option>
-                                                    <option value="17738979376" >
-                                                        773-897-9376
-
-                                                        - Inbound Extension 404
-                                                    </option>
-                                                    <option value="17739042658" >
-                                                        773-904-2658
-
-                                                        - Inbound Extension 905
-                                                    </option>
-                                                    <option value="17739065951" >
-                                                        773-906-5951
-
-                                                        - Inbound Extension 244
-                                                    </option>
-                                                    <option value="17739065952" >
-                                                        773-906-5952
-
-                                                        - Inbound Extension 150
-                                                    </option>
-                                                    <option value="17739065955" >
-                                                        773-906-5955
-
-                                                        - Inbound Extension 258
-                                                    </option>
-                                                    <option value="17739065956" >
-                                                        773-906-5956
-
-                                                        - Inbound Extension 233
-                                                    </option>
-                                                    <option value="17739388526" >
-                                                        773-938-8526
-
-                                                        - Inbound Extension 203
-                                                    </option>
-                                                    <option value="17739388533" >
-                                                        773-938-8533
-
-                                                        - Inbound Extension 275
-                                                    </option>
-                                                    <option value="17739450351" >
-                                                        773-945-0351
-
-                                                        - Inbound Extension 928
-                                                    </option>
-                                                    <option value="17739450362" >
-                                                        773-945-0362
-
-                                                        - Inbound Extension 157
-                                                    </option>
-                                                    <option value="17739450593" >
-                                                        773-945-0593
-
-                                                        - E: Consumer Affairs
-                                                    </option>
-                                                    <option value="17739451991" >
-                                                        773-945-1991
-
-                                                        - Inbound Extension 168
-                                                    </option>
-                                                    <option value="17739451993" >
-                                                        773-945-1993
-
-                                                        - Inbound Extension 160
-                                                    </option>
-                                                    <option value="17873030430" >
-                                                        787-303-0430
-
-                                                        - Jacob Dayan
-                                                    </option>
-                                                    <option value="17874939417" >
-                                                        787-493-9417
-
-                                                        - PBX - Ring Group: PR Office Line
-                                                    </option>
-                                                    <option value="18002178412" >
-                                                        800-217-8412
-
-                                                        - Inbound Extension 253 Marketing
-                                                    </option>
-                                                    <option value="18004248332" >
-                                                        800-424-8332
-
-                                                        - ES: Max TV
-                                                    </option>
-                                                    <option value="18004440622" >
-                                                        800-444-0622
-
-                                                        - E: Website Lead
-                                                    </option>
-                                                    <option value="18004440623" >
-                                                        800-444-0623
-
-                                                        - PBX - Ring Group: TP Admin-TF
-                                                    </option>
-                                                    <option value="18004440640" >
-                                                        800-444-0640
-
-                                                        - R - BK Dept
-                                                    </option>
-                                                    <option value="18004440650" >
-                                                        800-444-0650
-
-                                                        - E: Max TV
-                                                    </option>
-                                                    <option value="18004440656" >
-                                                        800-444-0656
-
-                                                        - E: Max TV
-                                                    </option>
-                                                    <option value="18004441012" >
-                                                        800-444-1012
-
-                                                        - E: Max TV
-                                                    </option>
-                                                    <option value="18004441023" >
-                                                        800-444-1023
-
-                                                        - E: Max TV
-                                                    </option>
-                                                    <option value="18004441025" >
-                                                        800-444-1025
-
-                                                        - E: Mail (CA Piece)
-                                                    </option>
-                                                    <option value="18004441026" >
-                                                        800-444-1026
-
-                                                        - E: Max TV
-                                                    </option>
-                                                    <option value="18004441045" >
-                                                        800-444-1045
-
-                                                        - E: Max TV
-                                                    </option>
-                                                    <option value="18004577068" >
-                                                        800-457-7068
-
-                                                        - E: Website
-                                                    </option>
-                                                    <option value="18004777767" >
-                                                        800-477-7767
-
-                                                        - E: IRS Pros
-                                                    </option>
-                                                    <option value="18005249974" >
-                                                        800-524-9974
-
-                                                        - ES: Max TV Spanish
-                                                    </option>
-                                                    <option value="18005531084" >
-                                                        800-553-1084
-
-                                                        - ES: Partner Lead - Compra
-                                                    </option>
-                                                    <option value="18006056302" >
-                                                        800-605-6302
-
-                                                        - ES: Partner Lead Compra
-                                                    </option>
-                                                    <option value="18007428039" >
-                                                        800-742-8039
-
-                                                        - ES: Spanish Website Lead
-                                                    </option>
-                                                    <option value="18007428404" >
-                                                        800-742-8404
-
-                                                        - ES: Max TV Spanish
-                                                    </option>
-                                                    <option value="18007986517" >
-                                                        800-798-6517
-
-                                                        - E: Mail
-                                                    </option>
-                                                    <option value="18008316757" >
-                                                        800-831-6757
-
-                                                        - E: Max TV
-                                                    </option>
-                                                    <option value="18008543127" >
-                                                        800-854-3127
-
-                                                        - E: Website Lead (BBB)
-                                                    </option>
-                                                    <option value="18009564189" >
-                                                        800-956-4189
-
-                                                        - Misc - Current Year Tax Prep
-                                                    </option>
-                                                    <option value="18009893678" >
-                                                        800-989-3678
-
-                                                        - Misc - Current Year Tax Prep
-                                                    </option>
-                                                    <option value="18443306991" >
-                                                        844-330-6991
-
-                                                        - Misc - Current Year Tax Prep
-                                                    </option>
-                                                    <option value="18774044791" >
-                                                        877-404-4791
-
-                                                        - PBX - Dialplan: CTR - CCS Caller ID
-                                                    </option>
-                                                    <option value="18774922750" >
-                                                        877-492-2750
-
-                                                        - E: Mail
-                                                    </option>
-                                                    <option value="18775150595" >
-                                                        877-515-0595
-
-                                                        - Test DID
-                                                    </option>
-                                                    <option value="18776564522" >
-                                                        877-656-4522
-
-                                                        - Main IVR
-                                                    </option>
-                                                    <option value="18776767675" >
-                                                        877-676-7675
-
-                                                        - Misc - Current Year Tax Prep
-                                                    </option>
-                                                    <option value="18778404870" >
-                                                        877-840-4870
-
-                                                        - EA: Finance Pal
-                                                    </option>
-                                                    <option value="18778984262" >
-                                                        877-898-4262
-
-                                                        - E: Mail
-                                                    </option>
-                                                    <option value="18883735292" >
-                                                        888-373-5292
-
-                                                        - R - AR
-                                                    </option>
-                                                    <option value="18887292236" >
-                                                        888-729-2236
-
-                                                        - Case Management
-                                                    </option>
-                                                    <option value="18887592755" >
-                                                        888-759-2755
-
-                                                        - E: Employee Perks
-                                                    </option>
-                                                    <option value="249" >
-                                                        249
-
-                                                        - Castle Credit
-                                                    </option>
-                                                    <option value="271" >
-                                                        271
-
-                                                        - AR UGA
-                                                    </option>
-                                                    <option value="273" >
-                                                        273
-
-                                                        - Home Acceptance
-                                                    </option>
-                                                    <option value="321" >
-                                                        321
-
-                                                        - Test number for IVR
-                                                    </option>
-                                                    <option value="420" >
-                                                        420
-
-                                                        - Cancun Conference Room
-                                                    </option>
-                                                    <option value="555" >
-                                                        555
-
-                                                        - Voice Mail access
-                                                    </option>
-                                                    <option value="5556661212" >
-                                                        555-666-1212
-
-                                                        - Sample phone number
-                                                    </option>
-                                                    <option value="997" >
-                                                        997
-
-                                                        - Inbound Extension - Guest Phone
-                                                    </option>
-                                                    <option value="arengxfer" >
-                                                        arengxfer
-
-                                                        - AR English Transfer
-                                                    </option>
-                                                    <option value="cmengxfr" >
-                                                        cmengxfr
-
-                                                        - CM English Transfer
-                                                    </option>
-                                                    <option value="CMExfer" >
-                                                        CMExfer
-
-                                                        - Case Managment English xfer
-                                                    </option>
-                                                    <option value="CMSXfer" >
-                                                        CMSXfer
-
-                                                        - Case Management Spanish Xfer
-                                                    </option>
-                                                    <option value="eengnoscrn" >
-                                                        eengnoscrn
-
-                                                        - E: Enrollment W/O Screeners
-                                                    </option>
-                                                    <option value="eengxfr" >
-                                                        eengxfr
-
-                                                        - English Enrollment Transfer
-                                                    </option>
-                                                    <option value="enspanxfr" >
-                                                        enspanxfr
-
-                                                        - Enroll Spanish xfer
-                                                    </option>
-                                                    <option value="FOTI" >
-                                                        FOTI
-
-                                                    </option>
-                                                    <option value="IRSxfer" >
-                                                        IRSxfer
-
-                                                        - IRS transfer routing
-                                                    </option>
-                                                    <option value="Outbound_AMD" >
-                                                        Outbound_AMD
-
-                                                        - Outbound answering machine detection filter
-                                                    </option>
-                                                    <option value="Out_No_AMD" >
-                                                        Out_No_AMD
-
-                                                        - Outbound with no AMD
-                                                    </option>
-                                                    <option value="Tier1" >
-                                                        Tier1
-
-                                                        - Tier1 Campaign
-                                                    </option>
-                                                    <option value="Tier2" >
-                                                        Tier2
-
-                                                        - Tier 2 Campaign
-                                                    </option>
-                                                </select>
-                                            </div>
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Call resulted in</label><br>
-
-                                                <select class="chosen chosen215" name="filter_call_resulted_in[]" id="call_resulted_in" data-placeholder="All calls resulted in" multiple>
-                                                    <option value="0" >No contact </option>
-                                                    <option value="1" >Contact </option>
-                                                    <option value="2" >Contact → Presentation </option>
-                                                    <option value="3" >Contact → Presentation → Success </option>
-                                                </select>
-                                            </div>
-
-                                            <div class="filter-input-container" style="margin-top: 7px">
-                                                <div style="height: 30px;">
-                                                    <input id="missed" type="checkbox" class="iCheck " name="missed" value="1">
-                                                    <div class="label_check" for="missed" style="font-size: 13px;">Call was missed</div>
-                                                </div>
-
-                                                <div style="height: 40px">
-                                                    <input id="Voicemail" type="checkbox" class="iCheck " name="check_voicemail" value="1">
-                                                    <div class="label_check" for="Voicemail" style="font-size: 13px;">Voicemail left</div>
-                                                </div>
-                                            </div>
-
-                                            <h4 style="margin-bottom: 5px;">Call attributes</h4>
-
-
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">ExtName</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[10][]" data-attrid="10" multiple data-placeholder="-">
-                                                    <option value="Joel Castile" >Joel Castile</option>
-                                                    <option value="Kyle Sanders" >Kyle Sanders</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Lead Provider ID</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[1][]" data-attrid="1" multiple data-placeholder="-">
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">productid</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[4][]" data-attrid="4" multiple data-placeholder="-">
-                                                    <option value="10" >10</option>
-                                                    <option value="5" >5</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">SetOfficerID</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[9][]" data-attrid="9" multiple data-placeholder="-">
-                                                    <option value="1091" >1091</option>
-                                                    <option value="826" >826</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">StatusID</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[8][]" data-attrid="8" multiple data-placeholder="-">
-                                                    <option value="2" >2</option>
-                                                    <option value="581" >581</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">teamid</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[5][]" data-attrid="5" multiple data-placeholder="-">
-                                                    <option value="10" >10</option>
-                                                    <option value="48" >48</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Test</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[11][]" data-attrid="11" multiple data-placeholder="-">
-                                                    <option value="Test1" >Test1</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">Test2</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[13][]" data-attrid="13" multiple data-placeholder="-">
-                                                    <option value="Test123" >Test123</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">UDF9</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[2][]" data-attrid="2" multiple data-placeholder="-">
-                                                    <option value="9" >9</option>
-                                                    <option value="affiliates" >affiliates</option>
-                                                    <option value="Call" >Call</option>
-                                                    <option value="Consumer Affairs &lt;10k" >Consumer Affairs &lt;10k</option>
-                                                    <option value="ConsumerAffairs Call &gt;10k" >ConsumerAffairs Call &gt;10k</option>
-                                                    <option value="Digital" >Digital</option>
-                                                    <option value="Direct" >Direct</option>
-                                                    <option value="display" >display</option>
-                                                    <option value="fbd" >fbd</option>
-                                                    <option value="Live Chat" >Live Chat</option>
-                                                    <option value="Mail" >Mail</option>
-                                                    <option value="Podcast" >Podcast</option>
-                                                    <option value="Post Test9" >Post Test9</option>
-                                                    <option value="Radio" >Radio</option>
-                                                    <option value="referral" >referral</option>
-                                                    <option value="Remarketing" >Remarketing</option>
-                                                    <option value="SugarTest" >SugarTest</option>
-                                                    <option value="Test2" >Test2</option>
-                                                    <option value="TV" >TV</option>
-                                                    <option value="UDF9" >UDF9</option>
-                                                    <option value="Uni Chi Local" >Uni Chi Local</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">UDF34</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[6][]" data-attrid="6" multiple data-placeholder="-">
-                                                    <option value="34" >34</option>
-                                                    <option value="CNN" >CNN</option>
-                                                    <option value="De Pelicula Classico" >De Pelicula Classico</option>
-                                                    <option value="De Pelicula Usa" >De Pelicula Usa</option>
-                                                    <option value="ESPND" >ESPND</option>
-                                                    <option value="Foro" >Foro</option>
-                                                    <option value="Fusion" >Fusion</option>
-                                                    <option value="Galavision" >Galavision</option>
-                                                    <option value="HLN" >HLN</option>
-                                                    <option value="NREM-L" >NREM-L</option>
-                                                    <option value="Ritmoson" >Ritmoson</option>
-                                                    <option value="SugarTest" >SugarTest</option>
-                                                    <option value="Telehit" >Telehit</option>
-                                                    <option value="Tl Novelas" >Tl Novelas</option>
-                                                    <option value="TM" >TM</option>
-                                                    <option value="Unimas" >Unimas</option>
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">UDF133</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[3][]" data-attrid="3" multiple data-placeholder="-">
-                                                    <option value="133" >133</option>
-                                                    <option value="airtime-media" >airtime-media</option>
-                                                    <option value="BBB" >BBB</option>
-                                                    <option value="bdc" >bdc</option>
-                                                    <option value="Best Debt Company" >Best Debt Company</option>
-                                                    <option value="C3" >C3</option>
-                                                    <option value="c3-data" >c3-data</option>
-                                                    <option value="Call" >Call</option>
-                                                    <option value="call-trader" >call-trader</option>
-                                                    <option value="compra" >compra</option>
-                                                    <option value="Consumer Affairs &lt;10k" >Consumer Affairs &lt;10k</option>
-                                                    <option value="consumer-affairs" >consumer-affairs</option>
-                                                    <option value="ConsumerAffairs Call &gt;10k" >ConsumerAffairs Call &gt;10k</option>
-                                                    <option value="Converse" >Converse</option>
-                                                    <option value="Direct" >Direct</option>
-                                                    <option value="e-local" >e-local</option>
-                                                    <option value="employee-perks" >employee-perks</option>
-                                                    <option value="facebookad" >facebookad</option>
-                                                    <option value="fbd" >fbd</option>
-                                                    <option value="Hybrid Radio" >Hybrid Radio</option>
-                                                    <option value="Max Radio" >Max Radio</option>
-                                                    <option value="Max TV" >Max TV</option>
-                                                    <option value="modern" >modern</option>
-                                                    <option value="palo-media" >palo-media</option>
-                                                    <option value="Phil" >Phil</option>
-                                                    <option value="Post Test133" >Post Test133</option>
-                                                    <option value="Pro Media" >Pro Media</option>
-                                                    <option value="pro-media" >pro-media</option>
-                                                    <option value="Revolution Media" >Revolution Media</option>
-                                                    <option value="snap" >snap</option>
-                                                    <option value="squeeze" >squeeze</option>
-                                                    <option value="SugarTest" >SugarTest</option>
-                                                    <option value="Test" >Test</option>
-                                                    <option value="Test3" >Test3</option>
-                                                    <option value="TRUIC" >TRUIC</option>
-                                                    <option value="UDF133" >UDF133</option>
-                                                    <option value="Yelp" >Yelp</option>
-                                                    <option value="Z - Converse Spanish" >Z - Converse Spanish</option>
-                                                    <option value="Z - Max TV Spanish " >Z - Max TV Spanish </option>
-                                                </select>
-
-                                            </div>
-                                            <div class="filter-input-container">
-                                                <label class="filter-label">UDF134</label>
-                                                <br>
-
-
-
-                                                <select class="chosen chosen215 attribute" name="filter_attribute[7][]" data-attrid="7" multiple data-placeholder="-">
-                                                    <option value="134" >134</option>
-                                                    <option value="Cash" >Cash</option>
-                                                    <option value="CTax Branded" >CTax Branded</option>
-                                                    <option value="facebook" >facebook</option>
-                                                    <option value="facebookad" >facebookad</option>
-                                                    <option value="IRS Pros Branded" >IRS Pros Branded</option>
-                                                    <option value="Live Chat" >Live Chat</option>
-                                                    <option value="PI" >PI</option>
-                                                    <option value="PPC" >PPC</option>
-                                                    <option value="Radio Cash Buy" >Radio Cash Buy</option>
-                                                    <option value="SugarTest" >SugarTest</option>
-                                                    <option value="Tax Prep Broadcast" >Tax Prep Broadcast</option>
-                                                    <option value="Tax Prep Mailer" >Tax Prep Mailer</option>
-                                                    <option value="Tax Prep Sales" >Tax Prep Sales</option>
-                                                    <option value="Website Calls" >Website Calls</option>
-                                                    <option value="website mail" >website mail</option>
-                                                    <option value="website-retargeting" >website-retargeting</option>
-                                                </select>
-
-                                            </div>
-
-                                            <input type="hidden" name="page" id="filter_form_page" value="1">
-                                            <input type="hidden" name="order_by" value="">
-                                            <input type="hidden" name="userid" value="">
-                                            <input type="hidden" name="export" id="export_to" value="">
-                                            <input type="hidden" name="request" id="request" value="ajax">
-
-                                        </form>
-                                    </div>
-
-                                    <div id="columns-body" class="tabs">
-                                        <form action="" method="POST" id="column_settings_form">
-                                            <h4 style="margin-bottom: 10px;">Show:</h4>
-
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-1" type="checkbox" class="iCheck column-checkbox" name="column[col-1]" data-column="col-1" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-1" style="font-size: 13px">Call date</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-2" type="checkbox" class="iCheck column-checkbox" name="column[col-2]" data-column="col-2" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-2" style="font-size: 13px">Call origin</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-3" type="checkbox" class="iCheck column-checkbox" name="column[col-3]" data-column="col-3" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-3" style="font-size: 13px">Call type</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-4" type="checkbox" class="iCheck column-checkbox" name="column[col-4]" data-column="col-4" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-4" style="font-size: 13px">Phone</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-5" type="checkbox" class="iCheck column-checkbox" name="column[col-5]" data-column="col-5" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-5" style="font-size: 13px">Caller ID</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-6" type="checkbox" class="iCheck column-checkbox" name="column[col-6]" data-column="col-6" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-6" style="font-size: 13px">DNIS</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-7" type="checkbox" class="iCheck column-checkbox" name="column[col-7]" data-column="col-7" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-7" style="font-size: 13px">Call status</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-8" type="checkbox" class="iCheck column-checkbox" name="column[col-8]" data-column="col-8" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-8" style="font-size: 13px">Call duration</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-9" type="checkbox" class="iCheck column-checkbox" name="column[col-9]" data-column="col-9" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-9" style="font-size: 13px">Listen </div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-10" type="checkbox" class="iCheck column-checkbox" name="column[col-10]" data-column="col-10" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-10" style="font-size: 13px">Download </div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-11" type="checkbox" class="iCheck column-checkbox" name="column[col-11]" data-column="col-11" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-11" style="font-size: 13px">Voicemail </div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-12" type="checkbox" class="iCheck column-checkbox" name="column[col-12]" data-column="col-12" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-12" style="font-size: 13px">Agent</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-13" type="checkbox" class="iCheck column-checkbox" name="column[col-13]" data-column="col-13" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-13" style="font-size: 13px">Campaign</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-14" type="checkbox" class="iCheck column-checkbox" name="column[col-14]" data-column="col-14" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-14" style="font-size: 13px">Account ID</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-15" type="checkbox" class="iCheck column-checkbox" name="column[col-15]" data-column="col-15" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-15" style="font-size: 13px">Contact list</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-16" type="checkbox" class="iCheck column-checkbox" name="column[col-16]" data-column="col-16" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-16" style="font-size: 13px">Call result</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-17" type="checkbox" class="iCheck column-checkbox" name="column[col-17]" data-column="col-17" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-17" style="font-size: 13px">Final </div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-18" type="checkbox" class="iCheck column-checkbox" name="column[col-18]" data-column="col-18" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-18" style="font-size: 13px">Termination event</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-19" type="checkbox" class="iCheck column-checkbox" name="column[col-19]" data-column="col-19" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-19" style="font-size: 13px">Missed</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-20" type="checkbox" class="iCheck column-checkbox" name="column[col-20]" data-column="col-20" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-20" style="font-size: 13px">Talk time</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-21" type="checkbox" class="iCheck column-checkbox" name="column[col-21]" data-column="col-21" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-21" style="font-size: 13px">Wrap time</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-22" type="checkbox" class="iCheck column-checkbox" name="column[col-22]" data-column="col-22" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-22" style="font-size: 13px">Wait time</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-23" type="checkbox" class="iCheck column-checkbox" name="column[col-23]" data-column="col-23" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-23" style="font-size: 13px">Revenue</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-24" type="checkbox" class="iCheck column-checkbox" name="column[col-24]" data-column="col-24" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-24" style="font-size: 13px">Resulted in</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-1" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-1]" data-column="col-attr-1" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-1" style="font-size: 13px">ExtName</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-2" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-2]" data-column="col-attr-2" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-2" style="font-size: 13px">Lead Provider ID</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-3" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-3]" data-column="col-attr-3" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-3" style="font-size: 13px">SetOfficerID</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-4" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-4]" data-column="col-attr-4" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-4" style="font-size: 13px">StatusID</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-5" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-5]" data-column="col-attr-5" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-5" style="font-size: 13px">Test</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-6" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-6]" data-column="col-attr-6" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-6" style="font-size: 13px">Test2</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-7" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-7]" data-column="col-attr-7" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-7" style="font-size: 13px">UDF133</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-8" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-8]" data-column="col-attr-8" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-8" style="font-size: 13px">UDF134</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-9" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-9]" data-column="col-attr-9" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-9" style="font-size: 13px">UDF34</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-10" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-10]" data-column="col-attr-10" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-10" style="font-size: 13px">UDF9</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-11" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-11]" data-column="col-attr-11" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-11" style="font-size: 13px">productid</div>
-                                                </div>
-                                            </div>
-                                            <div style="height: 30px;">
-                                                <div style="float:left;">
-                                                    <input id="column_col-attr-12" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-12]" data-column="col-attr-12" value="1" checked="checked" />
-                                                    <div class="label_check" for="column_col-attr-12" style="font-size: 13px">teamid</div>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-
-                                    <div id="export-body" class="tabs">
-                                        <div style="margin-left: 35px">
-                                            <div class="button white export_to" onclick="return exxport('csv')"><img style="vertical-align: text-top;" src="images/excel.png"> Export to CSV</div>
-                                            <div class="button white export_to" onclick="return exxport('pdf')"><img style="vertical-align: text-top;" src="images/pdf.png"> Export to PDF</div>
+                                        <div style="height: 50px; margin-bottom: 5px;">
+                                            <h4 style="float: left">Filter by:</h4>
+                                            <input style="float: right; margin: 15px 0;" type="submit" value="Update »" class="button" id="update">
                                         </div>
-                                    </div>
 
-                                    <div id="save-body" class="tabs">
-                                        <div style="margin-left: 0px;">
+                                        <div style="clear: both"></div>
+
+                                        <div class="date-fields">
+                                            <div class="f-left">
+                                                <label class="filter-label">Start date</label><br>
+                                                <input class="datepicker filter-input short" style="font-family: inherit;font-weight: inherit;font-size: 14px;" type="text" name="filter_start_date" id="filter_start_date" value="07/23/2019">
+                                            </div>
+
+                                            <div class="f-right">
+                                                <label class="filter-label">End date</label><br>
+                                                <input class="datepicker filter-input short" type="text" name="filter_end_date" id="filter_end_date" value="07/23/2019">
+                                            </div>
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Phone</label><br>
+                                            <input class="filter-input filter_phone" id="phone_filter" type="text" name="filter_phone" value="">
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Account ID</label><br>
+                                            <input class="filter-input" id="account_id" type="text" name="filter_accountid" value="">
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Agent</label><br>
+
+                                            <select class="chosen chosen215" name="filter_agent[]" id="agent" data-placeholder="All agents" multiple>
+                                                <option value="inactive"    onclick="alert('a')">Inactive users</option>
+                                                <option value="active"        onclick="alert('b')">Active users</option>
+                                                <option value="456"   > Sandra Rodriguez </option>
+                                                <option value="712"   > Sebastian Cuadras </option>
+                                                <option value="472"   > William Anderson </option>
+                                                <option value="520"   > John Albarran </option>
+                                                <option value="536"   > IC Test 1 (T) </option>
+                                                <option value="312"   > Cesar Del Moral IRS (D) </option>
+                                                <option value="328"   > Derek Knorr </option>
+                                                <option value="344"   > Frances Labadie IRS (D) </option>
+                                                <option value="360"   > James Feliksik IRS (D) </option>
+                                                <option value="616"   > Karla Ortiz </option>
+                                                <option value="376"   > Jose Alvarez IRS (D) </option>
+                                                <option value="392"   > Kristan Venlos </option>
+                                                <option value="648"   > Laura Wagner </option>
+                                                <option value="664"   > Cristina Rosas </option>
+                                                <option value="696"   > Deborah Parks Supervisor (D) </option>
+                                                <option value="697"   > Patricia Vazquez </option>
+                                                <option value="457"   > Sarah Nieschalk IRS (D) </option>
+                                                <option value="713"   > Adan Olivera </option>
+                                                <option value="473"   > William Dezoma </option>
+                                                <option value="521"   > Theresa Daniel </option>
+                                                <option value="537"   > IC Test 2 (T) </option>
+                                                <option value="313"   > Charlie Hernandez </option>
+                                                <option value="377"   > Josh Cuellar </option>
+                                                <option value="409"   > Manuel Chavez </option>
+                                                <option value="665"   > Jazmin Diaz_Supervisor (D) </option>
+                                                <option value="425"   > Mike Hoefke </option>
+                                                <option value="681"   > Norm Brumfield </option>
+                                                <option value="458"   > Saul Herrera </option>
+                                                <option value="714"   > Diana Moral </option>
+                                                <option value="474"   > William Murphy </option>
+                                                <option value="522"   > James Feliksik </option>
+                                                <option value="570"   > Euridice Lopez </option>
+                                                <option value="586"   > Usman Hussain (T) </option>
+                                                <option value="362"   > Jared Rogers </option>
+                                                <option value="618"   > Frank Reyes </option>
+                                                <option value="394"   > Larry Corridon </option>
+                                                <option value="650"   > Cecilia Rivera </option>
+                                                <option value="410"   > Marco Jacome </option>
+                                                <option value="682"   > Denyse Dominguez </option>
+                                                <option value="442"   > Paul Gluck </option>
+                                                <option value="699"   > Maria Salidas </option>
+                                                <option value="715"   > Jamie Franklin </option>
+                                                <option value="475"   > Yolanda Murphy </option>
+                                                <option value="507"   > Daniel Franklin </option>
+                                                <option value="523"   > Sarah Nieschalk </option>
+                                                <option value="539"   > IC Test 3 </option>
+                                                <option value="299"   > Angelica Berber </option>
+                                                <option value="315"   > Christopher Leludis </option>
+                                                <option value="571"   > Flavio Loria </option>
+                                                <option value="587"   > David Gimpel </option>
+                                                <option value="603"   > Nicholas Delaney IRS (D) </option>
+                                                <option value="363"   > Jasmine Grant </option>
+                                                <option value="619"   > Georgina Reyes </option>
+                                                <option value="635"   > Esther Shenberg </option>
+                                                <option value="395"   > Laura Fernandez </option>
+                                                <option value="651"   > Vanessa Vincent </option>
+                                                <option value="411"   > Maria Soto </option>
+                                                <option value="667"   > Chris Doyle </option>
+                                                <option value="716"   > Santiago Corvaia </option>
+                                                <option value="476"   > Zyanya Alejandra </option>
+                                                <option value="524"   > Tyler Butt </option>
+                                                <option value="300"   > Anselmo Hernandez </option>
+                                                <option value="556"   > Kiara Montgomery </option>
+                                                <option value="572"   > Lizbeth Cruz </option>
+                                                <option value="588"   > Terran Thomas </option>
+                                                <option value="348"   > Gerardo Barron </option>
+                                                <option value="604"   > Nicholas Delaney </option>
+                                                <option value="364"   > Jason Nofzinger </option>
+                                                <option value="620"   > Karen Vazquez </option>
+                                                <option value="636"   > Alejandro Rangel_Supervisor (D) </option>
+                                                <option value="396"   > Lauren Noel </option>
+                                                <option value="412"   > Maria Ruiz </option>
+                                                <option value="668"   > Wyatt Steed </option>
+                                                <option value="428"   > Natalie Garcia </option>
+                                                <option value="684"   > Noemi Carrero </option>
+                                                <option value="444"   > Paul Rosario </option>
+                                                <option value="461"   > Shelsee Hernandez </option>
+                                                <option value="525"   > Peter Kang </option>
+                                                <option value="2"   > Agent 1 </option>
+                                                <option value="541"   > Luis Rivera IRS (D) </option>
+                                                <option value="301"   > Arely Antunez </option>
+                                                <option value="333"   > Edwin Carde IRS (D) </option>
+                                                <option value="589"   > Katherine Austin </option>
+                                                <option value="605"   > Tomas Sanchez IRS (D) </option>
+                                                <option value="637"   > Jorge Caballero_Supervisor(D) </option>
+                                                <option value="397"   > Lauriel Collins </option>
+                                                <option value="653"   > Lourdes Miramontes </option>
+                                                <option value="429"   > Nate McGoldrick </option>
+                                                <option value="685"   > Maria Badillo </option>
+                                                <option value="445"   > Paula Munoz </option>
+                                                <option value="462"   > Sigrid Raudales </option>
+                                                <option value="718"   > Annabelle Borota </option>
+                                                <option value="526"   > Ryan Stegenga </option>
+                                                <option value="286"   > Abraham Cab </option>
+                                                <option value="542"   > Nancy Zambrana </option>
+                                                <option value="558"   > Joshua Willemse </option>
+                                                <option value="334"   > Elisabel Medina </option>
+                                                <option value="350"   > Giselle Manzanero </option>
+                                                <option value="606"   > Tomas Sanchez </option>
+                                                <option value="622"   > Pedro Garcia </option>
+                                                <option value="638"   > Alan Stafford_Super (D) </option>
+                                                <option value="398"   > Lesley Sive </option>
+                                                <option value="430"   > Neha Sharma </option>
+                                                <option value="446"   > Peter Kang IRS (D) </option>
+                                                <option value="703"   > Leon Johnson </option>
+                                                <option value="719"   > Kelli Snyder </option>
+                                                <option value="511"   > Brad Muller </option>
+                                                <option value="527"   > Jennifer Brugh </option>
+                                                <option value="303"   > Arturo del Castillo </option>
+                                                <option value="319"   > Cynthia Patino </option>
+                                                <option value="575"   > Oswaldo Escalante </option>
+                                                <option value="335"   > Elizabeth Harmon </option>
+                                                <option value="351"   > Han Tao </option>
+                                                <option value="607"   > Seidy Pacheco </option>
+                                                <option value="367"   > Jennifer Brugh IRS (D) </option>
+                                                <option value="399"   > Lilly Kovacevic </option>
+                                                <option value="655"   > Joshua Robison </option>
+                                                <option value="415"   > Markos Banos IRS (D) </option>
+                                                <option value="671"   > Lorenzo Stephens </option>
+                                                <option value="687"   > Nallely Ochoa </option>
+                                                <option value="447"   > Raul Cardiel </option>
+                                                <option value="704"   > CTAX Test Agent </option>
+                                                <option value="528"   > Jose Alvarez </option>
+                                                <option value="544"   > Luis Rivera </option>
+                                                <option value="304"   > Ashley Thomas </option>
+                                                <option value="320"   > Daniel Urban </option>
+                                                <option value="576"   > Christine Gandia </option>
+                                                <option value="336"   > Elizabeth Hernandez </option>
+                                                <option value="592"   > Tessa Garcia </option>
+                                                <option value="368"   > Jessica Perez </option>
+                                                <option value="384"   > Judith Redington </option>
+                                                <option value="400"   > Lisette Guel </option>
+                                                <option value="656"   > Yuritzi Vallejo </option>
+                                                <option value="416"   > Matt DiRaimondo </option>
+                                                <option value="672"   > Laura Sanchez </option>
+                                                <option value="432"   > Nicholas Carrera </option>
+                                                <option value="705"   > George Asimou </option>
+                                                <option value="465"   > Stephanie Padilla IRS (D) </option>
+                                                <option value="513"   > Gennifer White </option>
+                                                <option value="529"   > Stephanie Padilla </option>
+                                                <option value="289"   > Alan Eley </option>
+                                                <option value="545"   > Jose Leon IRS (D) </option>
+                                                <option value="305"   > Baletica Genous </option>
+                                                <option value="561"   > Corey Hankerson IRS (D) </option>
+                                                <option value="577"   > Ashley Thomas IRS (D) </option>
+                                                <option value="337"   > Emmanuel Martinez </option>
+                                                <option value="593"   > Robert Ventura </option>
+                                                <option value="369"   > Jessie Seaman </option>
+                                                <option value="385"   > Julieta Franco </option>
+                                                <option value="401"   > Lissette Garciduenas </option>
+                                                <option value="417"   > Matthew Chavez </option>
+                                                <option value="673"   > Ashley Green </option>
+                                                <option value="433"   > Nick Kind </option>
+                                                <option value="689"   > Juan Texier </option>
+                                                <option value="466"   > Stephany Cruz </option>
+                                                <option value="722"   > Valerie Bolden </option>
+                                                <option value="530"   > Frances Labadie </option>
+                                                <option value="290"   > Alan Stafford_Agent </option>
+                                                <option value="546"   > Jose Leon </option>
+                                                <option value="306"   > Barry Rubin </option>
+                                                <option value="562"   > Corey Hankerson </option>
+                                                <option value="578"   > Christian Zuluaga </option>
+                                                <option value="338"   > Erica Soto </option>
+                                                <option value="594"   > Raul Hernandez </option>
+                                                <option value="354"   > Hugo Gasca </option>
+                                                <option value="370"   > John Albarran IRS (D) </option>
+                                                <option value="626"   > Jon Brooke </option>
+                                                <option value="418"   > Megan Parr </option>
+                                                <option value="674"   > Alvaro Contreras </option>
+                                                <option value="434"   > Nick Charveron </option>
+                                                <option value="450"   > Robert Jakovich </option>
+                                                <option value="707"   > Perla Ordonez </option>
+                                                <option value="467"   > Stevie Bestecki </option>
+                                                <option value="515"   > Roberto Spinelli </option>
+                                                <option value="531"   > Edwin Carde </option>
+                                                <option value="547"   > Samuel Montalvo IRS (D) </option>
+                                                <option value="307"   > Benjamin Medina </option>
+                                                <option value="563"   > Carmen Flores </option>
+                                                <option value="323"   > Darla Harrison </option>
+                                                <option value="579"   > Maureen Hawkins IRS (D) </option>
+                                                <option value="339"   > Erick Santana </option>
+                                                <option value="611"   > Jazmin Diaz </option>
+                                                <option value="371"   > John Peloquin </option>
+                                                <option value="387"   > July Valera </option>
+                                                <option value="643"   > Abraham Montez </option>
+                                                <option value="675"   > Luz Xalamigua </option>
+                                                <option value="435"   > Nicolo Lentini </option>
+                                                <option value="451"   > Robert Craig </option>
+                                                <option value="708"   > Fabiola Patino </option>
+                                                <option value="468"   > Theresa Daniel IRS (D) </option>
+                                                <option value="292"   > Alejandro Rangel </option>
+                                                <option value="548"   > Samuel Montalvo </option>
+                                                <option value="580"   > Maureen Hawkins </option>
+                                                <option value="596"   > David Ramirez </option>
+                                                <option value="612"   > Andrew Strickler </option>
+                                                <option value="372"   > John Keefe </option>
+                                                <option value="644"   > Diego Franco </option>
+                                                <option value="404"   > Luis Mendoza </option>
+                                                <option value="420"   > Michael Hanses </option>
+                                                <option value="436"   > Ninnette Morales </option>
+                                                <option value="452"   > Ruben Leiva </option>
+                                                <option value="709"   > Hanseen Pool </option>
+                                                <option value="469"   > Tim Klepek </option>
+                                                <option value="725"   > Kin Lopez </option>
+                                                <option value="533"   > Cesar Del Moral </option>
+                                                <option value="549"   > Karen Torton </option>
+                                                <option value="565"   > Chris Hartford </option>
+                                                <option value="325"   > Deborah Parks </option>
+                                                <option value="581"   > Markos Banos </option>
+                                                <option value="341"   > Ermir Ali </option>
+                                                <option value="597"   > Robert Rodriguez </option>
+                                                <option value="357"   > Jacob Dayan </option>
+                                                <option value="613"   > 19999 (T) </option>
+                                                <option value="629"   > Leticia Munoz </option>
+                                                <option value="389"   > Karolina Gavilan </option>
+                                                <option value="645"   > Azul Rodriguez </option>
+                                                <option value="421"   > Michael Gaylord </option>
+                                                <option value="693"   > Luis Jimenez </option>
+                                                <option value="453"   > Ryan Zawadzki </option>
+                                                <option value="710"   > Paul Castillo </option>
+                                                <option value="470"   > Tyler Butt IRS (D) </option>
+                                                <option value="294"   > Andrea Quintana </option>
+                                                <option value="550"   > Joe Tester (T) </option>
+                                                <option value="310"   > Brian McDonald </option>
+                                                <option value="566"   > Ben Bauers IRS (D) </option>
+                                                <option value="358"   > Jaime Viscarra </option>
+                                                <option value="614"   > Mister Deeds (T) </option>
+                                                <option value="374"   > Jordan Snow </option>
+                                                <option value="630"   > Michelle Hurtado </option>
+                                                <option value="422"   > Miguel Ramirez </option>
+                                                <option value="678"   > Vanessa Rivera </option>
+                                                <option value="694"   > Rosa Garcia </option>
+                                                <option value="454"   > Ryan Stegenga IRS (D) </option>
+                                                <option value="471"   > Victor Gomez </option>
+                                                <option value="487"   > Daniela Garcia </option>
+                                                <option value="519"   > Edrica Beneby </option>
+                                                <option value="535"   > Keena Garner </option>
+                                                <option value="295"   > Andres Garcia </option>
+                                                <option value="311"   > Brynne Frauenhoffer </option>
+                                                <option value="567"   > Ben Bauers </option>
+                                                <option value="327"   > Dennis Mckinney </option>
+                                                <option value="359"   > James Clair </option>
+                                                <option value="615"   > Christopher Allen </option>
+                                                <option value="375"   > Jorge Caballero </option>
+                                                <option value="647"   > Rawley Davis </option>
+                                                <option value="407"   > Maggie Fuentes </option>
+                                                <option value="663"   > Jamie Franklin IRS (D) </option>
+                                                <option value="679"   > Mounika Alluri </option>
+                                                <option value="695"   > Francisco Ocanto </option>
+                                                <option value="455"   > Sally Guzman </option>
+                                                <option value="488"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="504"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="296"  style="color:#ccc; text-decoration: line-through" > Andrew Velazquez </option>
+                                                <option value="552"  style="color:#ccc; text-decoration: line-through" > Laura Ferguson </option>
+                                                <option value="568"  style="color:#ccc; text-decoration: line-through" > Yovanna Marin </option>
+                                                <option value="584"  style="color:#ccc; text-decoration: line-through" > Goldie Greenstein IRS </option>
+                                                <option value="600"  style="color:#ccc; text-decoration: line-through" > ALEXIS VELAZQUEZ </option>
+                                                <option value="632"  style="color:#ccc; text-decoration: line-through" > Hector Gracia </option>
+                                                <option value="408"  style="color:#ccc; text-decoration: line-through" > Manuel Espinosa </option>
+                                                <option value="424"  style="color:#ccc; text-decoration: line-through" > Miguel Torres </option>
+                                                <option value="680"  style="color:#ccc; text-decoration: line-through" > Geraldine Ceballos </option>
+                                                <option value="440"  style="color:#ccc; text-decoration: line-through" > Pamela Anderson </option>
+                                                <option value="489"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="505"  style="color:#ccc; text-decoration: line-through" > Leticia Hernandez </option>
+                                                <option value="297"  style="color:#ccc; text-decoration: line-through" > Angel Sales </option>
+                                                <option value="553"  style="color:#ccc; text-decoration: line-through" > Test Agent 2 </option>
+                                                <option value="569"  style="color:#ccc; text-decoration: line-through" > Carlos Pozo </option>
+                                                <option value="329"  style="color:#ccc; text-decoration: line-through" > Diana Aguilera </option>
+                                                <option value="585"  style="color:#ccc; text-decoration: line-through" > Barry Footlick IRS (D) </option>
+                                                <option value="345"  style="color:#ccc; text-decoration: line-through" > Gabriel Bustamante </option>
+                                                <option value="601"  style="color:#ccc; text-decoration: line-through" > Sigrid Mcgregor </option>
+                                                <option value="361"  style="color:#ccc; text-decoration: line-through" > James Thornton </option>
+                                                <option value="617"  style="color:#ccc; text-decoration: line-through" > Emily Martinez </option>
+                                                <option value="633"  style="color:#ccc; text-decoration: line-through" > Hector Garcia </option>
+                                                <option value="393"  style="color:#ccc; text-decoration: line-through" > Kunal Mishra </option>
+                                                <option value="649"  style="color:#ccc; text-decoration: line-through" > Rashawn Pope </option>
+                                                <option value="441"  style="color:#ccc; text-decoration: line-through" > Patricia Vazquez </option>
+                                                <option value="698"  style="color:#ccc; text-decoration: line-through" > Cortez Hodges </option>
+                                                <option value="490"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="506"  style="color:#ccc; text-decoration: line-through" > Coco Kasperowicz </option>
+                                                <option value="538"  style="color:#ccc; text-decoration: line-through" > test9899 </option>
+                                                <option value="298"  style="color:#ccc; text-decoration: line-through" > Angelica Ocana </option>
+                                                <option value="554"  style="color:#ccc; text-decoration: line-through" > Joe Tester </option>
+                                                <option value="314"  style="color:#ccc; text-decoration: line-through" > Chris Hastings </option>
+                                                <option value="330"  style="color:#ccc; text-decoration: line-through" > Diana Garcia </option>
+                                                <option value="346"  style="color:#ccc; text-decoration: line-through" > Gabriela Melgoza </option>
+                                                <option value="602"  style="color:#ccc; text-decoration: line-through" > Test for duplicate </option>
+                                                <option value="378"  style="color:#ccc; text-decoration: line-through" > Joshua Kronick </option>
+                                                <option value="634"  style="color:#ccc; text-decoration: line-through" > Jerrina Rodriguez </option>
+                                                <option value="666"  style="color:#ccc; text-decoration: line-through" > Jamil Macias </option>
+                                                <option value="426"  style="color:#ccc; text-decoration: line-through" > Monika Hudak </option>
+                                                <option value="459"  style="color:#ccc; text-decoration: line-through" > Sean Zaragoza </option>
+                                                <option value="491"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="555"  style="color:#ccc; text-decoration: line-through" > Grady Griffin </option>
+                                                <option value="331"  style="color:#ccc; text-decoration: line-through" > Domingo Aguilera </option>
+                                                <option value="347"  style="color:#ccc; text-decoration: line-through" > George Asimou </option>
+                                                <option value="379"  style="color:#ccc; text-decoration: line-through" > Josue Lopez </option>
+                                                <option value="427"  style="color:#ccc; text-decoration: line-through" > Natalie Camacho </option>
+                                                <option value="683"  style="color:#ccc; text-decoration: line-through" > Taroniah Rice </option>
+                                                <option value="443"  style="color:#ccc; text-decoration: line-through" > Paul Blahnik </option>
+                                                <option value="700"  style="color:#ccc; text-decoration: line-through" > Lukasz Krolak </option>
+                                                <option value="460"  style="color:#ccc; text-decoration: line-through" > Sharbel Meza </option>
+                                                <option value="492"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="508"  style="color:#ccc; text-decoration: line-through" > Tony Espinoza </option>
+                                                <option value="540"  style="color:#ccc; text-decoration: line-through" > IC Test 3 (T) </option>
+                                                <option value="316"  style="color:#ccc; text-decoration: line-through" > Conner Rubio </option>
+                                                <option value="332"  style="color:#ccc; text-decoration: line-through" > Edwin Montufar </option>
+                                                <option value="380"  style="color:#ccc; text-decoration: line-through" > Juan Palma </option>
+                                                <option value="652"  style="color:#ccc; text-decoration: line-through" > Marra Forman </option>
+                                                <option value="701"  style="color:#ccc; text-decoration: line-through" > Valeria Martinez </option>
+                                                <option value="717"  style="color:#ccc; text-decoration: line-through" > Mimi Lowery </option>
+                                                <option value="477"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="493"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="509"  style="color:#ccc; text-decoration: line-through" > Andres Guijarro </option>
+                                                <option value="557"  style="color:#ccc; text-decoration: line-through" > Angela Desmond </option>
+                                                <option value="317"  style="color:#ccc; text-decoration: line-through" > Cristhian Ramos </option>
+                                                <option value="573"  style="color:#ccc; text-decoration: line-through" > Cesar Criollo </option>
+                                                <option value="349"  style="color:#ccc; text-decoration: line-through" > Gerardo Ramirez </option>
+                                                <option value="365"  style="color:#ccc; text-decoration: line-through" > Javier Rivera </option>
+                                                <option value="621"  style="color:#ccc; text-decoration: line-through" > Faud Escobar </option>
+                                                <option value="381"  style="color:#ccc; text-decoration: line-through" > Juan Herrera </option>
+                                                <option value="413"  style="color:#ccc; text-decoration: line-through" > Maria Sanchez </option>
+                                                <option value="669"  style="color:#ccc; text-decoration: line-through" > Stephanie Edwards </option>
+                                                <option value="702"  style="color:#ccc; text-decoration: line-through" > Nancy Hughes </option>
+                                                <option value="478"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="494"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="510"  style="color:#ccc; text-decoration: line-through" > Patricia Valencia </option>
+                                                <option value="302"  style="color:#ccc; text-decoration: line-through" > Armando Picon </option>
+                                                <option value="318"  style="color:#ccc; text-decoration: line-through" > Cynthia Seaman </option>
+                                                <option value="574"  style="color:#ccc; text-decoration: line-through" > Omar Morales </option>
+                                                <option value="590"  style="color:#ccc; text-decoration: line-through" > Sharron Medley </option>
+                                                <option value="366"  style="color:#ccc; text-decoration: line-through" > Jazmin Chable </option>
+                                                <option value="382"  style="color:#ccc; text-decoration: line-through" > Juan Garcia </option>
+                                                <option value="654"  style="color:#ccc; text-decoration: line-through" > Joseph Sbarra </option>
+                                                <option value="414"  style="color:#ccc; text-decoration: line-through" > Mario Vazquez </option>
+                                                <option value="670"  style="color:#ccc; text-decoration: line-through" > Nicole Sanchez </option>
+                                                <option value="686"  style="color:#ccc; text-decoration: line-through" > Ruben Ramirez </option>
+                                                <option value="463"  style="color:#ccc; text-decoration: line-through" > Silvia Alvarez </option>
+                                                <option value="479"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="495"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="287"  style="color:#ccc; text-decoration: line-through" > Adam Dayan </option>
+                                                <option value="543"  style="color:#ccc; text-decoration: line-through" > Victor Jimenez </option>
+                                                <option value="559"  style="color:#ccc; text-decoration: line-through" > Greg Lomori IRS (D) </option>
+                                                <option value="591"  style="color:#ccc; text-decoration: line-through" > Luis De La Fuente </option>
+                                                <option value="623"  style="color:#ccc; text-decoration: line-through" > Cristopher Vera </option>
+                                                <option value="383"  style="color:#ccc; text-decoration: line-through" > Juan Mendez IRS (D) </option>
+                                                <option value="639"  style="color:#ccc; text-decoration: line-through" > Javier Chavarria </option>
+                                                <option value="431"  style="color:#ccc; text-decoration: line-through" > Nelson Canul </option>
+                                                <option value="464"  style="color:#ccc; text-decoration: line-through" > Silvia Nava </option>
+                                                <option value="720"  style="color:#ccc; text-decoration: line-through" > Elissa Pulido </option>
+                                                <option value="480"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="496"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="512"  style="color:#ccc; text-decoration: line-through" > Gordon Aguirre </option>
+                                                <option value="288"  style="color:#ccc; text-decoration: line-through" > Aida Flores </option>
+                                                <option value="560"  style="color:#ccc; text-decoration: line-through" > Greg Lomori </option>
+                                                <option value="352"  style="color:#ccc; text-decoration: line-through" > Hannah Gabbard </option>
+                                                <option value="608"  style="color:#ccc; text-decoration: line-through" > Test Agent3 </option>
+                                                <option value="624"  style="color:#ccc; text-decoration: line-through" > Lourdes Perez </option>
+                                                <option value="640"  style="color:#ccc; text-decoration: line-through" > Desiree Natividad </option>
+                                                <option value="688"  style="color:#ccc; text-decoration: line-through" > Rosa Carles </option>
+                                                <option value="448"  style="color:#ccc; text-decoration: line-through" > Rebeca Rivera IRS (D) </option>
+                                                <option value="721"  style="color:#ccc; text-decoration: line-through" > Manuel Sanchez </option>
+                                                <option value="481"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="497"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="321"  style="color:#ccc; text-decoration: line-through" > Daniela Lopez </option>
+                                                <option value="353"  style="color:#ccc; text-decoration: line-through" > Holly Matous </option>
+                                                <option value="609"  style="color:#ccc; text-decoration: line-through" > Francisco Camelo </option>
+                                                <option value="625"  style="color:#ccc; text-decoration: line-through" > Tiffany Rodriguez </option>
+                                                <option value="641"  style="color:#ccc; text-decoration: line-through" > Gloriana Suarez </option>
+                                                <option value="657"  style="color:#ccc; text-decoration: line-through" > Alan Osorio </option>
+                                                <option value="449"  style="color:#ccc; text-decoration: line-through" > Renee Curtis </option>
+                                                <option value="706"  style="color:#ccc; text-decoration: line-through" > Mariana Rodriguez </option>
+                                                <option value="482"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="498"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="514"  style="color:#ccc; text-decoration: line-through" > Christopher Bates </option>
+                                                <option value="322"  style="color:#ccc; text-decoration: line-through" > Danielle Levy </option>
+                                                <option value="610"  style="color:#ccc; text-decoration: line-through" > Rogelio Martinez </option>
+                                                <option value="386"  style="color:#ccc; text-decoration: line-through" > Julius Mosansky </option>
+                                                <option value="642"  style="color:#ccc; text-decoration: line-through" > Ana Avila </option>
+                                                <option value="402"  style="color:#ccc; text-decoration: line-through" > Louis Clarke </option>
+                                                <option value="658"  style="color:#ccc; text-decoration: line-through" > Valeria Borja </option>
+                                                <option value="690"  style="color:#ccc; text-decoration: line-through" > Said Rosillo </option>
+                                                <option value="723"  style="color:#ccc; text-decoration: line-through" > Cortez Hodges </option>
+                                                <option value="483"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="499"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="291"  style="color:#ccc; text-decoration: line-through" > Aldo Martinez </option>
+                                                <option value="595"  style="color:#ccc; text-decoration: line-through" > DANIEL KOH </option>
+                                                <option value="355"  style="color:#ccc; text-decoration: line-through" > Isaac Alferez </option>
+                                                <option value="627"  style="color:#ccc; text-decoration: line-through" > Joseph Blazen </option>
+                                                <option value="403"  style="color:#ccc; text-decoration: line-through" > Lourdes Miramontes </option>
+                                                <option value="659"  style="color:#ccc; text-decoration: line-through" > Dante Morales </option>
+                                                <option value="419"  style="color:#ccc; text-decoration: line-through" > Meghan Whitlock </option>
+                                                <option value="691"  style="color:#ccc; text-decoration: line-through" > Said Canche </option>
+                                                <option value="724"  style="color:#ccc; text-decoration: line-through" > Kin Lopez </option>
+                                                <option value="484"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="500"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="516"  style="color:#ccc; text-decoration: line-through" > Cathy Bryant </option>
+                                                <option value="532"  style="color:#ccc; text-decoration: line-through" > Juan Mendez </option>
+                                                <option value="308"  style="color:#ccc; text-decoration: line-through" > Berenice Ponce </option>
+                                                <option value="564"  style="color:#ccc; text-decoration: line-through" > Eddy Lamar </option>
+                                                <option value="324"  style="color:#ccc; text-decoration: line-through" > Darwin Lopez </option>
+                                                <option value="340"  style="color:#ccc; text-decoration: line-through" > Erik Sirk </option>
+                                                <option value="356"  style="color:#ccc; text-decoration: line-through" > Ivonne Kosberg </option>
+                                                <option value="628"  style="color:#ccc; text-decoration: line-through" > Chris Lightner </option>
+                                                <option value="388"  style="color:#ccc; text-decoration: line-through" > Karla Garcia </option>
+                                                <option value="660"  style="color:#ccc; text-decoration: line-through" > Patricia Urbina </option>
+                                                <option value="676"  style="color:#ccc; text-decoration: line-through" > Valeria Borja </option>
+                                                <option value="692"  style="color:#ccc; text-decoration: line-through" > Ana Gomez </option>
+                                                <option value="485"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="501"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="517"  style="color:#ccc; text-decoration: line-through" > Ron Stein </option>
+                                                <option value="293"  style="color:#ccc; text-decoration: line-through" > Amna Abid </option>
+                                                <option value="309"  style="color:#ccc; text-decoration: line-through" > Brad Blankley </option>
+                                                <option value="373"  style="color:#ccc; text-decoration: line-through" > Jonathan Jimenez </option>
+                                                <option value="405"  style="color:#ccc; text-decoration: line-through" > Luis Hernandez </option>
+                                                <option value="661"  style="color:#ccc; text-decoration: line-through" > Francisco Sánchez </option>
+                                                <option value="677"  style="color:#ccc; text-decoration: line-through" > Joselinne Jimenez </option>
+                                                <option value="437"  style="color:#ccc; text-decoration: line-through" > Norm Brumfield </option>
+                                                <option value="486"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="502"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="518"  style="color:#ccc; text-decoration: line-through" > Joseph Sbarra IRS (D) </option>
+                                                <option value="534"  style="color:#ccc; text-decoration: line-through" > Rebeca Rivera </option>
+                                                <option value="326"  style="color:#ccc; text-decoration: line-through" > Denise Young </option>
+                                                <option value="582"  style="color:#ccc; text-decoration: line-through" > Barry Footlick </option>
+                                                <option value="342"  style="color:#ccc; text-decoration: line-through" > Ernesto Mena </option>
+                                                <option value="598"  style="color:#ccc; text-decoration: line-through" > KELLY CALLAHAN </option>
+                                                <option value="390"  style="color:#ccc; text-decoration: line-through" > Kathleen O&#039;Connell </option>
+                                                <option value="646"  style="color:#ccc; text-decoration: line-through" > Jason Warr </option>
+                                                <option value="406"  style="color:#ccc; text-decoration: line-through" > Luz Picon </option>
+                                                <option value="662"  style="color:#ccc; text-decoration: line-through" > Dori Sauceda </option>
+                                                <option value="438"  style="color:#ccc; text-decoration: line-through" > Oscar Hernandez </option>
+                                                <option value="711"  style="color:#ccc; text-decoration: line-through" > Ivan Morales </option>
+                                                <option value="503"  style="color:#ccc; text-decoration: line-through" > Unassigned User </option>
+                                                <option value="551"  style="color:#ccc; text-decoration: line-through" > Test Agent (T) </option>
+                                                <option value="583"  style="color:#ccc; text-decoration: line-through" > Goldie Greenstein </option>
+                                                <option value="343"  style="color:#ccc; text-decoration: line-through" > Fernando Aviles </option>
+                                                <option value="599"  style="color:#ccc; text-decoration: line-through" > MICHELLE MENDEZ </option>
+                                                <option value="631"  style="color:#ccc; text-decoration: line-through" > Lindsey Marsland </option>
+                                                <option value="391"  style="color:#ccc; text-decoration: line-through" > Kerim Tatlici </option>
+                                                <option value="423"  style="color:#ccc; text-decoration: line-through" > Miguel Arredondo </option>
+                                                <option value="439"  style="color:#ccc; text-decoration: line-through" > Oscar Sanchez </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Contact list</label><br>
+
+                                            <select class="chosen chosen215" name="filter_pool[]" id="contact_list" data-placeholder="All contacts" multiple>
+                                                <option value="1" >Joel test</option>
+                                                <option value="3" >FreeReportDec27</option>
+                                                <option value="5" >FreeReportJan9</option>
+                                                <option value="9" >FreeReportJan28</option>
+                                                <option value="13" >FreeReportFeb6</option>
+                                                <option value="14" >FreeReportFeb7</option>
+                                                <option value="16" >FreeReportSpanishApril10</option>
+                                                <option value="17" >FreeReportMay25Eng</option>
+                                                <option value="18" >FreeReportJune3Eng</option>
+                                                <option value="19" >FreeReportJune13Eng</option>
+                                                <option value="20" >FreeReportJuly9Eng</option>
+                                                <option value="21" >FreeReportJuly9Eng2</option>
+                                                <option value="22" >FreeReportJuly11Eng</option>
+                                                <option value="23" >FreeReportJuly18Eng</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Call origin</label><br>
+
+                                            <select class="chosen chosen215" name="filter_call_origin" id="callorigin" data-placeholder="All calls">
+                                                <option value="all" >All calls</option>
+                                                <option value="internal" >Internal calls</option>
+                                                <option value="external" >External calls</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Call type</label><br>
+
+                                            <select class="chosen chosen215" name="filter_call_type[]" id="calltype" data-placeholder="All calls" multiple>
+                                                <option value="I" >Inbound</option>
+                                                <option value="M" >Manual</option>
+                                                <option value="O" >Outbound</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Termination event</label><br>
+
+                                            <select class="chosen chosen215" name="filter_termination_event[]" id="termination_event" data-placeholder="All termination events" multiple>
+                                                <option value="ABANDON" >Abandon </option>
+                                                <option value="COMPLETEAGENT" >Complete Agent </option>
+                                                <option value="COMPLETECALLER" >Complete Caller </option>
+                                                <option value="EXITWITHKEY" >Exit with Key </option>
+                                                <option value="EXITWITHTIMEOUT" >Exit with Timeout </option>
+                                                <option value="TRANSFER" >Transfer </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Call result</label><br>
+
+                                            <select class="chosen chosen215" name="filter_crc[]" id="call_result" data-placeholder="All call results" multiple>
+                                                <option value="22" >
+                                                    3QS - Three Question Screen Transfer
+                                                </option>
+                                                <option value="46" >
+                                                    4QS-1 - Four Question Screen-Tier 1
+                                                </option>
+                                                <option value="47" >
+                                                    4QS-2 - Four Question Screen-Tier 2
+                                                </option>
+                                                <option value="48" >
+                                                    5QS-1 - Five Question Screen-Tier 1
+                                                </option>
+                                                <option value="49" >
+                                                    5QS-2 - Five Question Screen-Tier 2
+                                                </option>
+                                                <option value="10" >
+                                                    AMD - Answer Machine - No Message Left
+                                                </option>
+                                                <option value="15" >
+                                                    AMM - Answer Machine - Message Left
+                                                </option>
+                                                <option value="43" >
+                                                    AR Call - Account Receivable Call
+                                                </option>
+                                                <option value="50" >
+                                                    BLG - Billing
+                                                </option>
+                                                <option value="9" >
+                                                    BSY - Busy Signal
+                                                </option>
+                                                <option value="40" >
+                                                    Call Completed - Call Handled Successfully
+                                                </option>
+                                                <option value="38" >
+                                                    CDIS - Call Discarded
+                                                </option>
+                                                <option value="42" >
+                                                    CR Call - Case Review Call
+                                                </option>
+                                                <option value="45" >
+                                                    CUR - Current Client
+                                                </option>
+                                                <option value="29" >
+                                                    DNC - Do Not Call
+                                                </option>
+                                                <option value="30" >
+                                                    DNQ - Non Qualified
+                                                </option>
+                                                <option value="35" >
+                                                    DRP - Dropped Call
+                                                </option>
+                                                <option value="8" >
+                                                    FAX - Fax machine
+                                                </option>
+                                                <option value="2" >
+                                                    HNG - Hangup or dead air
+                                                </option>
+                                                <option value="34" >
+                                                    IRS - IRS Call
+                                                </option>
+                                                <option value="26" >
+                                                    jctest - jctest
+                                                </option>
+                                                <option value="16" >
+                                                    NOA - No Answer
+                                                </option>
+                                                <option value="7" >
+                                                    OI - Invalid Phone Number
+                                                </option>
+                                                <option value="44" >
+                                                    P1 Call - New Client Call
+                                                </option>
+                                                <option value="31" >
+                                                    QLD - Qualified Prospect
+                                                </option>
+                                                <option value="32" >
+                                                    QND - Qualified No Deal
+                                                </option>
+                                                <option value="36" >
+                                                    RBD - Robodial
+                                                </option>
+                                                <option value="13" >
+                                                    UNK - Contact CU to resolve this result code
+                                                </option>
+                                                <option value="37" >
+                                                    VMAfter - Voice Mail After Hours
+                                                </option>
+                                                <option value="39" >
+                                                    Wrong Number - Not Looking for CTAX
+                                                </option>
+                                                <option value="28" >
+                                                    XAC - Transfer Accounting Sales
+                                                </option>
+                                                <option value="24" >
+                                                    XAR - Transfer to AR
+                                                </option>
+                                                <option value="33" >
+                                                    XCA - Transfer to Case Advocate
+                                                </option>
+                                                <option value="23" >
+                                                    XCM - Transfer to CM
+                                                </option>
+                                                <option value="17" >
+                                                    XFC - Transferred Call
+                                                </option>
+                                                <option value="27" >
+                                                    XSE - Transfer to English Sales
+                                                </option>
+                                                <option value="25" >
+                                                    XSS - Transfer Spanish Sales
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Campaign</label><br>
+
+                                            <select class="chosen chosen215 " name="campaign[]" id="filter_campaign" data-placeholder="All campaigns" multiple>
+                                                <option value="546" > AR English</option>
+                                                <option value="545" > Case Management</option>
+                                                <option value="555" > CM English</option>
+                                                <option value="556" > CM Spanish</option>
+                                                <option value="672" > Current Year Tax Prep Eng</option>
+                                                <option value="704" > Current Year Tax Prep Span</option>
+                                                <option value="678" > Direct Dialed</option>
+                                                <option value="557" > Enrollment English</option>
+                                                <option value="727" > Enrollment English W/O Screeners</option>
+                                                <option value="558" > Enrollment Spanish</option>
+                                                <option value="655" > Free Report</option>
+                                                <option value="741" > Free Report Spanish</option>
+                                                <option value="725" > Hoefke Test</option>
+                                                <option value="584" > Inbound</option>
+                                                <option value="5" > Inbound</option>
+                                                <option value="728" > Internal Transfer</option>
+                                                <option value="735" > Internal Transfer.</option>
+                                                <option value="554" > IRS Line</option>
+                                                <option value="689" > Joel&#039;s test dialer</option>
+                                                <option value="585" > Manual</option>
+                                                <option value="568" > Outbound AR/Finance</option>
+                                                <option value="563" > Outbound CM</option>
+                                                <option value="561" > Outbound Enrollment</option>
+                                                <option value="637" > Outbound Enrollment (Sp)</option>
+                                                <option value="564" > Outbound Enterprise</option>
+                                                <option value="569" > Outbound Investigation</option>
+                                                <option value="570" > Outbound P3</option>
+                                                <option value="567" > Outbound Practitioner</option>
+                                                <option value="562" > Outbound Spanish Sales</option>
+                                                <option value="566" > Outbound Tax Advocate</option>
+                                                <option value="565" > Outbound Tax Prep</option>
+                                                <option value="698" > P3</option>
+                                                <option value="702" > P3 Spanish</option>
+                                                <option value="674" > Practitioner IRS</option>
+                                                <option value="652" > Preview Campaign</option>
+                                                <option value="782" > Sugar - Enrollment English</option>
+                                                <option value="783" > Sugar - Enrollment English W/O Screeners</option>
+                                                <option value="784" > Sugar - Enrollment Spanish</option>
+                                                <option value="746" > Sugar Enrollment Eng Testing</option>
+                                                <option value="654" > Test Team</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">DNIS</label><br>
+
+                                            <select class="chosen chosen215" name="filter_dnis[]" id="dnis" data-placeholder="All DNIS" multiple>
+                                                <option value="1005" >
+                                                    1005
+
+                                                    - 1005 Test Number
+                                                </option>
+                                                <option value="13123867741" >
+                                                    312-386-7741
+
+                                                    - ES: Drips
+                                                </option>
+                                                <option value="13124360570" >
+                                                    312-436-0570
+
+                                                    - E: Partner Lead
+                                                </option>
+                                                <option value="13124459634" >
+                                                    312-445-9634
+
+                                                    - E: Converse Media
+                                                </option>
+                                                <option value="13124459635" >
+                                                    312-445-9635
+
+                                                    - ES: Partner Lead
+                                                </option>
+                                                <option value="13124459643" >
+                                                    312-445-9643
+
+                                                    - ES: Converse Spanish
+                                                </option>
+                                                <option value="13124459655" >
+                                                    312-445-9655
+
+                                                    - E: Pro Media (Cash)
+                                                </option>
+                                                <option value="13124459720" >
+                                                    312-445-9720
+
+                                                    - E: Hybrid Radio
+                                                </option>
+                                                <option value="13124942620" >
+                                                    312-494-2620
+
+                                                    - Inbound Extension 440
+                                                </option>
+                                                <option value="13125094940" >
+                                                    312-509-4940
+
+                                                    - Inbound Extension 144
+                                                </option>
+                                                <option value="13125464338" >
+                                                    312-546-4338
+
+                                                    - ES: CTax Media
+                                                </option>
+                                                <option value="13125466225" >
+                                                    312-546-6225
+
+                                                    - E: Broadcast (Marchex)
+                                                </option>
+                                                <option value="13125466599" >
+                                                    312-546-6599
+
+                                                    - EA: Finance Pal
+                                                </option>
+                                                <option value="13125613020" >
+                                                    312-561-3020
+
+                                                    - E: Consumer Affairs
+                                                </option>
+                                                <option value="13125645272" >
+                                                    312-564-5272
+
+                                                    - E: DCOM Lead (Live Transfers)
+                                                </option>
+                                                <option value="13126263023" >
+                                                    312-626-3023
+
+                                                    - Inbound Extension 248
+                                                </option>
+                                                <option value="13126619161" >
+                                                    312-661-9161
+
+                                                    - E: Pro Media (Radio)
+                                                </option>
+                                                <option value="13126708924" >
+                                                    312-670-8924
+
+                                                    - ES: Porsche Radio SP
+                                                </option>
+                                                <option value="13126839070" >
+                                                    312-683-9070
+
+                                                    - Inbound Extension 957
+                                                </option>
+                                                <option value="13126839389" >
+                                                    312-683-9389
+
+                                                    - Inbound Extension 959
+                                                </option>
+                                                <option value="13126977175" >
+                                                    312-697-7175
+
+                                                    - E: Pro Media (Cash)
+                                                </option>
+                                                <option value="13127537817" >
+                                                    312-753-7817
+
+                                                    - ES: Pro Media (Cash)
+                                                </option>
+                                                <option value="13127660942" >
+                                                    312-766-0942
+
+                                                    - Inbound Extension 486
+                                                </option>
+                                                <option value="13127660943" >
+                                                    312-766-0943
+
+                                                    - Inbound Extension 487
+                                                </option>
+                                                <option value="13127660946" >
+                                                    312-766-0946
+
+                                                    - Inbound Extension 483
+                                                </option>
+                                                <option value="13127660947" >
+                                                    312-766-0947
+
+                                                    - Inbound Extension 120
+                                                </option>
+                                                <option value="13127660948" >
+                                                    312-766-0948
+
+                                                    - Client Retention Eng
+                                                </option>
+                                                <option value="13127660949" >
+                                                    312-766-0949
+
+                                                    - Client Retention Spa
+                                                </option>
+                                                <option value="13127660950" >
+                                                    312-766-0950
+
+                                                    - Inbound Extension 482
+                                                </option>
+                                                <option value="13127660951" >
+                                                    312-766-0951
+
+                                                    - Inbound Extension 484
+                                                </option>
+                                                <option value="13128000610" >
+                                                    312-800-0610
+
+                                                    - Inbound Extension 136
+                                                </option>
+                                                <option value="13128000621" >
+                                                    312-800-0621
+
+                                                    - Tier 2 Internal Transfers
+                                                </option>
+                                                <option value="13128002935" >
+                                                    312-800-2935
+
+                                                    - E: Best Debt
+                                                </option>
+                                                <option value="13128781188" >
+                                                    312-878-1188
+
+                                                    - ES: INTM Web
+                                                </option>
+                                                <option value="13128781234" >
+                                                    312-878-1234
+
+                                                    - ES: Pro Media (PI)
+                                                </option>
+                                                <option value="13128781755" >
+                                                    312-878-1755
+
+                                                    - Inbound Extension 226
+                                                </option>
+                                                <option value="13128784212" >
+                                                    312-878-4212
+
+                                                    - EA: Hybrid
+                                                </option>
+                                                <option value="13128785454" >
+                                                    312-878-5454
+
+                                                    - Inbound Extension 506
+                                                </option>
+                                                <option value="13128789170" >
+                                                    312-878-9170
+
+                                                    - Tier 1 Internal Transfers
+                                                </option>
+                                                <option value="13129850405" >
+                                                    312-985-0405
+
+                                                    - Inbound Extension 997
+                                                </option>
+                                                <option value="14806761604" >
+                                                    480-676-1604
+
+                                                    - IC Test Number - Temp
+                                                </option>
+                                                <option value="150" >
+                                                    150
+
+                                                    - Client Office
+                                                </option>
+                                                <option value="17732432300" >
+                                                    773-243-2300
+
+                                                    - Test Team Campaign
+                                                </option>
+                                                <option value="17732432593" >
+                                                    773-243-2593
+
+                                                    - Inbound Extension 188
+                                                </option>
+                                                <option value="17732506558" >
+                                                    773-250-6558
+
+                                                    - Inbound Extension 505
+                                                </option>
+                                                <option value="17732506560" >
+                                                    773-250-6560
+
+                                                    - Inbound Extension 504
+                                                </option>
+                                                <option value="17732738171" >
+                                                    773-273-8171
+
+                                                    - ES: Website Lead
+                                                </option>
+                                                <option value="17732956552" >
+                                                    773-295-6552
+
+                                                    - Inbound Extension 182
+                                                </option>
+                                                <option value="17732957043" >
+                                                    773-295-7043
+
+                                                    - Inbound Extension 180
+                                                </option>
+                                                <option value="17732957893" >
+                                                    773-295-7893
+
+                                                    - Inbound Extension 466
+                                                </option>
+                                                <option value="17733036345" >
+                                                    773-303-6345
+
+                                                    - Inbound Extension 906
+                                                </option>
+                                                <option value="17733090180" >
+                                                    773-309-0180
+
+                                                    - Inbound Extension 938
+                                                </option>
+                                                <option value="17733090235" >
+                                                    773-309-0235
+
+                                                    - Inbound Extension 944
+                                                </option>
+                                                <option value="17733090238" >
+                                                    773-309-0238
+
+                                                    - CM Spanish
+                                                </option>
+                                                <option value="17733456056" >
+                                                    773-345-6056
+
+                                                    - Cancun Conference Room
+                                                </option>
+                                                <option value="17733456057" >
+                                                    773-345-6057
+
+                                                    - Inbound Extension 421
+                                                </option>
+                                                <option value="17733456058" >
+                                                    773-345-6058
+
+                                                    - Inbound Extension 422
+                                                </option>
+                                                <option value="17733456059" >
+                                                    773-345-6059
+
+                                                    - Inbound Extension 270
+                                                </option>
+                                                <option value="17733456060" >
+                                                    773-345-6060
+
+                                                    - Inbound Extension 424
+                                                </option>
+                                                <option value="17733456061" >
+                                                    773-345-6061
+
+                                                    - Inbound Extension 425
+                                                </option>
+                                                <option value="17733456062" >
+                                                    773-345-6062
+
+                                                    - Inbound Extension 411
+                                                </option>
+                                                <option value="17733582994" >
+                                                    773-358-2994
+
+                                                    - Inbound Extension 908
+                                                </option>
+                                                <option value="17733625043" >
+                                                    773-362-5043
+
+                                                    - Inbound Extension 507
+                                                </option>
+                                                <option value="17733644136" >
+                                                    773-364-4136
+
+                                                    - E: Partner Lead (Transfer)
+                                                </option>
+                                                <option value="17733644185" >
+                                                    773-364-4185
+
+                                                    - EA: Finance Pal
+                                                </option>
+                                                <option value="17733668263" >
+                                                    773-366-8263
+
+                                                    - Test DID 18090
+                                                </option>
+                                                <option value="17734094473" >
+                                                    773-409-4473
+
+                                                    - Inbound Extension 437
+                                                </option>
+                                                <option value="17734232098" >
+                                                    773-423-2098
+
+                                                    - Inbound Extension 434
+                                                </option>
+                                                <option value="17734359093" >
+                                                    773-435-9093
+
+                                                    - Inbound Extension 296
+                                                </option>
+                                                <option value="17734359910" >
+                                                    773-435-9910
+
+                                                    - Inbound Extension 295
+                                                </option>
+                                                <option value="17734964743" >
+                                                    773-496-4743
+
+                                                    - E: Partner Lead (Palo)
+                                                </option>
+                                                <option value="17734964761" >
+                                                    773-496-4761
+
+                                                    - ES: Spanish Website Lead
+                                                </option>
+                                                <option value="17734964766" >
+                                                    773-496-4766
+
+                                                    - E: C3 Web
+                                                </option>
+                                                <option value="17734964787" >
+                                                    773-496-4787
+
+                                                    - Inbound Extension 801
+                                                </option>
+                                                <option value="17735165706" >
+                                                    773-516-5706
+
+                                                    - Inbound Extension 286
+                                                </option>
+                                                <option value="17735412093" >
+                                                    773-541-2093
+
+                                                    - Inbound Extension 490
+                                                </option>
+                                                <option value="17735412094" >
+                                                    773-541-2094
+
+                                                    - Inbound Extension 454
+                                                </option>
+                                                <option value="17735705036" >
+                                                    773-570-5036
+
+                                                    - Inbound Extension 435
+                                                </option>
+                                                <option value="17735706049" >
+                                                    773-570-6049
+
+                                                    - Inbound Extension 263
+                                                </option>
+                                                <option value="17735772020" >
+                                                    773-577-2020
+
+                                                    - Community Tax
+                                                </option>
+                                                <option value="17735772641" >
+                                                    773-577-2641
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772642" >
+                                                    773-577-2642
+
+                                                    - Inbound Extension 115
+                                                </option>
+                                                <option value="17735772643" >
+                                                    773-577-2643
+
+                                                    - Inbound Extension 116
+                                                </option>
+                                                <option value="17735772644" >
+                                                    773-577-2644
+
+                                                    - Inbound Extension 953
+                                                </option>
+                                                <option value="17735772645" >
+                                                    773-577-2645
+
+                                                    - Inbound Extension 247
+                                                </option>
+                                                <option value="17735772646" >
+                                                    773-577-2646
+
+                                                    - Inbound Extension 183
+                                                </option>
+                                                <option value="17735772647" >
+                                                    773-577-2647
+
+                                                    - Inbound Extension 121
+                                                </option>
+                                                <option value="17735772648" >
+                                                    773-577-2648
+
+                                                    - Inbound Extension 291
+                                                </option>
+                                                <option value="17735772649" >
+                                                    773-577-2649
+
+                                                    - Inbound Extension 230
+                                                </option>
+                                                <option value="17735772650" >
+                                                    773-577-2650
+
+                                                    - Conference Room
+                                                </option>
+                                                <option value="17735772651" >
+                                                    773-577-2651
+
+                                                    - Inbound Extension 426
+                                                </option>
+                                                <option value="17735772652" >
+                                                    773-577-2652
+
+                                                    - E: DCOM Lead
+                                                </option>
+                                                <option value="17735772653" >
+                                                    773-577-2653
+
+                                                    - Inbound Extension 445
+                                                </option>
+                                                <option value="17735772654" >
+                                                    773-577-2654
+
+                                                    - Inbound Extension 129
+                                                </option>
+                                                <option value="17735772655" >
+                                                    773-577-2655
+
+                                                    - Inbound Extension 130
+                                                </option>
+                                                <option value="17735772656" >
+                                                    773-577-2656
+
+                                                    - Inbound Extension 131
+                                                </option>
+                                                <option value="17735772657" >
+                                                    773-577-2657
+
+                                                    - Inbound Extension 127
+                                                </option>
+                                                <option value="17735772658" >
+                                                    773-577-2658
+
+                                                    - Inbound Extension 126
+                                                </option>
+                                                <option value="17735772659" >
+                                                    773-577-2659
+
+                                                    - Inbound Extension 155
+                                                </option>
+                                                <option value="17735772660" >
+                                                    773-577-2660
+
+                                                    - Inbound Extension 132
+                                                </option>
+                                                <option value="17735772661" >
+                                                    773-577-2661
+
+                                                    - Inbound Extension 133
+                                                </option>
+                                                <option value="17735772662" >
+                                                    773-577-2662
+
+                                                    - Inbound Extension 134
+                                                </option>
+                                                <option value="17735772663" >
+                                                    773-577-2663
+
+                                                    - Inbound Extension 135
+                                                </option>
+                                                <option value="17735772664" >
+                                                    773-577-2664
+
+                                                    - Inbound Extension 902
+                                                </option>
+                                                <option value="17735772665" >
+                                                    773-577-2665
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772666" >
+                                                    773-577-2666
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772667" >
+                                                    773-577-2667
+
+                                                    - Inbound Extension 185
+                                                </option>
+                                                <option value="17735772668" >
+                                                    773-577-2668
+
+                                                    - Inbound Extension 145
+                                                </option>
+                                                <option value="17735772669" >
+                                                    773-577-2669
+
+                                                    - Inbound Extension 146
+                                                </option>
+                                                <option value="17735772670" >
+                                                    773-577-2670
+
+                                                    - Inbound Extension 217
+                                                </option>
+                                                <option value="17735772671" >
+                                                    773-577-2671
+
+                                                    - Inbound Extension 148
+                                                </option>
+                                                <option value="17735772672" >
+                                                    773-577-2672
+
+                                                    - Inbound Extension 149
+                                                </option>
+                                                <option value="17735772673" >
+                                                    773-577-2673
+
+                                                    - Inbound Extension 151
+                                                </option>
+                                                <option value="17735772674" >
+                                                    773-577-2674
+
+                                                    - Inbound Extension 419
+                                                </option>
+                                                <option value="17735772675" >
+                                                    773-577-2675
+
+                                                    - Inbound Extension 284
+                                                </option>
+                                                <option value="17735772676" >
+                                                    773-577-2676
+
+                                                    - Inbound Extension 101
+                                                </option>
+                                                <option value="17735772677" >
+                                                    773-577-2677
+
+                                                    - Inbound Extension 224
+                                                </option>
+                                                <option value="17735772678" >
+                                                    773-577-2678
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772679" >
+                                                    773-577-2679
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772680" >
+                                                    773-577-2680
+
+                                                    - Inbound Extension 186
+                                                </option>
+                                                <option value="17735772681" >
+                                                    773-577-2681
+
+                                                    - Inbound Extension 184
+                                                </option>
+                                                <option value="17735772682" >
+                                                    773-577-2682
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772683" >
+                                                    773-577-2683
+
+                                                    - Inbound Extension 138
+                                                </option>
+                                                <option value="17735772684" >
+                                                    773-577-2684
+
+                                                    - Inbound Extension 281
+                                                </option>
+                                                <option value="17735772685" >
+                                                    773-577-2685
+
+                                                    - Inbound Extension 475
+                                                </option>
+                                                <option value="17735772686" >
+                                                    773-577-2686
+
+                                                    - Inbound Extension 264
+                                                </option>
+                                                <option value="17735772687" >
+                                                    773-577-2687
+
+                                                    - Inbound Extension 274
+                                                </option>
+                                                <option value="17735772688" >
+                                                    773-577-2688
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772689" >
+                                                    773-577-2689
+
+                                                    - Inbound Extension 910
+                                                </option>
+                                                <option value="17735772690" >
+                                                    773-577-2690
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772691" >
+                                                    773-577-2691
+
+                                                    - Inbound Extension 187
+                                                </option>
+                                                <option value="17735772692" >
+                                                    773-577-2692
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772693" >
+                                                    773-577-2693
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772694" >
+                                                    773-577-2694
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772695" >
+                                                    773-577-2695
+
+                                                    - Inbound Extension 139
+                                                </option>
+                                                <option value="17735772696" >
+                                                    773-577-2696
+
+                                                    - Inbound Extension 142
+                                                </option>
+                                                <option value="17735772697" >
+                                                    773-577-2697
+
+                                                    - Inbound Extension 118
+                                                </option>
+                                                <option value="17735772698" >
+                                                    773-577-2698
+
+                                                    - Inbound Extension 119
+                                                </option>
+                                                <option value="17735772699" >
+                                                    773-577-2699
+
+                                                    - ES: DCOM Lead
+                                                </option>
+                                                <option value="17735772700" >
+                                                    773-577-2700
+
+                                                    - Inbound Extension 427
+                                                </option>
+                                                <option value="17735772900" >
+                                                    773-577-2900
+
+                                                    - EA: Finance Pal
+                                                </option>
+                                                <option value="17735772901" >
+                                                    773-577-2901
+
+                                                    - Inbound Extension 251
+                                                </option>
+                                                <option value="17735772902" >
+                                                    773-577-2902
+
+                                                    - Inbound Extension 252
+                                                </option>
+                                                <option value="17735772903" >
+                                                    773-577-2903
+
+                                                    - Inbound Extension 253
+                                                </option>
+                                                <option value="17735772904" >
+                                                    773-577-2904
+
+                                                    - Inbound Extension 254
+                                                </option>
+                                                <option value="17735772905" >
+                                                    773-577-2905
+
+                                                    - Inbound Extension 471
+                                                </option>
+                                                <option value="17735772906" >
+                                                    773-577-2906
+
+                                                    - Inbound Extension 256
+                                                </option>
+                                                <option value="17735772907" >
+                                                    773-577-2907
+
+                                                    - Inbound Extension 257
+                                                </option>
+                                                <option value="17735772908" >
+                                                    773-577-2908
+
+                                                    - Inbound Extension 459
+                                                </option>
+                                                <option value="17735772909" >
+                                                    773-577-2909
+
+                                                    - Inbound Extension 231
+                                                </option>
+                                                <option value="17735772910" >
+                                                    773-577-2910
+
+                                                    - Inbound Extension 122
+                                                </option>
+                                                <option value="17735772911" >
+                                                    773-577-2911
+
+                                                    - Inbound Extension 222
+                                                </option>
+                                                <option value="17735772912" >
+                                                    773-577-2912
+
+                                                    - Inbound Extension 262
+                                                </option>
+                                                <option value="17735772913" >
+                                                    773-577-2913
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772914" >
+                                                    773-577-2914
+
+                                                    - Inbound Extension 962
+                                                </option>
+                                                <option value="17735772915" >
+                                                    773-577-2915
+
+                                                    - Inbound Extension 125
+                                                </option>
+                                                <option value="17735772916" >
+                                                    773-577-2916
+
+                                                    - Inbound Extension 266
+                                                </option>
+                                                <option value="17735772917" >
+                                                    773-577-2917
+
+                                                    - Inbound Extension 932
+                                                </option>
+                                                <option value="17735772918" >
+                                                    773-577-2918
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772919" >
+                                                    773-577-2919
+
+                                                    - Inbound Extension 288
+                                                </option>
+                                                <option value="17735772920" >
+                                                    773-577-2920
+
+                                                    - Inbound Extension 460
+                                                </option>
+                                                <option value="17735772921" >
+                                                    773-577-2921
+
+                                                    - Inbound Extension 238
+                                                </option>
+                                                <option value="17735772922" >
+                                                    773-577-2922
+
+                                                    - Inbound Extension 272
+                                                </option>
+                                                <option value="17735772923" >
+                                                    773-577-2923
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772924" >
+                                                    773-577-2924
+
+                                                    - Inbound Extension 165
+                                                </option>
+                                                <option value="17735772925" >
+                                                    773-577-2925
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772926" >
+                                                    773-577-2926
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17735772927" >
+                                                    773-577-2927
+
+                                                    - Inbound Extension 277
+                                                </option>
+                                                <option value="17735772928" >
+                                                    773-577-2928
+
+                                                    - Inbound Extension 278
+                                                </option>
+                                                <option value="17735772929" >
+                                                    773-577-2929
+
+                                                    - ES: Partner Lead (compra)
+                                                </option>
+                                                <option value="17735772930" >
+                                                    773-577-2930
+
+                                                    - Inbound Extension 283
+                                                </option>
+                                                <option value="17735772931" >
+                                                    773-577-2931
+
+                                                    - Inbound Extension 109
+                                                </option>
+                                                <option value="17735772932" >
+                                                    773-577-2932
+
+                                                    - Inbound Extension 508
+                                                </option>
+                                                <option value="17735772933" >
+                                                    773-577-2933
+
+                                                    - Inbound Extension 123
+                                                </option>
+                                                <option value="17735772934" >
+                                                    773-577-2934
+
+                                                    - Inbound Extension 280
+                                                </option>
+                                                <option value="17735772935" >
+                                                    773-577-2935
+
+                                                    - Inbound Extension 942
+                                                </option>
+                                                <option value="17735772936" >
+                                                    773-577-2936
+
+                                                    - Inbound Extension 268
+                                                </option>
+                                                <option value="17735772938" >
+                                                    773-577-2938
+
+                                                    - Inbound Extension 287
+                                                </option>
+                                                <option value="17735772939" >
+                                                    773-577-2939
+
+                                                    - Inbound Extension 428
+                                                </option>
+                                                <option value="17735772940" >
+                                                    773-577-2940
+
+                                                    - Inbound Extension 289
+                                                </option>
+                                                <option value="17735772941" >
+                                                    773-577-2941
+
+                                                    - Inbound Extension 267
+                                                </option>
+                                                <option value="17735772942" >
+                                                    773-577-2942
+
+                                                    - Inbound Extension 956
+                                                </option>
+                                                <option value="17735772943" >
+                                                    773-577-2943
+
+                                                    - Inbound Extension 921
+                                                </option>
+                                                <option value="17735772944" >
+                                                    773-577-2944
+
+                                                    - Inbound Extension 124
+                                                </option>
+                                                <option value="17735772945" >
+                                                    773-577-2945
+
+                                                    - Inbound Extension 414
+                                                </option>
+                                                <option value="17735772946" >
+                                                    773-577-2946
+
+                                                    - Inbound Extension 467
+                                                </option>
+                                                <option value="17735772947" >
+                                                    773-577-2947
+
+                                                    - Inbound Extension 432
+                                                </option>
+                                                <option value="17735772948" >
+                                                    773-577-2948
+
+                                                    - Inbound Extension 167
+                                                </option>
+                                                <option value="17735772949" >
+                                                    773-577-2949
+
+                                                    - Inbound Extension 102
+                                                </option>
+                                                <option value="17735772950" >
+                                                    773-577-2950
+
+                                                    - Inbound Extension 108
+                                                </option>
+                                                <option value="17735772951" >
+                                                    773-577-2951
+
+                                                    - Inbound Extension 103
+                                                </option>
+                                                <option value="17735772952" >
+                                                    773-577-2952
+
+                                                    - Inbound Extension 104
+                                                </option>
+                                                <option value="17735772953" >
+                                                    773-577-2953
+
+                                                    - Inbound Extension 105
+                                                </option>
+                                                <option value="17735772954" >
+                                                    773-577-2954
+
+                                                    - Inbound Extension 106
+                                                </option>
+                                                <option value="17735772955" >
+                                                    773-577-2955
+
+                                                    - Inbound Extension 107
+                                                </option>
+                                                <option value="17735772956" >
+                                                    773-577-2956
+
+                                                    - PBX - Ring Group: TP Admin-local
+                                                </option>
+                                                <option value="17735772957" >
+                                                    773-577-2957
+
+                                                    - Inbound Extension 110
+                                                </option>
+                                                <option value="17735772958" >
+                                                    773-577-2958
+
+                                                    - Inbound Extension 111
+                                                </option>
+                                                <option value="17735772959" >
+                                                    773-577-2959
+
+                                                    - Inbound Extension 919
+                                                </option>
+                                                <option value="17735961488" >
+                                                    773-596-1488
+
+                                                    - Inbound Extension 913
+                                                </option>
+                                                <option value="17736349093" >
+                                                    773-634-9093
+
+                                                    - Inbound Extension 260
+                                                </option>
+                                                <option value="17736445327" >
+                                                    773-644-5327
+
+                                                    - Inbound Extension 276
+                                                </option>
+                                                <option value="17736496424" >
+                                                    773-649-6424
+
+                                                    - Inbound Extension 503
+                                                </option>
+                                                <option value="17736634074" >
+                                                    773-663-4074
+
+                                                    - Inbound Extension 510
+                                                </option>
+                                                <option value="17737242742" >
+                                                    773-724-2742
+
+                                                    - Inbound Extension 228
+                                                </option>
+                                                <option value="17737242743" >
+                                                    773-724-2743
+
+                                                    - Inbound Extension 143
+                                                </option>
+                                                <option value="17737242744" >
+                                                    773-724-2744
+
+                                                    - E: Yelp
+                                                </option>
+                                                <option value="17737242745" >
+                                                    773-724-2745
+
+                                                    - Main Spanish IVR
+                                                </option>
+                                                <option value="17737242746" >
+                                                    773-724-2746
+
+                                                    - Inbound Extension 297
+                                                </option>
+                                                <option value="17737242747" >
+                                                    773-724-2747
+
+                                                    - Inbound Extension 912
+                                                </option>
+                                                <option value="17737242748" >
+                                                    773-724-2748
+
+                                                    - Inbound Extension 430
+                                                </option>
+                                                <option value="17737242749" >
+                                                    773-724-2749
+
+                                                    - Inbound Extension 229
+                                                </option>
+                                                <option value="17737242750" >
+                                                    773-724-2750
+
+                                                    - Inbound Extension 282
+                                                </option>
+                                                <option value="17737242751" >
+                                                    773-724-2751
+
+                                                    - Inbound Extension 221
+                                                </option>
+                                                <option value="17737242752" >
+                                                    773-724-2752
+
+                                                    - Inbound Extension 161
+                                                </option>
+                                                <option value="17737242753" >
+                                                    773-724-2753
+
+                                                    - Inbound Extension 223
+                                                </option>
+                                                <option value="17737242754" >
+                                                    773-724-2754
+
+                                                    - E: Website Lead
+                                                </option>
+                                                <option value="17737242755" >
+                                                    773-724-2755
+
+                                                    - Inbound Extension 225
+                                                </option>
+                                                <option value="17737242756" >
+                                                    773-724-2756
+
+                                                    - Inbound Extension 451
+                                                </option>
+                                                <option value="17737242757" >
+                                                    773-724-2757
+
+                                                    - Inbound Extension 227
+                                                </option>
+                                                <option value="17737242758" >
+                                                    773-724-2758
+
+                                                    - Inbound Extension 216
+                                                </option>
+                                                <option value="17737242759" >
+                                                    773-724-2759
+
+                                                    - Inbound Extension 219
+                                                </option>
+                                                <option value="17737242760" >
+                                                    773-724-2760
+
+                                                    - Inbound Extension 140
+                                                </option>
+                                                <option value="17737242761" >
+                                                    773-724-2761
+
+                                                    - Inbound Extension 201
+                                                </option>
+                                                <option value="17737242762" >
+                                                    773-724-2762
+
+                                                    - Inbound Extension 202
+                                                </option>
+                                                <option value="17737242763" >
+                                                    773-724-2763
+
+                                                    - Inbound Extension 215
+                                                </option>
+                                                <option value="17737242764" >
+                                                    773-724-2764
+
+                                                    - Inbound Extension 204
+                                                </option>
+                                                <option value="17737242765" >
+                                                    773-724-2765
+
+                                                    - Inbound Extension 205
+                                                </option>
+                                                <option value="17737242766" >
+                                                    773-724-2766
+
+                                                    - Inbound Extension 206
+                                                </option>
+                                                <option value="17737242767" >
+                                                    773-724-2767
+
+                                                    - Inbound Extension 141
+                                                </option>
+                                                <option value="17737242768" >
+                                                    773-724-2768
+
+                                                    - Inbound Extension 208
+                                                </option>
+                                                <option value="17737242769" >
+                                                    773-724-2769
+
+                                                    - Inbound Extension 209
+                                                </option>
+                                                <option value="17737242771" >
+                                                    773-724-2771
+
+                                                    - Inbound Extension 211
+                                                </option>
+                                                <option value="17737242772" >
+                                                    773-724-2772
+
+                                                    - Inbound Extension 930
+                                                </option>
+                                                <option value="17737242773" >
+                                                    773-724-2773
+
+                                                    - Inbound Extension 213
+                                                </option>
+                                                <option value="17737242774" >
+                                                    773-724-2774
+
+                                                    - Inbound Extension 214
+                                                </option>
+                                                <option value="17737242775" >
+                                                    773-724-2775
+
+                                                    - Inbound Extension 235
+                                                </option>
+                                                <option value="17737242776" >
+                                                    773-724-2776
+
+                                                    - Inbound Extension 292
+                                                </option>
+                                                <option value="17737242777" >
+                                                    773-724-2777
+
+                                                    - Inbound Extension 207
+                                                </option>
+                                                <option value="17737242779" >
+                                                    773-724-2779
+
+                                                    - R - IRS Line
+                                                </option>
+                                                <option value="17737242780" >
+                                                    773-724-2780
+
+                                                    - Inbound Extension 210
+                                                </option>
+                                                <option value="17737242781" >
+                                                    773-724-2781
+
+                                                    - Inbound Extension 918
+                                                </option>
+                                                <option value="17737242782" >
+                                                    773-724-2782
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="17737242783" >
+                                                    773-724-2783
+
+                                                    - Inbound Extension 511
+                                                </option>
+                                                <option value="17737242784" >
+                                                    773-724-2784
+
+                                                    - Inbound Extension 234
+                                                </option>
+                                                <option value="17737242785" >
+                                                    773-724-2785
+
+                                                    - Inbound Extension 290
+                                                </option>
+                                                <option value="17737242786" >
+                                                    773-724-2786
+
+                                                    - Available
+                                                </option>
+                                                <option value="17737242787" >
+                                                    773-724-2787
+
+                                                    - Inbound Extension 237
+                                                </option>
+                                                <option value="17737242788" >
+                                                    773-724-2788
+
+                                                    - Inbound Extension 241
+                                                </option>
+                                                <option value="17737242789" >
+                                                    773-724-2789
+
+                                                    - Inbound Extension 461
+                                                </option>
+                                                <option value="17737242790" >
+                                                    773-724-2790
+
+                                                    - Inbound Extension 509
+                                                </option>
+                                                <option value="17737242791" >
+                                                    773-724-2791
+
+                                                    - Inbound Extension 479
+                                                </option>
+                                                <option value="17737242792" >
+                                                    773-724-2792
+
+                                                    - Inbound Extension 242
+                                                </option>
+                                                <option value="17737242793" >
+                                                    773-724-2793
+
+                                                    - Inbound Extension 243
+                                                </option>
+                                                <option value="17737242794" >
+                                                    773-724-2794
+
+                                                    - Inbound Extension 900
+                                                </option>
+                                                <option value="17737242795" >
+                                                    773-724-2795
+
+                                                    - Inbound Extension 907
+                                                </option>
+                                                <option value="17737242796" >
+                                                    773-724-2796
+
+                                                    - Inbound Extension 246
+                                                </option>
+                                                <option value="17737242797" >
+                                                    773-724-2797
+
+                                                    - Inbound Extension 476
+                                                </option>
+                                                <option value="17737242798" >
+                                                    773-724-2798
+
+                                                    - Inbound Extension 294
+                                                </option>
+                                                <option value="17737242799" >
+                                                    773-724-2799
+
+                                                    - Available
+                                                </option>
+                                                <option value="17737242800" >
+                                                    773-724-2800
+
+                                                    - Available
+                                                </option>
+                                                <option value="17737242801" >
+                                                    773-724-2801
+
+                                                    - E: Website Lead (Main WC Routing)
+                                                </option>
+                                                <option value="17737242802" >
+                                                    773-724-2802
+
+                                                    - Available
+                                                </option>
+                                                <option value="17737360100" >
+                                                    773-736-0100
+
+                                                    - Main IVR
+                                                </option>
+                                                <option value="17737565608" >
+                                                    773-756-5608
+
+                                                    - Inbound Extension 265
+                                                </option>
+                                                <option value="17737704174" >
+                                                    773-770-4174
+
+                                                    - Inbound Extension 904
+                                                </option>
+                                                <option value="17737704344" >
+                                                    773-770-4344
+
+                                                    - Inbound Extension 909
+                                                </option>
+                                                <option value="17737962289" >
+                                                    773-796-2289
+
+                                                    - Inbound Extension 200
+                                                </option>
+                                                <option value="17737992786" >
+                                                    773-799-2786
+
+                                                    - Inbound Extension 169
+                                                </option>
+                                                <option value="17737992788" >
+                                                    773-799-2788
+
+                                                    - Inbound Extension 293
+                                                </option>
+                                                <option value="17737992789" >
+                                                    773-799-2789
+
+                                                    - Inbound Extension 114
+                                                </option>
+                                                <option value="17738284785" >
+                                                    773-828-4785
+
+                                                    - Inbound Extension 438
+                                                </option>
+                                                <option value="17738284862" >
+                                                    773-828-4862
+
+                                                    - Inbound Extension 259
+                                                </option>
+                                                <option value="17738284886" >
+                                                    773-828-4886
+
+                                                    - Inbound Extension 935
+                                                </option>
+                                                <option value="17738407819" >
+                                                    773-840-7819
+
+                                                    - Inbound Extension 920
+                                                </option>
+                                                <option value="17738407821" >
+                                                    773-840-7821
+
+                                                    - Inbound Extension 285
+                                                </option>
+                                                <option value="17738773275" >
+                                                    773-877-3275
+
+                                                    - Inbound Extension 458
+                                                </option>
+                                                <option value="17738970860" >
+                                                    773-897-0860
+
+                                                    - Inbound Extension 163
+                                                </option>
+                                                <option value="17738970876" >
+                                                    773-897-0876
+
+                                                    - Inbound Extension 916
+                                                </option>
+                                                <option value="17738970878" >
+                                                    773-897-0878
+
+                                                    - Inbound Extension 917
+                                                </option>
+                                                <option value="17738970882" >
+                                                    773-897-0882
+
+                                                    - Inbound Extension 212
+                                                </option>
+                                                <option value="17738973313" >
+                                                    773-897-3313
+
+                                                    - Inbound Extension 462
+                                                </option>
+                                                <option value="17738973326" >
+                                                    773-897-3326
+
+                                                    - Inbound Extension 416
+                                                </option>
+                                                <option value="17738973792" >
+                                                    773-897-3792
+
+                                                    - Inbound Extension 406
+                                                </option>
+                                                <option value="17738973793" >
+                                                    773-897-3793
+
+                                                    - Inbound Extension 415
+                                                </option>
+                                                <option value="17738973798" >
+                                                    773-897-3798
+
+                                                    - Inbound Extension 469
+                                                </option>
+                                                <option value="17738973917" >
+                                                    773-897-3917
+
+                                                    - Inbound Extension 452
+                                                </option>
+                                                <option value="17738973935" >
+                                                    773-897-3935
+
+                                                    - Inbound Extension 442
+                                                </option>
+                                                <option value="17738975216" >
+                                                    773-897-5216
+
+                                                    - Inbound Extension 512
+                                                </option>
+                                                <option value="17738975404" >
+                                                    773-897-5404
+
+                                                    - Inbound Extension 417
+                                                </option>
+                                                <option value="17738975409" >
+                                                    773-897-5409
+
+                                                    - Inbound Extension 502
+                                                </option>
+                                                <option value="17738975413" >
+                                                    773-897-5413
+
+                                                    - Inbound Extension 500
+                                                </option>
+                                                <option value="17738975414" >
+                                                    773-897-5414
+
+                                                    - Inbound Extension 501
+                                                </option>
+                                                <option value="17738975926" >
+                                                    773-897-5926
+
+                                                    - ES: A Prospects
+                                                </option>
+                                                <option value="17738975936" >
+                                                    773-897-5936
+
+                                                    - Inbound Extension 401
+                                                </option>
+                                                <option value="17738975950" >
+                                                    773-897-5950
+
+                                                    - Inbound Extension 418
+                                                </option>
+                                                <option value="17738976083" >
+                                                    773-897-6083
+
+                                                    - Inbound Extension 412
+                                                </option>
+                                                <option value="17738976090" >
+                                                    773-897-6090
+
+                                                    - Inbound Extension 410
+                                                </option>
+                                                <option value="17738976092" >
+                                                    773-897-6092
+
+                                                    - Inbound Extension 166
+                                                </option>
+                                                <option value="17738976701" >
+                                                    773-897-6701
+
+                                                    - Inbound Extension 514
+                                                </option>
+                                                <option value="17738976703" >
+                                                    773-897-6703
+
+                                                    - Inbound Extension 408
+                                                </option>
+                                                <option value="17738976704" >
+                                                    773-897-6704
+
+                                                    - Inbound Extension 489
+                                                </option>
+                                                <option value="17738976713" >
+                                                    773-897-6713
+
+                                                    - Inbound Extension 409
+                                                </option>
+                                                <option value="17738979371" >
+                                                    773-897-9371
+
+                                                    - Inbound Extension 403
+                                                </option>
+                                                <option value="17738979373" >
+                                                    773-897-9373
+
+                                                    - Inbound Extension 405
+                                                </option>
+                                                <option value="17738979375" >
+                                                    773-897-9375
+
+                                                    - Inbound Extension 402
+                                                </option>
+                                                <option value="17738979376" >
+                                                    773-897-9376
+
+                                                    - Inbound Extension 404
+                                                </option>
+                                                <option value="17739042658" >
+                                                    773-904-2658
+
+                                                    - Inbound Extension 905
+                                                </option>
+                                                <option value="17739065951" >
+                                                    773-906-5951
+
+                                                    - Inbound Extension 244
+                                                </option>
+                                                <option value="17739065952" >
+                                                    773-906-5952
+
+                                                    - Inbound Extension 150
+                                                </option>
+                                                <option value="17739065955" >
+                                                    773-906-5955
+
+                                                    - Inbound Extension 258
+                                                </option>
+                                                <option value="17739065956" >
+                                                    773-906-5956
+
+                                                    - Inbound Extension 233
+                                                </option>
+                                                <option value="17739388526" >
+                                                    773-938-8526
+
+                                                    - Inbound Extension 203
+                                                </option>
+                                                <option value="17739388533" >
+                                                    773-938-8533
+
+                                                    - Inbound Extension 275
+                                                </option>
+                                                <option value="17739450351" >
+                                                    773-945-0351
+
+                                                    - Inbound Extension 928
+                                                </option>
+                                                <option value="17739450362" >
+                                                    773-945-0362
+
+                                                    - Inbound Extension 157
+                                                </option>
+                                                <option value="17739450593" >
+                                                    773-945-0593
+
+                                                    - E: Consumer Affairs
+                                                </option>
+                                                <option value="17739451991" >
+                                                    773-945-1991
+
+                                                    - Inbound Extension 168
+                                                </option>
+                                                <option value="17739451993" >
+                                                    773-945-1993
+
+                                                    - Inbound Extension 160
+                                                </option>
+                                                <option value="17873030430" >
+                                                    787-303-0430
+
+                                                    - Jacob Dayan
+                                                </option>
+                                                <option value="17874939417" >
+                                                    787-493-9417
+
+                                                    - PBX - Ring Group: PR Office Line
+                                                </option>
+                                                <option value="18002178412" >
+                                                    800-217-8412
+
+                                                    - Inbound Extension 253 Marketing
+                                                </option>
+                                                <option value="18004248332" >
+                                                    800-424-8332
+
+                                                    - ES: Max TV
+                                                </option>
+                                                <option value="18004440622" >
+                                                    800-444-0622
+
+                                                    - E: Website Lead
+                                                </option>
+                                                <option value="18004440623" >
+                                                    800-444-0623
+
+                                                    - PBX - Ring Group: TP Admin-TF
+                                                </option>
+                                                <option value="18004440640" >
+                                                    800-444-0640
+
+                                                    - R - BK Dept
+                                                </option>
+                                                <option value="18004440650" >
+                                                    800-444-0650
+
+                                                    - E: Max TV
+                                                </option>
+                                                <option value="18004440656" >
+                                                    800-444-0656
+
+                                                    - E: Max TV
+                                                </option>
+                                                <option value="18004441012" >
+                                                    800-444-1012
+
+                                                    - E: Max TV
+                                                </option>
+                                                <option value="18004441023" >
+                                                    800-444-1023
+
+                                                    - E: Max TV
+                                                </option>
+                                                <option value="18004441025" >
+                                                    800-444-1025
+
+                                                    - E: Mail (CA Piece)
+                                                </option>
+                                                <option value="18004441026" >
+                                                    800-444-1026
+
+                                                    - E: Max TV
+                                                </option>
+                                                <option value="18004441045" >
+                                                    800-444-1045
+
+                                                    - E: Max TV
+                                                </option>
+                                                <option value="18004577068" >
+                                                    800-457-7068
+
+                                                    - E: Website
+                                                </option>
+                                                <option value="18004777767" >
+                                                    800-477-7767
+
+                                                    - E: IRS Pros
+                                                </option>
+                                                <option value="18005249974" >
+                                                    800-524-9974
+
+                                                    - ES: Max TV Spanish
+                                                </option>
+                                                <option value="18005531084" >
+                                                    800-553-1084
+
+                                                    - ES: Partner Lead - Compra
+                                                </option>
+                                                <option value="18006056302" >
+                                                    800-605-6302
+
+                                                    - ES: Partner Lead Compra
+                                                </option>
+                                                <option value="18007428039" >
+                                                    800-742-8039
+
+                                                    - ES: Spanish Website Lead
+                                                </option>
+                                                <option value="18007428404" >
+                                                    800-742-8404
+
+                                                    - ES: Max TV Spanish
+                                                </option>
+                                                <option value="18007986517" >
+                                                    800-798-6517
+
+                                                    - E: Mail
+                                                </option>
+                                                <option value="18008316757" >
+                                                    800-831-6757
+
+                                                    - E: Max TV
+                                                </option>
+                                                <option value="18008543127" >
+                                                    800-854-3127
+
+                                                    - E: Website Lead (BBB)
+                                                </option>
+                                                <option value="18009564189" >
+                                                    800-956-4189
+
+                                                    - Misc - Current Year Tax Prep
+                                                </option>
+                                                <option value="18009893678" >
+                                                    800-989-3678
+
+                                                    - Misc - Current Year Tax Prep
+                                                </option>
+                                                <option value="18443306991" >
+                                                    844-330-6991
+
+                                                    - Misc - Current Year Tax Prep
+                                                </option>
+                                                <option value="18774044791" >
+                                                    877-404-4791
+
+                                                    - PBX - Dialplan: CTR - CCS Caller ID
+                                                </option>
+                                                <option value="18774922750" >
+                                                    877-492-2750
+
+                                                    - E: Mail
+                                                </option>
+                                                <option value="18775150595" >
+                                                    877-515-0595
+
+                                                    - Test DID
+                                                </option>
+                                                <option value="18776564522" >
+                                                    877-656-4522
+
+                                                    - Main IVR
+                                                </option>
+                                                <option value="18776767675" >
+                                                    877-676-7675
+
+                                                    - Misc - Current Year Tax Prep
+                                                </option>
+                                                <option value="18778404870" >
+                                                    877-840-4870
+
+                                                    - EA: Finance Pal
+                                                </option>
+                                                <option value="18778984262" >
+                                                    877-898-4262
+
+                                                    - E: Mail
+                                                </option>
+                                                <option value="18883735292" >
+                                                    888-373-5292
+
+                                                    - R - AR
+                                                </option>
+                                                <option value="18887292236" >
+                                                    888-729-2236
+
+                                                    - Case Management
+                                                </option>
+                                                <option value="18887592755" >
+                                                    888-759-2755
+
+                                                    - E: Employee Perks
+                                                </option>
+                                                <option value="249" >
+                                                    249
+
+                                                    - Castle Credit
+                                                </option>
+                                                <option value="271" >
+                                                    271
+
+                                                    - AR UGA
+                                                </option>
+                                                <option value="273" >
+                                                    273
+
+                                                    - Home Acceptance
+                                                </option>
+                                                <option value="321" >
+                                                    321
+
+                                                    - Test number for IVR
+                                                </option>
+                                                <option value="420" >
+                                                    420
+
+                                                    - Cancun Conference Room
+                                                </option>
+                                                <option value="555" >
+                                                    555
+
+                                                    - Voice Mail access
+                                                </option>
+                                                <option value="5556661212" >
+                                                    555-666-1212
+
+                                                    - Sample phone number
+                                                </option>
+                                                <option value="997" >
+                                                    997
+
+                                                    - Inbound Extension - Guest Phone
+                                                </option>
+                                                <option value="arengxfer" >
+                                                    arengxfer
+
+                                                    - AR English Transfer
+                                                </option>
+                                                <option value="cmengxfr" >
+                                                    cmengxfr
+
+                                                    - CM English Transfer
+                                                </option>
+                                                <option value="CMExfer" >
+                                                    CMExfer
+
+                                                    - Case Managment English xfer
+                                                </option>
+                                                <option value="CMSXfer" >
+                                                    CMSXfer
+
+                                                    - Case Management Spanish Xfer
+                                                </option>
+                                                <option value="eengnoscrn" >
+                                                    eengnoscrn
+
+                                                    - E: Enrollment W/O Screeners
+                                                </option>
+                                                <option value="eengxfr" >
+                                                    eengxfr
+
+                                                    - English Enrollment Transfer
+                                                </option>
+                                                <option value="enspanxfr" >
+                                                    enspanxfr
+
+                                                    - Enroll Spanish xfer
+                                                </option>
+                                                <option value="FOTI" >
+                                                    FOTI
+
+                                                </option>
+                                                <option value="IRSxfer" >
+                                                    IRSxfer
+
+                                                    - IRS transfer routing
+                                                </option>
+                                                <option value="Outbound_AMD" >
+                                                    Outbound_AMD
+
+                                                    - Outbound answering machine detection filter
+                                                </option>
+                                                <option value="Out_No_AMD" >
+                                                    Out_No_AMD
+
+                                                    - Outbound with no AMD
+                                                </option>
+                                                <option value="Tier1" >
+                                                    Tier1
+
+                                                    - Tier1 Campaign
+                                                </option>
+                                                <option value="Tier2" >
+                                                    Tier2
+
+                                                    - Tier 2 Campaign
+                                                </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Call resulted in</label><br>
+
+                                            <select class="chosen chosen215" name="filter_call_resulted_in[]" id="call_resulted_in" data-placeholder="All calls resulted in" multiple>
+                                                <option value="0" >No contact </option>
+                                                <option value="1" >Contact </option>
+                                                <option value="2" >Contact → Presentation </option>
+                                                <option value="3" >Contact → Presentation → Success </option>
+                                            </select>
+                                        </div>
+
+                                        <div class="filter-input-container" style="margin-top: 7px">
+                                            <div style="height: 30px;">
+                                                <input id="missed" type="checkbox" class="iCheck " name="missed" value="1">
+                                                <div class="label_check" for="missed" style="font-size: 13px;">Call was missed</div>
+                                            </div>
+
+                                            <div style="height: 40px">
+                                                <input id="Voicemail" type="checkbox" class="iCheck " name="check_voicemail" value="1">
+                                                <div class="label_check" for="Voicemail" style="font-size: 13px;">Voicemail left</div>
+                                            </div>
+                                        </div>
+
+                                        <h4 style="margin-bottom: 5px;">Call attributes</h4>
+
+
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">ExtName</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[10][]" data-attrid="10" multiple data-placeholder="-">
+                                                <option value="Joel Castile" >Joel Castile</option>
+                                                <option value="Kyle Sanders" >Kyle Sanders</option>
+                                            </select>
 
                                         </div>
-                                    </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Lead Provider ID</label>
+                                            <br>
 
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[1][]" data-attrid="1" multiple data-placeholder="-">
+                                            </select>
+
+                                        </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">productid</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[4][]" data-attrid="4" multiple data-placeholder="-">
+                                                <option value="10" >10</option>
+                                                <option value="5" >5</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">SetOfficerID</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[9][]" data-attrid="9" multiple data-placeholder="-">
+                                                <option value="1091" >1091</option>
+                                                <option value="826" >826</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">StatusID</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[8][]" data-attrid="8" multiple data-placeholder="-">
+                                                <option value="2" >2</option>
+                                                <option value="581" >581</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">teamid</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[5][]" data-attrid="5" multiple data-placeholder="-">
+                                                <option value="10" >10</option>
+                                                <option value="48" >48</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Test</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[11][]" data-attrid="11" multiple data-placeholder="-">
+                                                <option value="Test1" >Test1</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">Test2</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[13][]" data-attrid="13" multiple data-placeholder="-">
+                                                <option value="Test123" >Test123</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">UDF9</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[2][]" data-attrid="2" multiple data-placeholder="-">
+                                                <option value="9" >9</option>
+                                                <option value="affiliates" >affiliates</option>
+                                                <option value="Call" >Call</option>
+                                                <option value="Consumer Affairs &lt;10k" >Consumer Affairs &lt;10k</option>
+                                                <option value="ConsumerAffairs Call &gt;10k" >ConsumerAffairs Call &gt;10k</option>
+                                                <option value="Digital" >Digital</option>
+                                                <option value="Direct" >Direct</option>
+                                                <option value="display" >display</option>
+                                                <option value="fbd" >fbd</option>
+                                                <option value="Live Chat" >Live Chat</option>
+                                                <option value="Mail" >Mail</option>
+                                                <option value="Podcast" >Podcast</option>
+                                                <option value="Post Test9" >Post Test9</option>
+                                                <option value="Radio" >Radio</option>
+                                                <option value="referral" >referral</option>
+                                                <option value="Remarketing" >Remarketing</option>
+                                                <option value="SugarTest" >SugarTest</option>
+                                                <option value="Test2" >Test2</option>
+                                                <option value="TV" >TV</option>
+                                                <option value="UDF9" >UDF9</option>
+                                                <option value="Uni Chi Local" >Uni Chi Local</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">UDF34</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[6][]" data-attrid="6" multiple data-placeholder="-">
+                                                <option value="34" >34</option>
+                                                <option value="CNN" >CNN</option>
+                                                <option value="De Pelicula Classico" >De Pelicula Classico</option>
+                                                <option value="De Pelicula Usa" >De Pelicula Usa</option>
+                                                <option value="ESPND" >ESPND</option>
+                                                <option value="Foro" >Foro</option>
+                                                <option value="Fusion" >Fusion</option>
+                                                <option value="Galavision" >Galavision</option>
+                                                <option value="HLN" >HLN</option>
+                                                <option value="NREM-L" >NREM-L</option>
+                                                <option value="Ritmoson" >Ritmoson</option>
+                                                <option value="SugarTest" >SugarTest</option>
+                                                <option value="Telehit" >Telehit</option>
+                                                <option value="Tl Novelas" >Tl Novelas</option>
+                                                <option value="TM" >TM</option>
+                                                <option value="Unimas" >Unimas</option>
+                                            </select>
+
+                                        </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">UDF133</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[3][]" data-attrid="3" multiple data-placeholder="-">
+                                                <option value="133" >133</option>
+                                                <option value="airtime-media" >airtime-media</option>
+                                                <option value="BBB" >BBB</option>
+                                                <option value="bdc" >bdc</option>
+                                                <option value="Best Debt Company" >Best Debt Company</option>
+                                                <option value="C3" >C3</option>
+                                                <option value="c3-data" >c3-data</option>
+                                                <option value="Call" >Call</option>
+                                                <option value="call-trader" >call-trader</option>
+                                                <option value="compra" >compra</option>
+                                                <option value="Consumer Affairs &lt;10k" >Consumer Affairs &lt;10k</option>
+                                                <option value="consumer-affairs" >consumer-affairs</option>
+                                                <option value="ConsumerAffairs Call &gt;10k" >ConsumerAffairs Call &gt;10k</option>
+                                                <option value="Converse" >Converse</option>
+                                                <option value="Direct" >Direct</option>
+                                                <option value="e-local" >e-local</option>
+                                                <option value="employee-perks" >employee-perks</option>
+                                                <option value="facebookad" >facebookad</option>
+                                                <option value="fbd" >fbd</option>
+                                                <option value="Hybrid Radio" >Hybrid Radio</option>
+                                                <option value="Max Radio" >Max Radio</option>
+                                                <option value="Max TV" >Max TV</option>
+                                                <option value="modern" >modern</option>
+                                                <option value="palo-media" >palo-media</option>
+                                                <option value="Phil" >Phil</option>
+                                                <option value="Post Test133" >Post Test133</option>
+                                                <option value="Pro Media" >Pro Media</option>
+                                                <option value="pro-media" >pro-media</option>
+                                                <option value="Revolution Media" >Revolution Media</option>
+                                                <option value="snap" >snap</option>
+                                                <option value="squeeze" >squeeze</option>
+                                                <option value="SugarTest" >SugarTest</option>
+                                                <option value="Test" >Test</option>
+                                                <option value="Test3" >Test3</option>
+                                                <option value="TRUIC" >TRUIC</option>
+                                                <option value="UDF133" >UDF133</option>
+                                                <option value="Yelp" >Yelp</option>
+                                                <option value="Z - Converse Spanish" >Z - Converse Spanish</option>
+                                                <option value="Z - Max TV Spanish " >Z - Max TV Spanish </option>
+                                            </select>
+
+                                        </div>
+                                        <div class="filter-input-container">
+                                            <label class="filter-label">UDF134</label>
+                                            <br>
+
+
+
+                                            <select class="chosen chosen215 attribute" name="filter_attribute[7][]" data-attrid="7" multiple data-placeholder="-">
+                                                <option value="134" >134</option>
+                                                <option value="Cash" >Cash</option>
+                                                <option value="CTax Branded" >CTax Branded</option>
+                                                <option value="facebook" >facebook</option>
+                                                <option value="facebookad" >facebookad</option>
+                                                <option value="IRS Pros Branded" >IRS Pros Branded</option>
+                                                <option value="Live Chat" >Live Chat</option>
+                                                <option value="PI" >PI</option>
+                                                <option value="PPC" >PPC</option>
+                                                <option value="Radio Cash Buy" >Radio Cash Buy</option>
+                                                <option value="SugarTest" >SugarTest</option>
+                                                <option value="Tax Prep Broadcast" >Tax Prep Broadcast</option>
+                                                <option value="Tax Prep Mailer" >Tax Prep Mailer</option>
+                                                <option value="Tax Prep Sales" >Tax Prep Sales</option>
+                                                <option value="Website Calls" >Website Calls</option>
+                                                <option value="website mail" >website mail</option>
+                                                <option value="website-retargeting" >website-retargeting</option>
+                                            </select>
+
+                                        </div>
+
+                                        <input type="hidden" name="page" id="filter_form_page" value="1">
+                                        <input type="hidden" name="order_by" value="">
+                                        <input type="hidden" name="userid" value="">
+                                        <input type="hidden" name="export" id="export_to" value="">
+                                        <input type="hidden" name="request" id="request" value="ajax">
+
+                                    </form>
                                 </div>
+
+                                <div id="columns-body" class="tabs">
+                                    <form action="" method="POST" id="column_settings_form">
+                                        <h4 style="margin-bottom: 10px;">Show:</h4>
+
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-1" type="checkbox" class="iCheck column-checkbox" name="column[col-1]" data-column="col-1" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-1" style="font-size: 13px">Call date</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-2" type="checkbox" class="iCheck column-checkbox" name="column[col-2]" data-column="col-2" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-2" style="font-size: 13px">Call origin</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-3" type="checkbox" class="iCheck column-checkbox" name="column[col-3]" data-column="col-3" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-3" style="font-size: 13px">Call type</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-4" type="checkbox" class="iCheck column-checkbox" name="column[col-4]" data-column="col-4" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-4" style="font-size: 13px">Phone</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-5" type="checkbox" class="iCheck column-checkbox" name="column[col-5]" data-column="col-5" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-5" style="font-size: 13px">Caller ID</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-6" type="checkbox" class="iCheck column-checkbox" name="column[col-6]" data-column="col-6" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-6" style="font-size: 13px">DNIS</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-7" type="checkbox" class="iCheck column-checkbox" name="column[col-7]" data-column="col-7" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-7" style="font-size: 13px">Call status</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-8" type="checkbox" class="iCheck column-checkbox" name="column[col-8]" data-column="col-8" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-8" style="font-size: 13px">Call duration</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-9" type="checkbox" class="iCheck column-checkbox" name="column[col-9]" data-column="col-9" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-9" style="font-size: 13px">Listen </div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-10" type="checkbox" class="iCheck column-checkbox" name="column[col-10]" data-column="col-10" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-10" style="font-size: 13px">Download </div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-11" type="checkbox" class="iCheck column-checkbox" name="column[col-11]" data-column="col-11" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-11" style="font-size: 13px">Voicemail </div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-12" type="checkbox" class="iCheck column-checkbox" name="column[col-12]" data-column="col-12" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-12" style="font-size: 13px">Agent</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-13" type="checkbox" class="iCheck column-checkbox" name="column[col-13]" data-column="col-13" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-13" style="font-size: 13px">Campaign</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-14" type="checkbox" class="iCheck column-checkbox" name="column[col-14]" data-column="col-14" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-14" style="font-size: 13px">Account ID</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-15" type="checkbox" class="iCheck column-checkbox" name="column[col-15]" data-column="col-15" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-15" style="font-size: 13px">Contact list</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-16" type="checkbox" class="iCheck column-checkbox" name="column[col-16]" data-column="col-16" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-16" style="font-size: 13px">Call result</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-17" type="checkbox" class="iCheck column-checkbox" name="column[col-17]" data-column="col-17" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-17" style="font-size: 13px">Final </div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-18" type="checkbox" class="iCheck column-checkbox" name="column[col-18]" data-column="col-18" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-18" style="font-size: 13px">Termination event</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-19" type="checkbox" class="iCheck column-checkbox" name="column[col-19]" data-column="col-19" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-19" style="font-size: 13px">Missed</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-20" type="checkbox" class="iCheck column-checkbox" name="column[col-20]" data-column="col-20" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-20" style="font-size: 13px">Talk time</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-21" type="checkbox" class="iCheck column-checkbox" name="column[col-21]" data-column="col-21" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-21" style="font-size: 13px">Wrap time</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-22" type="checkbox" class="iCheck column-checkbox" name="column[col-22]" data-column="col-22" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-22" style="font-size: 13px">Wait time</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-23" type="checkbox" class="iCheck column-checkbox" name="column[col-23]" data-column="col-23" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-23" style="font-size: 13px">Revenue</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-24" type="checkbox" class="iCheck column-checkbox" name="column[col-24]" data-column="col-24" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-24" style="font-size: 13px">Resulted in</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-1" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-1]" data-column="col-attr-1" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-1" style="font-size: 13px">ExtName</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-2" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-2]" data-column="col-attr-2" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-2" style="font-size: 13px">Lead Provider ID</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-3" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-3]" data-column="col-attr-3" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-3" style="font-size: 13px">SetOfficerID</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-4" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-4]" data-column="col-attr-4" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-4" style="font-size: 13px">StatusID</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-5" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-5]" data-column="col-attr-5" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-5" style="font-size: 13px">Test</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-6" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-6]" data-column="col-attr-6" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-6" style="font-size: 13px">Test2</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-7" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-7]" data-column="col-attr-7" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-7" style="font-size: 13px">UDF133</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-8" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-8]" data-column="col-attr-8" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-8" style="font-size: 13px">UDF134</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-9" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-9]" data-column="col-attr-9" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-9" style="font-size: 13px">UDF34</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-10" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-10]" data-column="col-attr-10" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-10" style="font-size: 13px">UDF9</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-11" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-11]" data-column="col-attr-11" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-11" style="font-size: 13px">productid</div>
+                                            </div>
+                                        </div>
+                                        <div style="height: 30px;">
+                                            <div style="float:left;">
+                                                <input id="column_col-attr-12" type="checkbox" class="iCheck column-checkbox" name="column[col-attr-12]" data-column="col-attr-12" value="1" checked="checked" />
+                                                <div class="label_check" for="column_col-attr-12" style="font-size: 13px">teamid</div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div id="export-body" class="tabs">
+                                    <div style="margin-left: 35px">
+                                        <div class="button white export_to" onclick="return exxport('csv')"><img style="vertical-align: text-top;" src="images/excel.png"> Export to CSV</div>
+                                        <div class="button white export_to" onclick="return exxport('pdf')"><img style="vertical-align: text-top;" src="images/pdf.png"> Export to PDF</div>
+                                    </div>
+                                </div>
+
+                                <div id="save-body" class="tabs">
+                                    <div style="margin-left: 0px;">
+
+                                    </div>
+                                </div>
+
                             </div>
-                        </div>
-
-                        <div id="header-div">
-
-                            <h1 id="report-header">Reports / Calls <span class="clone_title"></span>
-                                <div class="help"></div>
-                            </h1>
-
-                            <div class="page_help">
-                                <span style="display: block; margin-top: 3px;">Here you can see all calls happened in the system:</span>
-                                <br>
-                                <table id="help_table">
-                                    <tr>
-                                        <td>Call date </td>
-                                        <td> &ndash; when the call was placed.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Contact list </td>
-                                        <td> &ndash; contact list name, if this phone# exists in one of the contact lists.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Call type </td>
-                                        <td> &ndash; type of the call (Manual, Inbound, etc).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Phone </td>
-                                        <td> &ndash; the lead phone number.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Caller ID </td>
-                                        <td> &ndash; CallerID for inbound calls.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>DNIS </td>
-                                        <td> &ndash; DNIS for inbound calls.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Call status </td>
-                                        <td> &ndash; technical status of the call (dropped? answered? answering machine?).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Call duration </td>
-                                        <td> &ndash; the total duration of the call (including dialing, wait, and on hold times).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Agent </td>
-                                        <td> &ndash; agent name, who spoke to the customer.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Campaign </td>
-                                        <td> &ndash; campaign name, if the call was placed or received within a campaign.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Account ID </td>
-                                        <td> &ndash; Account ID associated with the call.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Result code </td>
-                                        <td> &ndash; call result.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Final </td>
-                                        <td> &ndash; an indicator that shows whether the call result is final.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Termination event</td>
-                                        <td> &ndash; termination event the call ended with.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Talk time </td>
-                                        <td> &ndash; talk time (call duration, excluding dialing, wait, and on hold times).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Wrap time </td>
-                                        <td> &ndash; time spent by an agent wrapping the call after the call is finished.</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Wait time </td>
-                                        <td> &ndash; time agent spent waiting for this call (in "Ready" status).</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Listen </td>
-                                        <td> &ndash; call recording (special permission required)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Download </td>
-                                        <td> &ndash; call recording download button (special permission required)</td>
-                                    </tr>
-                                </table>
-                            </div>
-
-                            <table id="calls" class="zebra hover datatable-tablebox-class" style="position: relative" width="auto" cellpadding="5" cellspacing="1" border="0">
-                                <thead>
-                                    <tr>
-                                        <th>Call date</th>
-                                        <th>Call origin</th>
-                                        <th>Call type</th>
-                                        <th>Phone</th>
-                                        <th>Caller ID</th>
-                                        <th>DNIS</th>
-                                        <th>Call status</th>
-                                        <th>Call duration</th>
-                                        <th data-orderable="false">Listen </th>
-                                        <th data-orderable="false">Download</th>
-                                        <th data-orderable="false">Voicemail </th>
-                                        <th>Agent</th>
-                                        <th>Campaign</th>
-                                        <th>Account ID</th>
-                                        <th>Contact list</th>
-                                        <th>Call result</th>
-                                        <th>Final</th>
-                                        <th>Termination event</th>
-                                        <th>Missed</th>
-                                        <th>Talk time</th>
-                                        <th>Wrap time</th>
-                                        <th>Wait time</th>
-                                        <th>Revenue</th>
-                                        <th data-orderable="false">Resulted in</th>
-                                        <th data-orderable="false">ExtName</th>
-                                        <th data-orderable="false">Lead Provider ID</th>
-                                        <th data-orderable="false">SetOfficerID</th>
-                                        <th data-orderable="false">StatusID</th>
-                                        <th data-orderable="false">Test</th>
-                                        <th data-orderable="false">Test2</th>
-                                        <th data-orderable="false">UDF133</th>
-                                        <th data-orderable="false">UDF134</th>
-                                        <th data-orderable="false">UDF34</th>
-                                        <th data-orderable="false">UDF9</th>
-                                        <th data-orderable="false">productid</th>
-                                        <th data-orderable="false">teamid</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
 
+                    <div id="header-div">
 
+                        <h1 id="report-header">Reports / Calls <span class="clone_title"></span>
+                            <div class="help"></div>
+                        </h1>
 
+                        <div class="page_help">
+                            <span style="display: block; margin-top: 3px;">Here you can see all calls happened in the system:</span>
+                            <br>
+                            <table id="help_table">
+                                <tr>
+                                    <td>Call date </td>
+                                    <td> &ndash; when the call was placed.</td>
+                                </tr>
+                                <tr>
+                                    <td>Contact list </td>
+                                    <td> &ndash; contact list name, if this phone# exists in one of the contact lists.</td>
+                                </tr>
+                                <tr>
+                                    <td>Call type </td>
+                                    <td> &ndash; type of the call (Manual, Inbound, etc).</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone </td>
+                                    <td> &ndash; the lead phone number.</td>
+                                </tr>
+                                <tr>
+                                    <td>Caller ID </td>
+                                    <td> &ndash; CallerID for inbound calls.</td>
+                                </tr>
+                                <tr>
+                                    <td>DNIS </td>
+                                    <td> &ndash; DNIS for inbound calls.</td>
+                                </tr>
+                                <tr>
+                                    <td>Call status </td>
+                                    <td> &ndash; technical status of the call (dropped? answered? answering machine?).</td>
+                                </tr>
+                                <tr>
+                                    <td>Call duration </td>
+                                    <td> &ndash; the total duration of the call (including dialing, wait, and on hold times).</td>
+                                </tr>
+                                <tr>
+                                    <td>Agent </td>
+                                    <td> &ndash; agent name, who spoke to the customer.</td>
+                                </tr>
+                                <tr>
+                                    <td>Campaign </td>
+                                    <td> &ndash; campaign name, if the call was placed or received within a campaign.</td>
+                                </tr>
+                                <tr>
+                                    <td>Account ID </td>
+                                    <td> &ndash; Account ID associated with the call.</td>
+                                </tr>
+                                <tr>
+                                    <td>Result code </td>
+                                    <td> &ndash; call result.</td>
+                                </tr>
+                                <tr>
+                                    <td>Final </td>
+                                    <td> &ndash; an indicator that shows whether the call result is final.</td>
+                                </tr>
+                                <tr>
+                                    <td>Termination event</td>
+                                    <td> &ndash; termination event the call ended with.</td>
+                                </tr>
+                                <tr>
+                                    <td>Talk time </td>
+                                    <td> &ndash; talk time (call duration, excluding dialing, wait, and on hold times).</td>
+                                </tr>
+                                <tr>
+                                    <td>Wrap time </td>
+                                    <td> &ndash; time spent by an agent wrapping the call after the call is finished.</td>
+                                </tr>
+                                <tr>
+                                    <td>Wait time </td>
+                                    <td> &ndash; time agent spent waiting for this call (in "Ready" status).</td>
+                                </tr>
+                                <tr>
+                                    <td>Listen </td>
+                                    <td> &ndash; call recording (special permission required)</td>
+                                </tr>
+                                <tr>
+                                    <td>Download </td>
+                                    <td> &ndash; call recording download button (special permission required)</td>
+                                </tr>
+                            </table>
+                        </div>
 
-                    <script>
+                        <table id="calls" class="zebra hover datatable-tablebox-class" style="position: relative" width="auto" cellpadding="5" cellspacing="1" border="0">
+                            <thead>
+                                <tr>
+                                    <th>Account ID</th>
+                                    <th>Agent</th>
+                                    <th>Call date</th>
+                                    <th>Call duration</th>
+                                    <th>Call origin</th>
+                                    <th>Call result</th>
+                                    <th>Call status</th>
+                                    <th>Call type</th>
+                                    <th>Caller ID</th>
+                                    <th>Campaign</th>
+                                    <th>Contact list</th>
+                                    <th>DNIS</th>
+                                    <th>Disposition</th>
+                                    <th>Final</th>
+                                    <th>Lead Provider</th>
+                                    <th data-orderable="false">Lead Provider ID</th>
+                                    <th>Phone</th>
+                                    <th>Team</th>
+                                    <th>Call duration</th>
+                                    <th>Termination event</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($items as $item)
+                                <tr>
+                                    <td>{{ $item->AccountID }} </td>
+                                    <td>{{ $item->Agent }} </td>
+                                    <td>{{ $item->CallDate }} </td>
+                                    <td>{{ $item->CallDuration }} </td>
+                                    <td>{{ $item->CallOrigin }} </td>
+                                    <td>{{ $item->CallResult }} </td>
+                                    <td>{{ $item->CallStatus }} </td>
+                                    <td>{{ $item->CallType }} </td>
+                                    <td>{{ $item->CallerID }} </td>
+                                    <td>{{ $item->Campaign }} </td>
+                                    <td>{{ $item->DNIS }} </td>
+                                    <td>{{ $item->Disposition }} </td>
+                                    <td>{{ $item->Final }} </td>
+                                    <td>{{ $item->LeadProvider }} </td>
+                                    <td>{{ $item->LeadProviderID }} </td>
+                                    <td>{{ $item->Phone }} </td>
+                                    <td>{{ $item->Team }} </td>
+                                    <td>{{ $item->TerminationEvent }} </td>
+                                </tr>
+                                @endforeach
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <script>
                 // When user clicked update button, count how many filters were used and display this number near filters icon
 
                 function count_used_filters() {
@@ -8184,7 +8187,5 @@ $('#update').click(function(e) {
             // });
         });
     </script>
-
 </body>
-
 </html>
