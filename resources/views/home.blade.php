@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <title>IC Callcenter</title>
+    <title>Ctax-PhoneSystem</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <base href="https://ctax.intelligentcontacts.net" />
 
     <meta name="format-detection" content="telephone=no" />
 
-    <link href="/images/favicon/icon-32.png" sizes="32x32" rel="icon" />
-    <link href="/images/favicon/icon-192.png" sizes="192x192" rel="icon" />
-    <link href="/images/favicon/icon-180.png" rel="apple-touch-icon-precomposed" />
-    <meta content="/images/favicon/icon-270.png" name="msapplication-TileImage" />
+    <link href="/images/favicon.png" sizes="32x32" rel="icon" />
+    <link href="/images/favicon.png" sizes="192x192" rel="icon" />
+    <link href="/images/favicon.png" rel="apple-touch-icon-precomposed" />
+    <meta content="/images/favicon.png" name="msapplication-TileImage" />
 
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery-migrate-3.0.1.js"></script>
@@ -4205,7 +4205,7 @@ w.find("input.account_id_unknown").click(function() {
                         <div class="filters-body-div">
                             <div id="filters-container">
                                 <div id="filters-body" class="tabs">
-                                    <form action="{{ url('phones') }}" method="POST" name="filter_form" id="filter_form">
+                                    <form action="{{ url('admin') }}" method="POST" name="filter_form" id="filter_form">
                                         @csrf
                                         <div style="height: 50px; margin-bottom: 5px;">
                                             <h4 style="float: left">Filter by:</h4>
@@ -4740,6 +4740,7 @@ w.find("input.account_id_unknown").click(function() {
                                             </select>
                                         </div>
 
+                                        <!--
                                         <div class="filter-input-container">
                                             <label class="filter-label">Call result</label><br>
 
@@ -7053,122 +7054,124 @@ w.find("input.account_id_unknown").click(function() {
                                         <input type="hidden" name="userid" value="">
                                         <input type="hidden" name="export" id="export_to" value="">
                                         <input type="hidden" name="request" id="request" value="ajax">
+                                    -->
+                                </form>
+                            </div>
 
-                                    </form>
-                                </div>
+                            <div id="columns-body" class="tabs">
+                                <form action="" method="POST" id="column_settings_form">
+                                    <h4 style="margin-bottom: 10px;">Show:</h4>
 
-                                <div id="columns-body" class="tabs">
-                                    <form action="" method="POST" id="column_settings_form">
-                                        <h4 style="margin-bottom: 10px;">Show:</h4>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-1" type="checkbox" class="iCheck column-checkbox" name="column[col-1]" data-column="col-1" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-1" style="font-size: 13px">Call date</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-2" type="checkbox" class="iCheck column-checkbox" name="column[col-2]" data-column="col-2" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-2" style="font-size: 13px">Call origin</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-3" type="checkbox" class="iCheck column-checkbox" name="column[col-3]" data-column="col-3" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-3" style="font-size: 13px">Call type</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-4" type="checkbox" class="iCheck column-checkbox" name="column[col-4]" data-column="col-4" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-4" style="font-size: 13px">Phone</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-5" type="checkbox" class="iCheck column-checkbox" name="column[col-5]" data-column="col-5" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-5" style="font-size: 13px">Caller ID</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-6" type="checkbox" class="iCheck column-checkbox" name="column[col-6]" data-column="col-6" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-6" style="font-size: 13px">DNIS</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-7" type="checkbox" class="iCheck column-checkbox" name="column[col-7]" data-column="col-7" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-7" style="font-size: 13px">Call status</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-8" type="checkbox" class="iCheck column-checkbox" name="column[col-8]" data-column="col-8" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-8" style="font-size: 13px">Call duration</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-9" type="checkbox" class="iCheck column-checkbox" name="column[col-9]" data-column="col-9" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-9" style="font-size: 13px">Listen </div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-10" type="checkbox" class="iCheck column-checkbox" name="column[col-10]" data-column="col-10" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-10" style="font-size: 13px">Download </div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-11" type="checkbox" class="iCheck column-checkbox" name="column[col-11]" data-column="col-11" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-11" style="font-size: 13px">Voicemail </div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-12" type="checkbox" class="iCheck column-checkbox" name="column[col-12]" data-column="col-12" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-12" style="font-size: 13px">Agent</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-13" type="checkbox" class="iCheck column-checkbox" name="column[col-13]" data-column="col-13" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-13" style="font-size: 13px">Campaign</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-14" type="checkbox" class="iCheck column-checkbox" name="column[col-14]" data-column="col-14" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-14" style="font-size: 13px">Account ID</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-15" type="checkbox" class="iCheck column-checkbox" name="column[col-15]" data-column="col-15" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-15" style="font-size: 13px">Contact list</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-16" type="checkbox" class="iCheck column-checkbox" name="column[col-16]" data-column="col-16" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-16" style="font-size: 13px">Call result</div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-17" type="checkbox" class="iCheck column-checkbox" name="column[col-17]" data-column="col-17" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-17" style="font-size: 13px">Final </div>
+                                        </div>
+                                    </div>
+                                    <div style="height: 30px;">
+                                        <div style="float:left;">
+                                            <input id="column_col-18" type="checkbox" class="iCheck column-checkbox" name="column[col-18]" data-column="col-18" value="1" checked="checked" />
+                                            <div class="label_check" for="column_col-18" style="font-size: 13px">Termination event</div>
+                                        </div>
+                                    </div>
 
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-1" type="checkbox" class="iCheck column-checkbox" name="column[col-1]" data-column="col-1" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-1" style="font-size: 13px">Call date</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-2" type="checkbox" class="iCheck column-checkbox" name="column[col-2]" data-column="col-2" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-2" style="font-size: 13px">Call origin</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-3" type="checkbox" class="iCheck column-checkbox" name="column[col-3]" data-column="col-3" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-3" style="font-size: 13px">Call type</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-4" type="checkbox" class="iCheck column-checkbox" name="column[col-4]" data-column="col-4" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-4" style="font-size: 13px">Phone</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-5" type="checkbox" class="iCheck column-checkbox" name="column[col-5]" data-column="col-5" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-5" style="font-size: 13px">Caller ID</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-6" type="checkbox" class="iCheck column-checkbox" name="column[col-6]" data-column="col-6" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-6" style="font-size: 13px">DNIS</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-7" type="checkbox" class="iCheck column-checkbox" name="column[col-7]" data-column="col-7" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-7" style="font-size: 13px">Call status</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-8" type="checkbox" class="iCheck column-checkbox" name="column[col-8]" data-column="col-8" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-8" style="font-size: 13px">Call duration</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-9" type="checkbox" class="iCheck column-checkbox" name="column[col-9]" data-column="col-9" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-9" style="font-size: 13px">Listen </div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-10" type="checkbox" class="iCheck column-checkbox" name="column[col-10]" data-column="col-10" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-10" style="font-size: 13px">Download </div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-11" type="checkbox" class="iCheck column-checkbox" name="column[col-11]" data-column="col-11" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-11" style="font-size: 13px">Voicemail </div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-12" type="checkbox" class="iCheck column-checkbox" name="column[col-12]" data-column="col-12" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-12" style="font-size: 13px">Agent</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-13" type="checkbox" class="iCheck column-checkbox" name="column[col-13]" data-column="col-13" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-13" style="font-size: 13px">Campaign</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-14" type="checkbox" class="iCheck column-checkbox" name="column[col-14]" data-column="col-14" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-14" style="font-size: 13px">Account ID</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-15" type="checkbox" class="iCheck column-checkbox" name="column[col-15]" data-column="col-15" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-15" style="font-size: 13px">Contact list</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-16" type="checkbox" class="iCheck column-checkbox" name="column[col-16]" data-column="col-16" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-16" style="font-size: 13px">Call result</div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-17" type="checkbox" class="iCheck column-checkbox" name="column[col-17]" data-column="col-17" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-17" style="font-size: 13px">Final </div>
-                                            </div>
-                                        </div>
-                                        <div style="height: 30px;">
-                                            <div style="float:left;">
-                                                <input id="column_col-18" type="checkbox" class="iCheck column-checkbox" name="column[col-18]" data-column="col-18" value="1" checked="checked" />
-                                                <div class="label_check" for="column_col-18" style="font-size: 13px">Termination event</div>
-                                            </div>
-                                        </div>
+                                        <!--
                                         <div style="height: 30px;">
                                             <div style="float:left;">
                                                 <input id="column_col-19" type="checkbox" class="iCheck column-checkbox" name="column[col-19]" data-column="col-19" value="1" checked="checked" />
@@ -7277,169 +7280,177 @@ w.find("input.account_id_unknown").click(function() {
                                                 <div class="label_check" for="column_col-attr-12" style="font-size: 13px">teamid</div>
                                             </div>
                                         </div>
-                                    </form>
-                                </div>
-
-                                <div id="export-body" class="tabs">
-                                    <div style="margin-left: 35px">
-                                        <div class="button white export_to" onclick="return exxport('csv')"><img style="vertical-align: text-top;" src="images/excel.png"> Export to CSV</div>
-                                        <div class="button white export_to" onclick="return exxport('pdf')"><img style="vertical-align: text-top;" src="images/pdf.png"> Export to PDF</div>
-                                    </div>
-                                </div>
-
-                                <div id="save-body" class="tabs">
-                                    <div style="margin-left: 0px;">
-
-                                    </div>
-                                </div>
-
+                                    -->
+                                </form>
                             </div>
+
+                            <div id="export-body" class="tabs">
+                                <div style="margin-left: 35px">
+                                    <div class="button white export_to" onclick="return exxport('csv')"><img style="vertical-align: text-top;" src="images/excel.png"> Export to CSV</div>
+                                    <div class="button white export_to" onclick="return exxport('pdf')"><img style="vertical-align: text-top;" src="images/pdf.png"> Export to PDF</div>
+                                </div>
+                            </div>
+
+                            <div id="save-body" class="tabs">
+                                <div style="margin-left: 0px;">
+
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
-
-                    <div id="header-div">
-
-                        <h1 id="report-header">Reports / Calls <span class="clone_title"></span>
-                            <div class="help"></div>
-                        </h1>
-
-                        <div class="page_help">
-                            <span style="display: block; margin-top: 3px;">Here you can see all calls happened in the system:</span>
-                            <br>
-                            <table id="help_table">
-                                <tr>
-                                    <td>Call date </td>
-                                    <td> &ndash; when the call was placed.</td>
-                                </tr>
-                                <tr>
-                                    <td>Contact list </td>
-                                    <td> &ndash; contact list name, if this phone# exists in one of the contact lists.</td>
-                                </tr>
-                                <tr>
-                                    <td>Call type </td>
-                                    <td> &ndash; type of the call (Manual, Inbound, etc).</td>
-                                </tr>
-                                <tr>
-                                    <td>Phone </td>
-                                    <td> &ndash; the lead phone number.</td>
-                                </tr>
-                                <tr>
-                                    <td>Caller ID </td>
-                                    <td> &ndash; CallerID for inbound calls.</td>
-                                </tr>
-                                <tr>
-                                    <td>DNIS </td>
-                                    <td> &ndash; DNIS for inbound calls.</td>
-                                </tr>
-                                <tr>
-                                    <td>Call status </td>
-                                    <td> &ndash; technical status of the call (dropped? answered? answering machine?).</td>
-                                </tr>
-                                <tr>
-                                    <td>Call duration </td>
-                                    <td> &ndash; the total duration of the call (including dialing, wait, and on hold times).</td>
-                                </tr>
-                                <tr>
-                                    <td>Agent </td>
-                                    <td> &ndash; agent name, who spoke to the customer.</td>
-                                </tr>
-                                <tr>
-                                    <td>Campaign </td>
-                                    <td> &ndash; campaign name, if the call was placed or received within a campaign.</td>
-                                </tr>
-                                <tr>
-                                    <td>Account ID </td>
-                                    <td> &ndash; Account ID associated with the call.</td>
-                                </tr>
-                                <tr>
-                                    <td>Result code </td>
-                                    <td> &ndash; call result.</td>
-                                </tr>
-                                <tr>
-                                    <td>Final </td>
-                                    <td> &ndash; an indicator that shows whether the call result is final.</td>
-                                </tr>
-                                <tr>
-                                    <td>Termination event</td>
-                                    <td> &ndash; termination event the call ended with.</td>
-                                </tr>
-                                <tr>
-                                    <td>Talk time </td>
-                                    <td> &ndash; talk time (call duration, excluding dialing, wait, and on hold times).</td>
-                                </tr>
-                                <tr>
-                                    <td>Wrap time </td>
-                                    <td> &ndash; time spent by an agent wrapping the call after the call is finished.</td>
-                                </tr>
-                                <tr>
-                                    <td>Wait time </td>
-                                    <td> &ndash; time agent spent waiting for this call (in "Ready" status).</td>
-                                </tr>
-                                <tr>
-                                    <td>Listen </td>
-                                    <td> &ndash; call recording (special permission required)</td>
-                                </tr>
-                                <tr>
-                                    <td>Download </td>
-                                    <td> &ndash; call recording download button (special permission required)</td>
-                                </tr>
-                            </table>
-                        </div>
-
-                        <table id="calls" class="zebra hover datatable-tablebox-class" style="position: relative" width="auto" cellpadding="5" cellspacing="1" border="0">
-                            <thead>
-                                <tr>
-                                    <th>Account ID</th>
-                                    <th>Agent</th>
-                                    <th>Call date</th>
-                                    <th>Call duration</th>
-                                    <th>Call origin</th>
-                                    <th>Call result</th>
-                                    <th>Call status</th>
-                                    <th>Call type</th>
-                                    <th>Caller ID</th>
-                                    <th>Campaign</th>
-                                    <th>Contact list</th>
-                                    <th>DNIS</th>
-                                    <th>Disposition</th>
-                                    <th>Final</th>
-                                    <th>Lead Provider</th>
-                                    <th data-orderable="false">Lead Provider ID</th>
-                                    <th>Phone</th>
-                                    <th>Team</th>
-                                    <th>Call duration</th>
-                                    <th>Termination event</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                @foreach($items as $item)
-                                <tr>
-                                    <td>{{ $item->AccountID }} </td>
-                                    <td>{{ $item->Agent }} </td>
-                                    <td>{{ $item->CallDate }} </td>
-                                    <td>{{ $item->CallDuration }} </td>
-                                    <td>{{ $item->CallOrigin }} </td>
-                                    <td>{{ $item->CallResult }} </td>
-                                    <td>{{ $item->CallStatus }} </td>
-                                    <td>{{ $item->CallType }} </td>
-                                    <td>{{ $item->CallerID }} </td>
-                                    <td>{{ $item->Campaign }} </td>
-                                    <td>{{ $item->DNIS }} </td>
-                                    <td>{{ $item->Disposition }} </td>
-                                    <td>{{ $item->Final }} </td>
-                                    <td>{{ $item->LeadProvider }} </td>
-                                    <td>{{ $item->LeadProviderID }} </td>
-                                    <td>{{ $item->Phone }} </td>
-                                    <td>{{ $item->Team }} </td>
-                                    <td>{{ $item->TerminationEvent }} </td>
-                                </tr>
-                                @endforeach
-                            </tbody>
-                        </table>
                     </div>
                 </div>
 
-                <script>
+                <div id="header-div">
+
+                    <h1 id="report-header">Reports / Calls <span class="clone_title"></span>
+                        <div class="help"></div>
+                        <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                            Logout
+                        </a>
+
+                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            {{ csrf_field() }}
+                        </form>
+                    </h1>
+
+                    <div class="page_help">
+                        <span style="display: block; margin-top: 3px;">Here you can see all calls happened in the system:</span>
+                        <br>
+                        <table id="help_table">
+                            <tr>
+                                <td>Call date </td>
+                                <td> &ndash; when the call was placed.</td>
+                            </tr>
+                            <tr>
+                                <td>Contact list </td>
+                                <td> &ndash; contact list name, if this phone# exists in one of the contact lists.</td>
+                            </tr>
+                            <tr>
+                                <td>Call type </td>
+                                <td> &ndash; type of the call (Manual, Inbound, etc).</td>
+                            </tr>
+                            <tr>
+                                <td>Phone </td>
+                                <td> &ndash; the lead phone number.</td>
+                            </tr>
+                            <tr>
+                                <td>Caller ID </td>
+                                <td> &ndash; CallerID for inbound calls.</td>
+                            </tr>
+                            <tr>
+                                <td>DNIS </td>
+                                <td> &ndash; DNIS for inbound calls.</td>
+                            </tr>
+                            <tr>
+                                <td>Call status </td>
+                                <td> &ndash; technical status of the call (dropped? answered? answering machine?).</td>
+                            </tr>
+                            <tr>
+                                <td>Call duration </td>
+                                <td> &ndash; the total duration of the call (including dialing, wait, and on hold times).</td>
+                            </tr>
+                            <tr>
+                                <td>Agent </td>
+                                <td> &ndash; agent name, who spoke to the customer.</td>
+                            </tr>
+                            <tr>
+                                <td>Campaign </td>
+                                <td> &ndash; campaign name, if the call was placed or received within a campaign.</td>
+                            </tr>
+                            <tr>
+                                <td>Account ID </td>
+                                <td> &ndash; Account ID associated with the call.</td>
+                            </tr>
+                            <tr>
+                                <td>Result code </td>
+                                <td> &ndash; call result.</td>
+                            </tr>
+                            <tr>
+                                <td>Final </td>
+                                <td> &ndash; an indicator that shows whether the call result is final.</td>
+                            </tr>
+                            <tr>
+                                <td>Termination event</td>
+                                <td> &ndash; termination event the call ended with.</td>
+                            </tr>
+                            <tr>
+                                <td>Talk time </td>
+                                <td> &ndash; talk time (call duration, excluding dialing, wait, and on hold times).</td>
+                            </tr>
+                            <tr>
+                                <td>Wrap time </td>
+                                <td> &ndash; time spent by an agent wrapping the call after the call is finished.</td>
+                            </tr>
+                            <tr>
+                                <td>Wait time </td>
+                                <td> &ndash; time agent spent waiting for this call (in "Ready" status).</td>
+                            </tr>
+                            <tr>
+                                <td>Listen </td>
+                                <td> &ndash; call recording (special permission required)</td>
+                            </tr>
+                            <tr>
+                                <td>Download </td>
+                                <td> &ndash; call recording download button (special permission required)</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <table id="calls" class="zebra hover datatable-tablebox-class" style="position: relative" width="auto" cellpadding="5" cellspacing="1" border="0">
+                        <thead>
+                            <tr>
+                                <th>Account ID</th>
+                                <th>Agent</th>
+                                <th>Call date</th>
+                                <th>Call duration</th>
+                                <th>Call origin</th>
+                                <th>Call result</th>
+                                <th>Call status</th>
+                                <th>Call type</th>
+                                <th>Caller ID</th>
+                                <th>Campaign</th>
+                                <th>Contact list</th>
+                                <th>DNIS</th>
+                                <th>Disposition</th>
+                                <th>Final</th>
+                                <th>Lead Provider</th>
+                                <th data-orderable="false">Lead Provider ID</th>
+                                <th>Phone</th>
+                                <th>Team</th>
+                                <th>Call duration</th>
+                                <th>Termination event</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach($items as $item)
+                            <tr>
+                                <td>{{ $item->AccountID }} </td>
+                                <td>{{ $item->Agent }} </td>
+                                <td>{{ $item->CallDate }} </td>
+                                <td>{{ $item->CallDuration }} </td>
+                                <td>{{ $item->CallOrigin }} </td>
+                                <td>{{ $item->CallResult }} </td>
+                                <td>{{ $item->CallStatus }} </td>
+                                <td>{{ $item->CallType }} </td>
+                                <td>{{ $item->CallerID }} </td>
+                                <td>{{ $item->Campaign }} </td>
+                                <td>{{ $item->DNIS }} </td>
+                                <td>{{ $item->Disposition }} </td>
+                                <td>{{ $item->Final }} </td>
+                                <td>{{ $item->LeadProvider }} </td>
+                                <td>{{ $item->LeadProviderID }} </td>
+                                <td>{{ $item->Phone }} </td>
+                                <td>{{ $item->Team }} </td>
+                                <td>{{ $item->TerminationEvent }} </td>
+                            </tr>
+                            @endforeach
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <script>
                 // When user clicked update button, count how many filters were used and display this number near filters icon
 
                 function count_used_filters() {

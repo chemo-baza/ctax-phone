@@ -11,8 +11,6 @@
 |
 */
 
-Route::resource('phones', 'PhoneSystemController');
 
-Route::get('welcome', function() {
-	return view('welcome');
-});
+Auth::routes();
+Route::resource('/', 'PhoneSystemController');
