@@ -5,9 +5,6 @@
     <title>Ctax-PhoneSystem</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <base href="https://ctax.intelligentcontacts.net" />
-
-    <meta name="format-detection" content="telephone=no" />
 
     <link href="/images/favicon.png" sizes="32x32" rel="icon" />
     <link href="/images/favicon.png" sizes="192x192" rel="icon" />
@@ -16,7 +13,6 @@
 
     <script type="text/javascript" src="/js/jquery-3.4.1.min.js"></script>
     <script type="text/javascript" src="/js/jquery-migrate-3.0.1.js"></script>
-
 
     <link type="text/css" href="/js/jquery-ui-1.12.1.redmond_theme/jquery-ui.min.css" rel="stylesheet" />
     <link type="text/css" href="/js/jquery-ui-1.12.1.redmond_theme/jquery-ui.theme.min.css" rel="stylesheet" />
@@ -74,12 +70,6 @@
 
     <script type="text/javascript" src="/js/easytimer/easytimer.min.js"></script>
 
-
-
-    <script>
-        SUBDOMAIN = 'ctax';
-    </script>
-
     <script type="text/javascript" src="/js/Updater.js?1563937183"></script>
     <script type="text/javascript" src="/js/right_panel.js?1563937183"></script>
     <script type="text/javascript" src="/js/ajaxfileupload.js?1563937183"></script>
@@ -101,6 +91,11 @@
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106742965-4"></script>
+
+    <link href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/all.css" integrity="sha256-KS/KA6l6/TgimcBRobFX07zO4LAjYASrXfF79TFBk1Q=" crossorigin="anonymous" />
+    
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -7397,56 +7392,31 @@ w.find("input.account_id_unknown").click(function() {
                         </table>
                     </div>
 
-                    <table id="calls" class="zebra hover datatable-tablebox-class" style="position: relative" width="auto" cellpadding="5" cellspacing="1" border="0">
-                        <thead>
-                            <tr>
-                                <th>Account ID</th>
-                                <th>Agent</th>
-                                <th>Call date</th>
-                                <th>Call duration</th>
-                                <th>Call origin</th>
-                                <th>Call result</th>
-                                <th>Call status</th>
-                                <th>Call type</th>
-                                <th>Caller ID</th>
-                                <th>Campaign</th>
-                                <th>Contact list</th>
-                                <th>DNIS</th>
-                                <th>Disposition</th>
-                                <th>Final</th>
-                                <th>Lead Provider</th>
-                                <th data-orderable="false">Lead Provider ID</th>
-                                <th>Phone</th>
-                                <th>Team</th>
-                                <th>Call duration</th>
-                                <th>Termination event</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach($items as $item)
-                            <tr>
-                                <td>{{ $item->AccountID }} </td>
-                                <td>{{ $item->Agent }} </td>
-                                <td>{{ $item->CallDate }} </td>
-                                <td>{{ $item->CallDuration }} </td>
-                                <td>{{ $item->CallOrigin }} </td>
-                                <td>{{ $item->CallResult }} </td>
-                                <td>{{ $item->CallStatus }} </td>
-                                <td>{{ $item->CallType }} </td>
-                                <td>{{ $item->CallerID }} </td>
-                                <td>{{ $item->Campaign }} </td>
-                                <td>{{ $item->DNIS }} </td>
-                                <td>{{ $item->Disposition }} </td>
-                                <td>{{ $item->Final }} </td>
-                                <td>{{ $item->LeadProvider }} </td>
-                                <td>{{ $item->LeadProviderID }} </td>
-                                <td>{{ $item->Phone }} </td>
-                                <td>{{ $item->Team }} </td>
-                                <td>{{ $item->TerminationEvent }} </td>
-                            </tr>
-                            @endforeach
-                        </tbody>
-                    </table>
+                     <table id="items_calls" class="zebra hover datatable-tablebox-class" style="position: relative" width="auto" cellpadding="5" cellspacing="1" border="0">
+                    <thead>
+                        <tr>
+                            <th>Account ID</th>
+                            <th>Agent</th>
+                            <th>Call date</th>
+                            <th>Call duration</th>
+                            <th>Call origin</th>
+                            <th>Call result</th>
+                            <th>Call status</th>
+                            <th>Call type</th>
+                            <th>Caller ID</th>
+                            <th>Campaign</th>
+                            <th>DNIS</th>
+                            <th>Disposition</th>
+                            <th>Final</th>
+                            <th>Lead Provider</th>
+                            <th>Lead Provider ID</th>
+                            <th>Phone</th>
+                            <th>Team</th>
+                            <th>Call duration</th>
+                            <th>Termination event</th>
+                        </tr>
+                    </thead>
+                </table>
                 </div>
             </div>
 
@@ -8155,14 +8125,8 @@ $('#update').click(function(e) {
             </script>
 
             <script src="/js/left_filter_panel.js"></script>
-
-            <script src="/js/datatables/datatables.fixedHeader.customfix.js"></script>
-
         </div>
     </div>
-
-
-
 
     <script>
         $(".chosen").chosen({
@@ -8196,6 +8160,44 @@ $('#update').click(function(e) {
             // 	var icWindowHeight = $("#intelligentcontacts-container").height();
             // $("#intelligentcontacts-container").css("height", (icWindowHeight + 100)); // add plus 100px
             // });
+        });
+    </script>
+
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js" integrity="sha256-8HGN1EdmKWVH4hU3Zr3FbTHoqsUcfteLZJnVmqD/rC8=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready( function () {
+            $('#items_calls').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": '/api/items',
+                "lengthChange": false,
+                "bFilter": false,
+                "pageLength": 100,
+
+                "columns": [ 
+                { data: 'accountid' }, 
+                { data: 'agent' },
+                { data: 'calldate' },
+                { data: 'callduration' },
+                { data: 'callorigin' },
+                { data: 'callresult' },
+                { data: 'callstatus' },
+                { data: 'calltype' },
+                { data: 'callerid' },
+                { data: 'campaign' },
+                { data: 'dnis' },
+                { data: 'disposition' },
+                { data: 'final' },
+                { data: 'leadprovider' },
+                { data: 'leadproviderid' },
+                { data: 'phone' },
+                { data: 'team' }, 
+                { data: 'callduration' },
+                { data: 'terminationevent' },
+                ],
+            });
         });
     </script>
 </body>
