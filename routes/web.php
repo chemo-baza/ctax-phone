@@ -54,6 +54,6 @@ Route::get('api/items', function() {
         where 
         c.call_date >= '2019=08-06'
         order by 
-        c.call_date"))->toJson();
+        c.call_date LIMIT 10000"))->toJson();
 });
 
